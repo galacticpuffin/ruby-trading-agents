@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Operator // Control Center</title>
+<style>
+  :root {
+    --bg: #0a0d12;
+    --surface: #0f1520;
+    --surface-2: #0a0f18;
+    --border: #1c2736;
+    --text: #e6edf5;
+    --text-dim: #7b93a8;
+    --accent: #00ff9d;
+    --accent-dim: #00ff9d18;
+    --warn: #fbbf24;
+    --danger: #f87171;
+    --ok: #34d399;
+    --info: #60a5fa;
+    --purple: #c084fc;
+    --pink: #f472b6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  .app {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+  }
+  @media (max-width: 960px){ .app { grid-template-columns: 1fr; } }
+
+  header {
+    grid-column: 1 / -1;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 18px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  .brand { font-size: 13px; font-weight: 800; letter-spacing: 0.14em; color: var(--accent); }
+  .status-cluster { display: flex; gap: 10px; align-items: center; }
+  .pill {
+    font-size: 11px; font-weight: 600;
+    padding: 5px 10px; border-radius: 999px;
+    background: var(--surface-2); border: 1px solid var(--border);
+    color: var(--text-dim);
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .pill .dot { width: 7px; height: 7px; border-radius: 999px; background: var(--text-dim); }
+  .pill .dot.ok { background: var(--ok); box-shadow: 0 0 8px var(--ok); }
+  .pill .dot.warn { background: var(--warn); }
+  .pill .dot.danger { background: var(--danger); }
+
+  .sidebar {
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    padding: 16px;
+    display: flex; flex-direction: column; gap: 16px;
+    overflow-y: auto;
+  }
+  .sidebar h3 {
+    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--text-dim); margin-bottom: 8px; font-weight: 700;
+  }
+  .shortcuts { display: flex; flex-direction: column; gap: 6px; }
+  .shortcut {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 12px; border-radius: 10px;
+    background: var(--surface-2); border: 1px solid var(--border);
+    color: var(--text); text-decoration: none;
+    transition: transform 0.05s ease, border-color 0.15s ease;
+  }
+  .shortcut:hover { border-color: #2a3f55; transform: translateY(-1px); }
+  .shortcut .icon {
+    width: 30px; height: 30px; border-radius: 8px;
+    display: grid; place-items: center;
+    font-weight: 800; font-size: 11px;
+    background: #0b1220; border: 1px solid var(--border); color: var(--accent);
+  }
+  .shortcut .meta { min-width: 0; flex: 1; }
+  .shortcut .label { font-size: 12px; font-weight: 700; color: #e6edf5; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .shortcut .sub { font-size: 11px; color: var(--text-dim); }
+  .shortcut .badge {
+    font-size: 10px; font-weight: 700; padding: 3px 7px; border-radius: 999px;
+    background: #0b1220; border: 1px solid var(--border);
+  }
+  .shortcut .badge.ok { color: var(--ok); border-color: #15533a; }
+  .shortcut .badge.err { color: var(--danger); border-color: #5c1f1f; }
+
+  .agents { display: flex; flex-direction: column; gap: 6px; }
+  .agent {
+    display: grid; grid-template-columns: 110px 1fr 90px; gap: 8px;
+    align-items: center;
+    padding: 10px 12px; border-radius: 10px;
+    background: var(--surface-2); border: 1px solid var(--border);
+  }
+  .agent-name { font-size: 13px; font-weight: 700; color: var(--text); display: flex; align-items: center; gap: 8px; }
+  .agent-name .icon {
+    width: 22px; height: 22px; border-radius: 6px;
+    display: grid; place-items: center;
+    font-weight: 800; font-size: 10px;
+    background: #0b1220; border: 1px solid var(--border); color: var(--accent);
+  }
+  .agent-task { font-size: 12px; color: var(--text-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .agent-status {
+    font-size: 11px; font-weight: 700; text-align: right;
+    padding: 4px 8px; border-radius: 999px;
+    background: #0b1220; border: 1px solid var(--border);
+    color: var(--text-dim);
+  }
+  .agent-status.idle { color: #8fa3b8; }
+  .agent-status.running { color: var(--warn); border-color: #5e4a16; }
+  .agent-status.error { color: var(--danger); border-color: #5c1f1f; }
+  .agent-status.done { color: var(--ok); border-color: #15533a; }
+
+  .metrics { display: flex; flex-direction: column; gap: 8px; }
+  .metric {
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 10px;
+  }
+  .metric .label { font-size: 10px; letter-spacing: 0.12em; color: var(--text-dim); }
+  .metric .val { font-size: 18px; font-weight: 800; color: var(--text); margin-top: 4px; }
+  .accuracy {
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 10px;
+  }
+  .accuracy .label { font-size: 10px; letter-spacing: 0.14em; color: var(--text-dim); }
+  .accuracy .val { font-size: 16px; font-weight: 800; color: var(--text); margin-top: 4px; }
+
+  main {
+    background: var(--bg);
+    padding: 18px;
+    display: flex; flex-direction: column; gap: 14px;
+    overflow-y: auto;
+  }
+
+  .live-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  @media (max-width: 1000px){ .live-grid { grid-template-columns: 1fr; } }
+  .live-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 12px; min-height: 120px;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .live-card h4 {
+    font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--text-dim); font-weight: 700;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .live-card .body {
+    flex: 1; font-size: 12px; color: var(--text-dim);
+    overflow: hidden; position: relative;
+  }
+  .log-line { margin: 3px 0; font-size: 11px; line-height: 1.4; }
+  .log-line .t { color: #465a72; margin-right: 6px; }
+  .log-line.info { color: var(--info); }
+  .log-line.ok { color: var(--ok); }
+  .log-line.warn { color: var(--warn); }
+  .log-line.error { color: var(--danger); }
+
+  .charts-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  @media (max-width: 1000px){ .charts-row { grid-template-columns: 1fr; } }
+  .chart-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 12px; min-height: 260px; display: flex; flex-direction: column;
+  }
+  .chart-card h4 {
+    font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--text-dim); font-weight: 700; margin-bottom: 8px;
+  }
+  .chart-card canvas { flex: 1 1 auto; width: 100% !important; height: 100% !important; }
+
+  .decisions { display: flex; flex-direction: column; gap: 8px; }
+  .decision {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 12px; display: flex; flex-direction: column; gap: 6px;
+  }
+  .decision-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .decision-agent { font-size: 12px; font-weight: 800; color: var(--accent); letter-spacing: 0.08em; }
+  .decision-type { font-size: 11px; color: var(--text-dim); }
+  .decision-time { font-size: 11px; color: #4b5d73; }
+  .decision-payload { font-size: 12px; color: var(--text); word-break: break-word; }
+  .decision-actions { display: flex; gap: 8px; margin-top: 4px; }
+  .decision-actions button {
+    background: transparent; border: 1px solid var(--border); color: var(--text);
+    padding: 5px 10px; border-radius: 8px; cursor: pointer;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+  }
+  .decision-actions button.approve { border-color: var(--accent); color: var(--accent); }
+  .decision-actions button.reject { border-color: var(--danger); color: var(--danger); }
+
+  .terminal-wrap {
+    background: #05080d; border: 1px solid #142233; border-radius: 12px;
+    padding: 10px; display: flex; flex-direction: column; gap: 8px;
+  }
+  .terminal {
+    background: transparent; border: none; outline: none;
+    height: 160px; overflow: auto;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px;
+    color: var(--text);
+  }
+  .t-line { margin: 2px 0; }
+  .t-line .ts { color: #465a72; margin-right: 6px; }
+  .t-line.info { color: var(--info); }
+  .t-line.ok { color: var(--ok); }
+  .t-line.warn { color: var(--warn); }
+  .t-line.error { color: var(--danger); }
+  .t-line.cmd { color: var(--text); }
+  .t-line.reply { color: var(--text-dim); }
+  .cmd-bar { display: flex; gap: 6px; }
+  .cmd-bar input {
+    flex: 1; background: var(--surface-2); color: var(--text);
+    border: 1px solid var(--border); padding: 8px 12px; border-radius: 10px;
+    font-family: inherit; font-size: 13px;
+  }
+  .cmd-bar button {
+    background: var(--accent); color: #0a0f18; border: none;
+    padding: 8px 12px; border-radius: 10px; font-weight: 800;
+    cursor: pointer; letter-spacing: 0.08em; font-size: 12px;
+  }
+  .empty { color: var(--text-dim); font-size: 12px; }
+</style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="brand">OPERATOR // CONTROL CENTER</div>
+      <div class="status-cluster">
+        <div class="pill"><span class="dot" id="net-dot"></span><span id="net-label">NET --</span></div>
+        <div class="pill"><span class="dot ok"></span>LIVE</div>
+        <div class="pill" id="clock">--</div>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <div>
+        <h3>Shortcuts</h3>
+        <div class="shortcuts" id="shortcuts">Loading...</div>
+      </div>
+
+      <div>
+        <h3>Active Agents</h3>
+        <div class="agents" id="agents">Loading...</div>
+      </div>
+
+      <div>
+        <h3>System</h3>
+        <div class="metrics">
+          <div class="metric"><div class="label">Dividend Budget</div><div class="val" id="kpi-budget">--</div></div>
+          <div class="metric"><div class="label">Blended Yield</div><div class="val" id="kpi-yield">--</div></div>
+          <div class="metric"><div class="label">Annual Proj</div><div class="val" id="kpi-annual">--</div></div>
+        </div>
+        <div class="accuracy" style="margin-top:10px"><div class="label">APPROVAL ACCURACY</div><div class="val" id="accuracy-val">--</div></div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="live-grid">
+        <div class="live-card">
+          <h4>Research Feed</h4>
+          <div class="body" id="research-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Dividend Agent</h4>
+          <div class="body" id="dividend-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Daytrader</h4>
+          <div class="body" id="daytrader-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Capital Agent</h4>
+          <div class="body" id="capital-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Gold Stocks</h4>
+          <div class="body" id="gold-stocks-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Gold Bars</h4>
+          <div class="body" id="gold-bars-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Oil Stocks</h4>
+          <div class="body" id="oil-stocks-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Oil Opportunity</h4>
+          <div class="body" id="oil-opportunity-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>IT Agent</h4>
+          <div class="body" id="it-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Master</h4>
+          <div class="body" id="master-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Trump / Gov Contracts</h4>
+          <div class="body" id="trumpgov-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Gold Price</h4>
+          <div class="body" id="gold-price-feed"><div class="empty">Loading...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Oil Price</h4>
+          <div class="body" id="oil-price-feed"><div class="empty">Loading...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Political Impact</h4>
+          <div class="body" id="politics-feed"><div class="empty">Loading...</div></div>
+        </div>
+      </div>
+
+      <div class="charts-row">
+        <div class="chart-card">
+          <h4>System Metrics</h4>
+          <canvas id="system-chart" width="400" height="200"></canvas>
+        </div>
+        <div class="chart-card">
+          <h4>Ticker Prices</h4>
+          <canvas id="ticker-chart" width="400" height="200"></canvas>
+        </div>
+      </div>
+
+      <div class="section" style="margin-top:4px">
+        <div class="section-head"><h2>Pending Decisions</h2></div>
+        <div class="decisions" id="decisions">Loading...</div>
+      </div>
+
+      <div class="terminal-wrap">
+        <div class="terminal" id="term"></div>
+        <div class="cmd-bar">
+          <input id="inp" placeholder="run research|dividend|daytrader|capital|gold_stocks|gold_bars|oil_stocks|oil_opportunity|it|master|trumpgov | approve <id> | reject <id>"/>
+          <button id="send">SEND</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/static/chart.umd.min.js"></script>
+<script>
+function apiUrl(path){
+  return window.location.protocol + '//' + window.location.host + path;
+}
+function append(kind, text){
+  const d = document.createElement('div');
+  d.className = 't-line ' + kind;
+  const ts = document.createElement('span');
+  ts.className = 'ts';
+  ts.textContent = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit', second:'2-digit'});
+  d.appendChild(ts);
+  d.appendChild(document.createTextNode(text));
+  term.appendChild(d);
+  term.scrollTop = term.scrollHeight;
+  trimTerm();
+}
+function trimTerm(){ while (term.children.length > 160){ term.removeChild(term.firstChild); } }
+
+const feeds = {
+  research: document.getElementById('research-feed'),
+  dividend: document.getElementById('dividend-feed'),
+  daytrader: document.getElementById('daytrader-feed'),
+  capital: document.getElementById('capital-feed'),
+  gold_stocks: document.getElementById('gold-stocks-feed'),
+  gold_bars: document.getElementById('gold-bars-feed'),
+  oil_stocks: document.getElementById('oil-stocks-feed'),
+  oil_opportunity: document.getElementById('oil-opportunity-feed'),
+  it: document.getElementById('it-feed'),
+  master: document.getElementById('master-feed'),
+  trumpgov: document.getElementById('trumpgov-feed'),
+  gold_price: document.getElementById('gold-price-feed'),
+  oil_price: document.getElementById('oil-price-feed'),
+  politics: document.getElementById('politics-feed'),
+};
+function pushFeed(agent, text, level){
+  const el = feeds[agent];
+  if (!el) return;
+  if (el.querySelector('.empty')) el.innerHTML = '';
+  const line = document.createElement('div');
+  line.className = 'log-line ' + (level || '');
+  const t = document.createElement('span');
+  t.className = 't';
+  t.textContent = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit', second:'2-digit'});
+  line.appendChild(t);
+  line.appendChild(document.createTextNode(text));
+  el.appendChild(line);
+  while (el.children.length > 60) el.removeChild(el.firstChild);
+}
+
+const ws = new WebSocket((location.protocol==='https:'?'wss://':'ws://') + location.host + '/ws');
+const els = {
+  agents: document.getElementById('agents'),
+  kpiBudget: document.getElementById('kpi-budget'),
+  kpiYield: document.getElementById('kpi-yield'),
+  kpiAnnual: document.getElementById('kpi-annual'),
+  decisions: document.getElementById('decisions'),
+  accuracy: document.getElementById('accuracy-val'),
+  shortcuts: document.getElementById('shortcuts'),
+  netDot: document.getElementById('net-dot'),
+  netLabel: document.getElementById('net-label'),
+  clock: document.getElementById('clock'),
+};
+
+const agentMeta = {
+  research: { name: 'Research', icon: 'R', color: '#60a5fa' },
+  dividend: { name: 'Dividend', icon: 'D', color: '#00ff9d' },
+  daytrader: { name: 'Daytrader', icon: 'T', color: '#fbbf24' },
+  capital: { name: 'Capital', icon: 'C', color: '#f472b6' },
+  gold_stocks: { name: 'Gold Stocks', icon: 'G', color: '#fbbf24' },
+  gold_bars: { name: 'Gold Bars', icon: 'B', color: '#facc15' },
+  oil_stocks: { name: 'Oil Stocks', icon: 'O', color: '#f87171' },
+  oil_opportunity: { name: 'Oil Opp', icon: 'E', color: '#fb923c' },
+  it: { name: 'IT', icon: 'I', color: '#c084fc' },
+  master: { name: 'Master', icon: 'M', color: '#a78bfa' },
+  trumpgov: { name: 'Trump/Gov', icon: 'G', color: '#f87171' },
+};
+
+const systemChartCtx = document.getElementById('system-chart')?.getContext('2d');
+const tickerChartCtx = document.getElementById('ticker-chart')?.getContext('2d');
+
+let systemChart = null;
+let tickerChart = null;
+
+try {
+  if (systemChartCtx) {
+    systemChart = new Chart(systemChartCtx, {
+      type: 'line',
+      data: { labels: [], datasets: [
+        { label: 'CPU %', data: [], borderColor: '#60a5fa', tension: 0.3, pointRadius: 0, borderWidth: 2 },
+        { label: 'MEM %', data: [], borderColor: '#f472b6', tension: 0.3, pointRadius: 0, borderWidth: 2 },
+        { label: 'LOAD1', data: [], borderColor: '#fbbf24', tension: 0.3, pointRadius: 0, borderWidth: 2 },
+      ]},
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: false,
+        plugins: { legend: { labels: { color: '#7b93a8', font: { size: 10 } } } },
+        scales: {
+          x: { ticks: { color: '#465a72', font: { size: 9 } }, grid: { color: '#1c2736' } },
+          y: { ticks: { color: '#465a72', font: { size: 9 } }, grid: { color: '#1c2736' }, min: 0 },
+        },
+      }
+    });
+  }
+  if (tickerChartCtx) {
+    tickerChart = new Chart(tickerChartCtx, {
+      type: 'line',
+      data: { labels: [], datasets: [] },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: false,
+        plugins: { legend: { labels: { color: '#7b93a8', font: { size: 9 } } } },
+        scales: {
+          x: { ticks: { color: '#465a72', font: { size: 9 } }, grid: { color: '#1c2736' } },
+          y: { ticks: { color: '#465a72', font: { size: 9 } }, grid: { color: '#1c2736' } },
+        },
+      }
+    });
+  }
+} catch (e) {
+  append('error', 'chart init failed: ' + e.message);
+}
+
+let metricsHistory = [];
+let tickerData = {};
+
+function esc(t){ return (t||'').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+
+function renderAgents(runs){
+  const el = els.agents; el.innerHTML = '';
+  if (!runs || !Object.keys(runs).length){ el.innerHTML = '<div class="empty">No agent runs yet</div>'; return; }
+  for (const [k, v] of Object.entries(runs)){
+    const cfg = agentMeta[k] || { name: k, icon: '?', color: '#94a3b8' };
+    const s = (v && v.status) || 'idle';
+    const d = (v && v.detail) || '';
+    const dot = s === 'done' ? 'ok' : s === 'error' ? 'danger' : s === 'running' ? 'warn' : '';
+    const row = document.createElement('div');
+    row.className = 'agent';
+    row.innerHTML = `
+      <div class="agent-name"><span class="icon">${cfg.icon}</span>${esc(cfg.name)}</div>
+      <div class="agent-task" title="${esc(d)}">${esc(d || 'idle')}</div>
+      <div class="agent-status ${s}"><span class="dot ${dot}"></span>${s.toUpperCase()}</div>
+    `;
+    el.appendChild(row);
+  }
+}
+
+function renderDecisions(list){
+  if (!list || !list.length){ els.decisions.innerHTML = '<div class="empty">No pending decisions</div>'; return; }
+  els.decisions.innerHTML = '';
+  for (const d of list){
+    const payload = d.payload || {};
+    let detail = '';
+    if (d.type === 'rebalance') detail = 'Allocations: ' + JSON.stringify(payload.allocations || []);
+    else if (d.type === 'trade') detail = `Trade ${payload.side} ${payload.symbol}`;
+    else if (d.type === 'fix') detail = `Fix ${payload.issue_type} (${payload.priority})`;
+    else if (d.type === 'bank_setup') detail = `Provider: ${payload.provider} | Action: ${payload.action}`;
+    else if (d.type === 'investment_suggestion') detail = `${payload.symbol} ${payload.type} | Target: +${(payload.target_return_pct||0).toFixed(0)}% in ${payload.expected_hold||'30-90 days'}`;
+    else if (d.type === 'buy_gold_bar') detail = `Buy ${payload.weight_oz || 0}oz ${payload.source || 'Unknown'} @ $${(payload.price_per_oz||0).toFixed(2)} via ${payload.payment_method || 'N/A'}`;
+    else if (d.type === 'gold_profit_split') detail = `GLD profit $${(payload.profit||0).toFixed(2)} split: savings ${((payload.to_capital_savings||0)/Math.max(payload.profit || 1, 0.01)*100).toFixed(0)}%`;
+    else if (d.type === 'oil_profit_split') detail = `${payload.symbol || 'oil'} profit $${(payload.profit||0).toFixed(2)} split: savings ${((payload.to_capital_savings||0)/Math.max(payload.profit || 1, 0.01)*100).toFixed(0)}%`;
+    else detail = JSON.stringify(payload);
+    const timeStr = d.submitted_at ? new Date(d.submitted_at*1000).toLocaleString([], {hour:'2-digit', minute:'2-digit'}) : '';
+    const box = document.createElement('div');
+    box.className = 'decision';
+    box.innerHTML = `
+      <div class="decision-head">
+        <div>
+          <div class="decision-agent">${esc(d.agent)}</div>
+          <div class="decision-type">${esc(d.type)}</div>
+        </div>
+        <div class="decision-time">${esc(timeStr)}</div>
+      </div>
+      <div class="decision-payload" title="${esc(detail)}">${esc(detail)}</div>
+      <div class="decision-actions">
+        <button class="approve" onclick='sendCmd("approve ${d.id}")'>APPROVE</button>
+        <button class="reject" onclick='sendCmd("reject ${d.id}")'>REJECT</button>
+      </div>
+    `;
+    els.decisions.appendChild(box);
+  }
+}
+
+function renderIntegrations(list){
+  if (!list || !list.length){ els.shortcuts.innerHTML = '<div class="empty">No integrations configured</div>'; return; }
+  els.shortcuts.innerHTML = '';
+  for (const it of list){
+    const badge = document.createElement('span');
+    badge.className = 'badge ' + (it.linked ? 'ok' : 'err');
+    badge.textContent = it.linked ? 'LINKED' : 'LINK';
+    const a = document.createElement('a');
+    a.className = 'shortcut';
+    if (it.linked && it.base_url){ a.href = esc(it.base_url); a.target = '_blank'; a.rel = 'noopener'; }
+    else { a.href = '#'; a.onclick = e => e.preventDefault(); }
+    const icon = document.createElement('div');
+    icon.className = 'icon';
+    icon.textContent = (it.label || it.key || '?').charAt(0).toUpperCase();
+    const meta = document.createElement('div');
+    meta.className = 'meta';
+    meta.innerHTML = `<div class="label">${esc(it.label || it.key)}</div><div class="sub">${esc(it.note || it.type)}</div>`;
+    a.appendChild(icon); a.appendChild(meta); a.appendChild(badge);
+    els.shortcuts.appendChild(a);
+  }
+}
+
+async function refreshMetrics(){
+  try {
+    const r = await fetch(apiUrl('/api/metrics?t=' + Date.now()), {cache:'no-store'}).then(res => res.json()).catch(() => null);
+    if (!r) return;
+    const sys = r.system || {};
+    const now = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit', second:'2-digit'});
+    metricsHistory.push({ t: now, cpu: sys.cpu || 0, mem: sys.mem || 0, load1: sys.load1 || 0 });
+    if (metricsHistory.length > 60) metricsHistory.shift();
+
+    try {
+      if (systemChart) {
+        systemChart.data.labels = metricsHistory.map(m => m.t);
+        systemChart.data.datasets[0].data = metricsHistory.map(m => m.cpu);
+        systemChart.data.datasets[1].data = metricsHistory.map(m => m.mem);
+        systemChart.data.datasets[2].data = metricsHistory.map(m => m.load1);
+        systemChart.update('none');
+      }
+    } catch (e) {
+      append('error', 'system chart update failed: ' + e.message);
+    }
+
+    try {
+      const ticks = r.tickers || {};
+      const symbols = Object.keys(ticks);
+      tickerData = ticks;
+      if (tickerChart && symbols.length) {
+        tickerChart.data.datasets = symbols.map((sym, idx) => {
+          const rows = (ticks[sym] || []).slice(-60);
+          return { label: sym, data: rows.map(r => r.price), borderColor: `hsl(${(idx * 55) % 360}, 70%, 60%)`, tension: 0.3, pointRadius: 0, borderWidth: 2 };
+        });
+        tickerChart.data.labels = (symbols[0] ? (ticks[symbols[0]] || []).slice(-60).map((_, i) => '') : []);
+        tickerChart.update('none');
+      } else if (tickerChart) {
+        tickerChart.data.datasets = [];
+        tickerChart.data.labels = [];
+        tickerChart.update('none');
+      }
+    } catch (e) {
+      append('error', 'ticker chart update failed: ' + e.message);
+    }
+  } catch (e) {}
+}
+
+async function refresh(){
+  try {
+    const [st, br, dec, integ] = await Promise.all([
+      fetch(apiUrl('/api/status?t=' + Date.now()), {cache:'no-store'}).then(r=>r.json()).catch(()=>null),
+      fetch(apiUrl('/api/briefing?t=' + Date.now()), {cache:'no-store'}).then(r=>r.json()).catch(()=>null),
+      fetch(apiUrl('/api/decisions?t=' + Date.now()), {cache:'no-store'}).then(r=>r.json()).catch(()=>null),
+      fetch(apiUrl('/api/integrations?t=' + Date.now()), {cache:'no-store'}).then(r=>r.json()).catch(()=>null),
+    ]);
+    if (st){
+      renderAgents((st.runs) || {});
+      renderKPIs((st.portfolio) || {});
+      renderAccuracy((st.accuracy) || {});
+    }
+    if (dec) renderDecisions((dec.pending) || []);
+    if (integ) renderIntegrations((integ.integrations) || []);
+    const conn = (br && br.brief && br.brief.connectivity) || null;
+    if (conn && conn.connected !== undefined){
+      els.netDot.className = 'dot ' + (conn.connected ? 'ok' : 'danger');
+      els.netLabel.textContent = conn.connected ? 'NET LIVE' : 'NET DOWN';
+    }
+  } catch (e){}
+  await refreshMetrics();
+  await renderAgentFeeds();
+  await renderGold();
+  await renderOil();
+  await renderPolitics();
+}
+setInterval(refresh, 2000);
+refresh();
+
+let lastLogCount = 0;
+async function renderLogs(){
+  try {
+    const r = await fetch(apiUrl('/api/logs?t=' + Date.now()), {cache:'no-store'});
+    const data = await r.json();
+    const lines = (data && data.lines) || [];
+    if (!lines.length) return;
+    const since = Math.max(0, lines.length - 60);
+    for (const ln of lines.slice(since)){
+      const kind = (ln.level || 'info').toLowerCase();
+      append(kind, `[${ln.time}] [${ln.agent}] ${ln.msg}`);
+    }
+    while (term.children.length > 300){ term.removeChild(term.firstChild); }
+    lastLogCount = lines.length;
+  } catch (e){}
+}
+setInterval(renderLogs, 1000);
+renderLogs();
+function renderKPIs(p){
+  try {
+    const d = p && p.dividend ? p.dividend : {};
+    els.kpiBudget.textContent = '$' + ((d.monthly_budget !== undefined ? d.monthly_budget : 0)).toFixed(2);
+    els.kpiYield.textContent = ((d.blended_yield !== undefined ? d.blended_yield : 0)).toFixed(2) + '%';
+    els.kpiAnnual.textContent = '$' + ((d.annualized_project !== undefined ? d.annualized_project : 0)).toFixed(2);
+  } catch (e){}
+}
+function renderAccuracy(acc){
+  if (!acc){ els.accuracy.textContent = '--'; return; }
+  const vals = Object.values(acc).filter(v => v !== null && v !== undefined);
+  if (!vals.length){ els.accuracy.textContent = '--'; return; }
+  const avg = vals.reduce((a,b)=>a+b,0)/vals.length;
+  els.accuracy.textContent = (avg * 100).toFixed(1) + '%';
+}
+
+async function renderAgentFeeds(){
+  const names = ['research','dividend','daytrader','capital','gold_stocks','gold_bars','oil_stocks','oil_opportunity','it','master','trumpgov'];
+  for (const name of names){
+    try {
+      const r = await fetch(apiUrl('/api/agent/' + name)).then(res => res.json()).catch(() => null);
+      const el = feeds[name];
+      if (!el || !r) continue;
+      let html = '';
+      if (name === 'research'){
+        const stories = (r.top_stories || []).slice(0,6);
+        const live = (r.live_feed || []).slice(-3).reverse();
+        for (const s of live){
+          const timeStr = s.ts ? new Date(s.ts).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}) : '';
+          html += `<div class="log-line info">${esc(s.message)} <span class="sub">${timeStr}</span></div>`;
+        }
+        for (const s of stories){
+          html += `<div class="log-line"><a href="${esc(s.url)}" target="_blank">${esc(s.title)}</a><div class="sub">${esc(s.description||'')}</div></div>`;
+        }
+        const tickers = r.tickers_mentioned || {};
+        if (Object.keys(tickers).length){
+          html += `<div class="sub" style="margin-top:6px">Tickers: ${Object.keys(tickers).slice(0,8).map(t=>`<span class="badge">${esc(t)}</span>`).join(' ')}</div>`;
+        }
+      } else if (name === 'gold_stocks'){
+        const trades = (r.trades || []).slice(-4);
+        for (const t of trades){
+          html += `<div class="log-line ${t.win?'ok':'danger'}">${esc(t.symbol)} PnL: $${t.pnl.toFixed(2)} <span class="sub">${esc(t.date)}</span></div>`;
+        }
+        if (r.cash !== undefined) html += `<div class="sub">Cash: $${r.cash.toFixed(2)}</div>`;
+      } else if (name === 'gold_bars'){
+        const buys = (r.purchases || []).slice(-4);
+        for (const b of buys){
+          html += `<div class="log-line">${esc(b.source)} ${b.weight_oz}oz @ $${b.price_per_oz.toFixed(2)} <span class="sub">${esc(b.status||'')}</span></div>`;
+        }
+      } else if (name === 'oil_stocks'){
+        const trades = (r.trades || []).slice(-4);
+        for (const t of trades){
+          html += `<div class="log-line ${t.win?'ok':'danger'}">${esc(t.symbol)} PnL: $${t.pnl.toFixed(2)} <span class="sub">${esc(t.date)}</span></div>`;
+        }
+        if (r.cash !== undefined) html += `<div class="sub">Cash: $${r.cash.toFixed(2)}</div>`;
+      } else if (name === 'oil_opportunity'){
+        const opps = (r.opportunities || []).slice(-4);
+        for (const o of opps){
+          html += `<div class="log-line">${esc(o.symbol)} est +${(o.est_return*100).toFixed(1)}% conf ${(o.confidence*100).toFixed(0)}% <span class="sub">${esc(o.status||'')}</span></div>`;
+        }
+      } else if (name === 'trumpgov'){
+        html += `<div class="sub">Suggestions: ${r.suggestions_made||0} | High Impact: ${r.high_impact_count||0}</div>`;
+        const items = (r.suggestions_submitted || 0);
+        html += `<div class="sub">Submitted today: ${r.daily_suggestions||0}</div>`;
+      } else if (name === 'dividend'){
+        const allocs = (r.allocations || []).slice(0,4);
+        for (const a of allocs){
+          html += `<div class="log-line ok">${esc(a.symbol)} $${a.amount.toFixed(2)} yield ${a.yield.toFixed(1)}%</div>`;
+        }
+        html += `<div class="sub">Monthly: $${(r.monthly_budget||0).toFixed(2)}</div>`;
+      } else if (name === 'daytrader'){
+        const trades = (r.trades || []).slice(-4);
+        for (const t of trades){
+          html += `<div class="log-line ${t.win?'ok':'danger'}">${esc(t.symbol)} ${t.side||''} PnL: $${t.pnl.toFixed(2)} <span class="sub">${esc(t.date)}</span></div>`;
+        }
+        if (r.cash !== undefined) html += `<div class="sub">Cash: $${r.cash.toFixed(2)}</div>`;
+      } else if (name === 'capital'){
+        if (r.trades && r.trades.length){
+          const t = r.trades[r.trades.length-1];
+          html += `<div class="log-line">Last trade: ${esc(t.symbol)} $${(t.amount||0).toFixed(2)} <span class="sub">${esc(t.date||'')}</span></div>`;
+        }
+        html += `<div class="sub">Daily trades: ${r.daily_trades||0}</div>`;
+      } else if (name === 'it'){
+        const queue = (r.queue || []).slice(-4);
+        for (const q of queue){
+          html += `<div class="log-line warn">${esc(q.payload.issue_type||q.type)} <span class="sub">${esc(q.payload.priority||'')}</span></div>`;
+        }
+        const learn = (r.learning || {});
+        if (learn.total_fixes){
+          html += `<div class="sub" style="margin-top:6px">Fixes: ${learn.total_fixes} | Success: ${(learn.accuracy_pct||0).toFixed(1)}%</div>`;
+          if ((learn.lessons_learned||[]).length){
+            html += `<div class="sub">Latest lesson: ${esc(learn.lessons_learned[0])}</div>`;
+          }
+        }
+      } else if (name === 'master'){
+        const entries = Object.entries(r.runs || {});
+        if (entries.length){
+          html += '<div class="sub">Agent status</div>';
+          for (const [k,v] of entries){
+            const dot = v.status === 'done' ? 'ok' : v.status === 'error' ? 'danger' : v.status === 'running' ? 'warn' : '';
+            html += `<div class="log-line ${dot}">${esc(k)}: ${esc(v.status)} ${esc(v.detail||'').slice(0,40)}</div>`;
+          }
+        }
+      }
+      if (!html) html = '<div class="empty">No recent output</div>';
+      el.innerHTML = html;
+    } catch (e) {
+      // ignore per-agent refresh errors
+    }
+  }
+}
+
+async function renderGold(){
+  try {
+    const r = await fetch(apiUrl('/api/gold?t=' + Date.now()), {cache:'no-store'}).then(res => res.json()).catch(() => null);
+    const el = feeds.gold_price;
+    if (!el || !r) return;
+    let html = '';
+    if (r.price) html += `<div class="log-line ok"><strong>GC=F</strong> $${r.price.toFixed(2)}</div>`;
+    else html += '<div class="empty">Price unavailable</div>';
+    const gt = (r.gold_stocks && r.gold_stocks.trades || []).slice(-2);
+    for (const t of gt){
+      html += `<div class="log-line ${t.win?'ok':'danger'}">GLD PnL: $${t.pnl.toFixed(2)} <span class="sub">${esc(t.date)}</span></div>`;
+    }
+    const gb = (r.gold_bars && r.gold_bars.purchases || []).slice(-2);
+    for (const b of gb){
+      html += `<div class="log-line">Bar: ${esc(b.source)} ${b.weight_oz}oz @ $${b.price_per_oz.toFixed(2)}</div>`;
+    }
+    el.innerHTML = html || '<div class="empty">No data</div>';
+  } catch (e) {}
+}
+
+async function renderOil(){
+  try {
+    const r = await fetch(apiUrl('/api/oil?t=' + Date.now()), {cache:'no-store'}).then(res => res.json()).catch(() => null);
+    const el = feeds.oil_price;
+    if (!el || !r) return;
+    let html = '';
+    if (r.price) html += `<div class="log-line ok"><strong>CL=F</strong> $${r.price.toFixed(2)}</div>`;
+    else html += '<div class="empty">Price unavailable</div>';
+    const ot = (r.oil_stocks && r.oil_stocks.trades || []).slice(-2);
+    for (const t of ot){
+      html += `<div class="log-line ${t.win?'ok':'danger'}">${esc(t.symbol)} PnL: $${t.pnl.toFixed(2)} <span class="sub">${esc(t.date)}</span></div>`;
+    }
+    const oo = (r.oil_opportunity && r.oil_opportunity.opportunities || []).slice(-2);
+    for (const o of oo){
+      html += `<div class="log-line">${esc(o.symbol)} est +${(o.est_return*100).toFixed(1)}% <span class="sub">${esc(o.status||'')}</span></div>`;
+    }
+    el.innerHTML = html || '<div class="empty">No data</div>';
+  } catch (e) {}
+}
+
+async function renderPolitics(){
+  try {
+    const r = await fetch(apiUrl('/api/politics?t=' + Date.now()), {cache:'no-store'}).then(res => res.json()).catch(() => null);
+    const el = feeds.politics;
+    if (!el || !r) return;
+    let html = `<div class="sub">Suggestions: ${r.suggestions||0} | High impact: ${r.high_impact||0}</div>`;
+    const stories = r.top_political_stories || [];
+    for (const s of stories.slice(0,5)){
+      html += `<div class="log-line"><a href="${esc(s.url)}" target="_blank">${esc(s.title)}</a></div>`;
+    }
+    el.innerHTML = html || '<div class="empty">No data</div>';
+  } catch (e) {}
+}
+
+function sendCmd(v){ if(!v) return; append('cmd','> '+v); ws.send(v); }
+function sendCommand(){
+  const v = document.getElementById('inp').value.trim();
+  if(!v) return;
+  sendCmd(v);
+  document.getElementById('inp').value='';
+}
+document.getElementById('send').addEventListener('click', sendCommand);
+document.getElementById('inp').addEventListener('keydown', e => { if(e.key==='Enter') sendCommand(); });
+
+setInterval(()=>{ els.clock.textContent = new Date().toLocaleString([], {hour:'2-digit', minute:'2-digit', second:'2-digit'}); }, 1000);
+els.clock.textContent = new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit', second:'2-digit'});
+
+append('info', 'dashboard loaded — waiting for live updates');
+
+fetch('/api/healthz').then(r=>r.json()).then(d => {
+  append('ok', 'healthz ok — pending=' + (d.pending_decisions || 0));
+}).catch(e => {
+  append('error', 'healthz failed: ' + e.message);
+});
+
+ws.onopen = () => append('ok', 'terminal: connected');
+ws.onmessage = (ev) => {
+  try {
+    const msg = JSON.parse(ev.data);
+    if (msg.agent && msg.message){
+      pushFeed(msg.agent, msg.message, msg.level || 'info');
+    }
+    append('reply', JSON.stringify(msg, null, 2));
+  } catch (e){ append('reply', ev.data); }
+  trimTerm();
+};
+ws.onerror = () => append('error', 'terminal: error');
+ws.onclose = () => append('warn', 'terminal: closed');
+</script>
+</body>
+</html>

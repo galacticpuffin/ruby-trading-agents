@@ -1,0 +1,18 @@
+[Unit]
+Description=Trading Agents Dashboard
+After=network.target
+
+[Service]
+Type=simple
+User=clawdette
+Group=clawdette
+WorkingDirectory=/home/clawdette/trading-agents
+ExecStart=/home/clawdette/trading-agents/.venv/bin/python3 /home/clawdette/trading-agents/start-ui.py
+Environment=PATH=/home/clawdette/trading-agents/.venv/bin:/usr/bin:/bin
+Restart=always
+RestartSec=5
+StandardOutput=append:/home/clawdette/trading-agents/shared/state/dashboard.out.log
+StandardError=append:/home/clawdette/trading-agents/shared/state/dashboard.err.log
+
+[Install]
+WantedBy=multi-user.target

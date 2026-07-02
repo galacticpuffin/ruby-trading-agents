@@ -1,0 +1,59 @@
+{
+  "dividend": {
+    "cash": 100,
+    "trades": [],
+    "starting_cash": 100,
+    "status": "initialized",
+    "last_run": "2026-07-02 07:10 PM",
+    "allocations": [
+      {
+        "symbol": "T",
+        "amount": 100.0,
+        "yield": 6.4,
+        "name": "AT&T"
+      }
+    ],
+    "weekly_budget": 100,
+    "annualized_project": 332.8,
+    "blended_yield": 6.4
+  },
+  "daytrader": {
+    "cash": 224.17,
+    "start_cash": 100.0,
+    "max_cash": 124.17,
+    "daily_wins": 1,
+    "daily_losses": 0,
+    "trades": [
+      {
+        "date": "2026-07-02",
+        "symbol": "O",
+        "pnl": 24.17,
+        "cash_after": 224.17,
+        "win": true,
+        "reinvested": 100
+      }
+    ],
+    "current_bias": "O",
+    "last_run": "2026-07-02 07:10 PM",
+    "budget": {
+      "starting_cash": 100,
+      "target_total": 1100,
+      "minimum_profit_target": 1000,
+      "extra_buffer": 100,
+      "reinvestment_amount": 100,
+      "reinvest_daily": true
+    }
+  },
+  "gold_stocks": {
+    "cash": 5.239400775846717e+21,
+    "start_cash": 100.0,
+    "trades": [],
+    "last_run": "2026-07-02 07:10 PM"
+  },
+  "oil_stocks": {
+    "cash": 1.2428159015057277e+17,
+    "start_cash": 100.0,
+    "trades": [],
+    "last_run": "2026-07-02 07:10 PM"
+  }
+}

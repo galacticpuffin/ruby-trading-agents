@@ -1,0 +1,1202 @@
+{
+  "generated_at": "2026-07-02 07:10 PM",
+  "agent": "research",
+  "connectivity": {
+    "connected": true,
+    "fetched": 10,
+    "validated": 10,
+    "duration_s": 0.5
+  },
+  "top_stories": [
+    {
+      "title": "My doctor friend objected to his hospital&#x2019;s fundraising tactics. Did management go too far?",
+      "url": "https://www.marketwatch.com/story/there-was-a-catch-my-doctor-friend-was-outraged-by-his-hospitals-fundraising-tactics-where-do-we-draw-the-line-797b9fff?mod=mw_rss_topstories",
+      "description": "&#x201c;This shocking program was exploiting doctors and the trust inherent in their relationships with patients.&#x201d;",
+      "score": 2
+    },
+    {
+      "title": "&#x2018;I claimed Social Security at 62&#x2019;: At 76, I&#x2019;m working at Walmart. Why do I still owe payroll taxes?",
+      "url": "https://www.marketwatch.com/story/i-claimed-social-security-at-62-at-76-im-working-at-walmart-why-do-i-still-owe-payroll-taxes-8e22a97c?mod=mw_rss_topstories",
+      "description": "&#x201c;It seems like half of the workforce at our local Walmart is over 65.&#x201d;",
+      "score": 2
+    },
+    {
+      "title": "When does my kid get the free &#x2018;Trump account&#x2019; money?",
+      "url": "https://www.marketwatch.com/story/when-does-my-kid-get-the-free-trump-account-money-37c3f503?mod=mw_rss_topstories",
+      "description": "As the accounts start working, here are 5 things families should know about what&#x2019;s next",
+      "score": 2
+    },
+    {
+      "title": "Dow scores fresh record despite tepid jobs report. Why the rest of 2026 is about workers.",
+      "url": "https://www.marketwatch.com/story/dow-scores-fresh-record-despite-tepid-jobs-report-why-the-rest-of-2026-is-about-workers-6247fbed?mod=mw_rss_topstories",
+      "description": "&#x201c;American workers are not getting a raise,&#x201d; says J.P. Morgan Asset Management strategist.",
+      "score": 2
+    },
+    {
+      "title": "Trump blasts &#x2018;hostile&#x2019; Fed and says Warsh &#x2018;has to do what he has to do&#x2019; on interest rates",
+      "url": "https://www.marketwatch.com/story/trump-blasts-hostile-fed-and-says-warsh-has-to-do-what-he-has-to-do-on-interest-rates-60b5d16b?mod=mw_rss_topstories",
+      "description": "Trump, in the interview, also said he continues to plan to remove Fed governor Lisa Cook from the central bank&#x2019;s board.",
+      "score": 2
+    },
+    {
+      "title": "I have no kids. Will I cause family drama by leaving different amounts to my nieces and nephews?",
+      "url": "https://www.marketwatch.com/story/i-have-no-kids-will-i-cause-family-drama-by-leaving-different-amounts-to-my-nieces-and-nephews-14c0fdda?mod=mw_rss_topstories",
+      "description": "&#x201c;Part of me would prefer to leave more to those for whom the money could make a meaningful difference.&#x201d;",
+      "score": 2
+    },
+    {
+      "title": "5 things to know about Jersey Mike&#x2019;s ahead of its IPO",
+      "url": "https://www.marketwatch.com/story/5-things-to-know-about-jersey-mikes-ahead-of-its-ipo-e6829aa2?mod=mw_rss_topstories",
+      "description": "Sandwich chain&#x2019;s IPO filing offers details about sales gains and family compensation",
+      "score": 2
+    },
+    {
+      "title": "Trump&#x2019;s billion-dollar crypto haul triggers some everyday investors sitting on big losses",
+      "url": "https://www.marketwatch.com/story/trumps-billion-dollar-crypto-haul-triggers-some-everyday-investors-sitting-on-big-losses-9f045f00?mod=mw_rss_topstories",
+      "description": "Millions of crypto investors around the world are sitting on losses as a painful bear market erases trillions of dollars in paper profits.",
+      "score": 2
+    },
+    {
+      "title": "Trump&#x2019;s real-estate licensing income in foreign countries nearly doubled &#x2014; and now features Qatar and Romania",
+      "url": "https://www.marketwatch.com/story/trumps-real-estate-licensing-income-in-foreign-countries-nearly-doubled-and-now-features-qatar-and-romania-ebe3d73d?mod=mw_rss_topstories",
+      "description": "One ethics watchdog has &#x201c;grave concerns about the president doing business in foreign countries.&#x201d;",
+      "score": 2
+    },
+    {
+      "title": "Gamer trades in $1,000 of physical discs at GameStop, days after Sony announces end of disc era",
+      "url": "https://www.marketwatch.com/story/gamer-trades-in-1-000-of-physical-discs-at-gamestop-days-after-sony-announces-end-of-disc-era-bf8383b7?mod=mw_rss_topstories",
+      "description": "While some collectors may plan to hoard their physical media, one Columbus gamer decided to liquidate his collection",
+      "score": 2
+    }
+  ],
+  "tickers_mentioned": {
+    "O": 10,
+    "T": 10
+  },
+  "ticker_series": {
+    "T": [
+      {
+        "ts": 1783033859.7956169,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033877.9823432,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033882.6715689,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033884.697008,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033893.5453846,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033911.4028304,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033916.1123044,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033918.2195659,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033927.5646918,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033944.8073046,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033949.8935125,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033951.603702,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033961.5876153,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033978.3935933,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033984.3099098,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033985.3406534,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033995.5072007,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034012.0287917,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034017.860468,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034019.4158313,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034028.8994415,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034046.206073,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034051.8364742,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034053.34081,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034062.617648,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034080.5102944,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034086.0170243,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034087.122386,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034096.1134756,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034113.9522173,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034119.6008463,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034121.3172593,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034129.6772935,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034147.6475265,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034153.8138196,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034154.790506,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034163.2007775,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034181.1909947,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034187.304584,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034188.5100517,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034196.806051,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034214.6866634,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034220.7280815,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034222.3005872,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034230.2764113,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034248.4018571,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034254.2285452,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034255.7581549,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034263.778577,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034282.149986,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034287.8077717,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034289.6657927,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034297.3945184,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034315.849115,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034321.6472957,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034323.3933685,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034331.2303808,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034349.4013386,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034355.0566306,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034356.8545787,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034364.73929,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034382.9582615,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034388.5180004,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034390.9496343,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034398.8870962,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034416.487671,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034421.9535532,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034424.6335917,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034432.4792213,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034449.9906511,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034455.5757902,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034457.9743698,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034476.0291648,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034483.4902067,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034488.8624363,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034491.5057771,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034509.437502,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034517.2929637,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034522.6751235,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034525.1560588,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034543.0550206,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034550.6292078,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034556.3505383,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034558.7510374,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034576.706996,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034584.2843375,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034589.9289613,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034592.7669945,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034610.3154583,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034617.7954276,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034623.2008815,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034626.2360933,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034643.8206482,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034651.4866316,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034656.7827098,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034659.6867392,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034677.4628775,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034685.0865011,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034690.311495,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034693.0573263,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034710.950739,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034718.5242105,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034723.6664743,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034726.818523,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034744.4854624,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034752.0172088,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034757.0773904,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034760.348916,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034778.0762413,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034785.9473197,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034790.4766364,
+        "price": 20.58,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034794.392069,
+        "price": 20.58,
+        "delta": 0.0
+      }
+    ],
+    "O": [
+      {
+        "ts": 1783033859.7956169,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033877.9823432,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033882.6715689,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033884.697008,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033893.5453846,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033911.4028304,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033916.1123044,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033918.2195659,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033927.5646918,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033944.8073046,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033949.8935125,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033951.603702,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033961.5876153,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033978.3935933,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033984.3099098,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033985.3406534,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783033995.5072007,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034012.0287917,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034017.860468,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034019.4158313,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034028.8994415,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034046.206073,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034051.8364742,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034053.34081,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034062.617648,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034080.5102944,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034086.0170243,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034087.122386,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034096.1134756,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034113.9522173,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034119.6008463,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034121.3172593,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034129.6772935,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034147.6475265,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034153.8138196,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034154.790506,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034163.2007775,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034181.1909947,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034187.304584,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034188.5100517,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034196.806051,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034214.6866634,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034220.7280815,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034222.3005872,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034230.2764113,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034248.4018571,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034254.2285452,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034255.7581549,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034263.778577,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034282.149986,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034287.8077717,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034289.6657927,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034297.3945184,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034315.849115,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034321.6472957,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034323.3933685,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034331.2303808,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034349.4013386,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034355.0566306,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034356.8545787,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034364.73929,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034382.9582615,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034388.5180004,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034390.9496343,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034398.8870962,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034416.487671,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034421.9535532,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034424.6335917,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034432.4792213,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034449.9906511,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034455.5757902,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034457.9743698,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034476.0291648,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034483.4902067,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034488.8624363,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034491.5057771,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034509.437502,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034517.2929637,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034522.6751235,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034525.1560588,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034543.0550206,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034550.6292078,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034556.3505383,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034558.7510374,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034576.706996,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034584.2843375,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034589.9289613,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034592.7669945,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034610.3154583,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034617.7954276,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034623.2008815,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034626.2360933,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034643.8206482,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034651.4866316,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034656.7827098,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034659.6867392,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034677.4628775,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034685.0865011,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034690.311495,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034693.0573263,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034710.950739,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034718.5242105,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034723.6664743,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034726.818523,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034744.4854624,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034752.0172088,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034757.0773904,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034760.348916,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034778.0762413,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034785.9473197,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034790.4766364,
+        "price": 63.84,
+        "delta": 0.0
+      },
+      {
+        "ts": 1783034794.392069,
+        "price": 63.84,
+        "delta": 0.0
+      }
+    ]
+  }
+}

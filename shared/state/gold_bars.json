@@ -1,0 +1,214 @@
+{
+  "sources_checked": [
+    "APMEX",
+    "JM Bullion",
+    "Kitco",
+    "Provident Metals"
+  ],
+  "last_run": "2026-07-02 07:10 PM",
+  "budget": 0.0,
+  "cash": 100,
+  "starting_cash": 100,
+  "purchases": [
+    {
+      "date": "2026-07-02",
+      "source": "Kitco",
+      "url": "https://www.kitco.com",
+      "weight_oz": 2,
+      "price_per_oz": 2324.93,
+      "total_usd": 4649.86,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "APMEX",
+      "url": "https://www.apmex.com",
+      "weight_oz": 20,
+      "price_per_oz": 2478.27,
+      "total_usd": 49565.45,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "Kitco",
+      "url": "https://www.kitco.com",
+      "weight_oz": 1,
+      "price_per_oz": 2653.97,
+      "total_usd": 2653.97,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "APMEX",
+      "url": "https://www.apmex.com",
+      "weight_oz": 20,
+      "price_per_oz": 2342.23,
+      "total_usd": 46844.59,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "Kitco",
+      "url": "https://www.kitco.com",
+      "weight_oz": 2,
+      "price_per_oz": 2705.4,
+      "total_usd": 5410.79,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "Kitco",
+      "url": "https://www.kitco.com",
+      "weight_oz": 5,
+      "price_per_oz": 2392.46,
+      "total_usd": 11962.31,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "Kitco",
+      "url": "https://www.kitco.com",
+      "weight_oz": 10,
+      "price_per_oz": 2584.79,
+      "total_usd": 25847.89,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "JM Bullion",
+      "url": "https://www.jmbullion.com",
+      "weight_oz": 20,
+      "price_per_oz": 2794.1,
+      "total_usd": 55881.97,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "Provident Metals",
+      "url": "https://www.providentmetals.com",
+      "weight_oz": 5,
+      "price_per_oz": 2346.82,
+      "total_usd": 11734.08,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "Provident Metals",
+      "url": "https://www.providentmetals.com",
+      "weight_oz": 5,
+      "price_per_oz": 2614.97,
+      "total_usd": 13074.86,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "Kitco",
+      "url": "https://www.kitco.com",
+      "weight_oz": 20,
+      "price_per_oz": 2519.29,
+      "total_usd": 50385.86,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "APMEX",
+      "url": "https://www.apmex.com",
+      "weight_oz": 5,
+      "price_per_oz": 2820.16,
+      "total_usd": 14100.8,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "Kitco",
+      "url": "https://www.kitco.com",
+      "weight_oz": 10,
+      "price_per_oz": 2799.71,
+      "total_usd": 27997.08,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "APMEX",
+      "url": "https://www.apmex.com",
+      "weight_oz": 5,
+      "price_per_oz": 2393.73,
+      "total_usd": 11968.63,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "APMEX",
+      "url": "https://www.apmex.com",
+      "weight_oz": 5,
+      "price_per_oz": 2478.25,
+      "total_usd": 12391.25,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "Provident Metals",
+      "url": "https://www.providentmetals.com",
+      "weight_oz": 10,
+      "price_per_oz": 2408.32,
+      "total_usd": 24083.23,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "JM Bullion",
+      "url": "https://www.jmbullion.com",
+      "weight_oz": 5,
+      "price_per_oz": 2471.9,
+      "total_usd": 12359.48,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "Kitco",
+      "url": "https://www.kitco.com",
+      "weight_oz": 1,
+      "price_per_oz": 2569.55,
+      "total_usd": 2569.55,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "APMEX",
+      "url": "https://www.apmex.com",
+      "weight_oz": 20,
+      "price_per_oz": 2778.67,
+      "total_usd": 55573.45,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    },
+    {
+      "date": "2026-07-02",
+      "source": "APMEX",
+      "url": "https://www.apmex.com",
+      "weight_oz": 1,
+      "price_per_oz": 2776.69,
+      "total_usd": 2776.69,
+      "status": "pending_approval",
+      "note": "Requires Capital One funding transfer"
+    }
+  ]
+}

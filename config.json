@@ -1,0 +1,161 @@
+{
+  "portfolio": {
+    "starting_capital": 0,
+    "current_cash": 100,
+    "dividend_allocations": 100,
+    "daytrader_starting_cash": 100,
+    "daytrader_budget": {
+      "starting_cash": 100,
+      "target_total": 1100,
+      "minimum_profit_target": 1000,
+      "extra_buffer": 100,
+      "reinvestment_amount": 100,
+      "reinvest_daily": true
+    },
+    "capital_agent": {
+      "profit_share_pct": 0.25,
+      "min_trade_profit": 10000
+    }
+  },
+  "targets": {
+    "dividend_annual_target": 10000,
+    "daytrader_daily_target": 1000,
+    "daytrader_compounding": true
+  },
+  "agents": {
+    "research": {
+      "enabled": true,
+      "interval_minutes": 30,
+      "sources": [
+        "federal_reserve",
+        "treasury",
+        "congress",
+        "earnings",
+        "sector_flows"
+      ]
+    },
+    "dividend": {
+      "enabled": true,
+      "rebalance_monthly": true,
+      "weekly_investment_usd": 100,
+      "annual_target_usd": 20000,
+      "next_year_target_usd": 40000,
+      "broker_link_required": true,
+      "min_yield_pct": 4.0,
+      "max_single_position_pct": 20,
+      "starting_cash": 100
+    },
+    "daytrader": {
+      "enabled": true,
+      "session_start": "09:30",
+      "session_end": "16:00",
+      "max_risk_per_trade_pct": 2,
+      "budget": {
+        "starting_cash": 100,
+        "target_total": 1100,
+        "minimum_profit_target": 1000,
+        "extra_buffer": 100,
+        "reinvestment_amount": 100,
+        "reinvest_daily": true
+      },
+      "starting_cash": 100
+    },
+    "capital": {
+      "enabled": true,
+      "profit_share_pct": 0.25,
+      "min_trade_profit": 50,
+      "max_daily_trades": 2,
+      "interval_minutes": 120,
+      "starting_cash": 100
+    },
+    "gold_stocks": {
+      "enabled": true,
+      "starting_cash": 100,
+      "reinvest_pct": 0.5,
+      "profit_split_to_capital": 0.25,
+      "profit_split_to_gold_bars": 0.25,
+      "profit_split_to_savings": 0.0,
+      "interval_minutes": 180
+    },
+    "gold_bars": {
+      "enabled": true,
+      "starting_cash": 100,
+      "interval_minutes": 240
+    },
+    "oil_stocks": {
+      "enabled": true,
+      "starting_cash": 100,
+      "reinvest_pct": 0.5,
+      "profit_split_to_capital": 0.25,
+      "profit_split_to_oil_opp": 0.25,
+      "profit_split_to_savings": 0.0,
+      "interval_minutes": 180
+    },
+    "oil_opportunity": {
+      "enabled": true,
+      "starting_cash": 100,
+      "interval_minutes": 150
+    },
+    "it": {
+      "enabled": true,
+      "scan_interval_minutes": 15,
+      "max_auto_fixes_per_hour": 5,
+      "starting_cash": 100
+    },
+    "trumpgov": {
+      "enabled": true,
+      "interval_minutes": 30,
+      "starting_cash": 50000,
+      "yearly_profit_target": 1000000,
+      "reinvest_pct": 0.45,
+      "min_trade_size": 5000,
+      "max_daily_suggestions": 5
+    }
+  },
+  "risk": {
+    "max_drawdown_pct": 15,
+    "daily_loss_limit_pct": 5,
+    "circuit_breaker": true
+  },
+  "slack": {
+    "webhook_url": "",
+    "enabled": false
+  },
+  "brokers": {
+    "fidelity": {
+      "label": "Fidelity",
+      "base_url": "https://fidelity.com",
+      "linked": false,
+      "note": "Add brokerage connection via SSH on the Pi."
+    },
+    "schwab": {
+      "label": "Charles Schwab",
+      "base_url": "https://schwab.com",
+      "linked": false,
+      "note": "Add brokerage connection via SSH on the Pi."
+    },
+    "webull": {
+      "label": "Webull",
+      "base_url": "https://webull.com",
+      "linked": false,
+      "note": "Click Link in the control panel to connect."
+    },
+    "robinhood": {
+      "label": "Robinhood",
+      "base_url": "https://robinhood.com",
+      "linked": false,
+      "note": "Click Link in the control panel to connect."
+    }
+  },
+  "banking": {
+    "capital_one": {
+      "client_id": "",
+      "client_secret": "",
+      "access_token": "",
+      "refresh_token": "",
+      "account_id": "",
+      "enabled": false,
+      "note": "Add real Capital One Dev Environment credentials here via SSH on the Pi. Do not paste secrets into chat."
+    }
+  }
+}

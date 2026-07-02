@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Operator // Control Center</title>
+<style>
+  :root {
+    --bg: #0a0d12;
+    --surface: #0f1520;
+    --surface-2: #0a0f18;
+    --border: #1c2736;
+    --text: #e6edf5;
+    --text-dim: #7b93a8;
+    --accent: #00ff9d;
+    --accent-dim: #00ff9d18;
+    --warn: #fbbf24;
+    --danger: #f87171;
+    --ok: #34d399;
+    --info: #60a5fa;
+    --purple: #c084fc;
+    --pink: #f472b6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  .app {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+  }
+  @media (max-width: 960px){ .app { grid-template-columns: 1fr; } }
+
+  header {
+    grid-column: 1 / -1;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 18px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  .brand { font-size: 13px; font-weight: 800; letter-spacing: 0.14em; color: var(--accent); }
+  .status-cluster { display: flex; gap: 10px; align-items: center; }
+  .pill {
+    font-size: 11px; font-weight: 600;
+    padding: 5px 10px; border-radius: 999px;
+    background: var(--surface-2); border: 1px solid var(--border);
+    color: var(--text-dim);
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .pill .dot { width: 7px; height: 7px; border-radius: 999px; background: var(--text-dim); }
+  .pill .dot.ok { background: var(--ok); box-shadow: 0 0 8px var(--ok); }
+  .pill .dot.warn { background: var(--warn); }
+  .pill .dot.danger { background: var(--danger); }
+
+  .sidebar {
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    padding: 16px;
+    display: flex; flex-direction: column; gap: 16px;
+    overflow-y: auto;
+  }
+  .sidebar h3 {
+    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--text-dim); margin-bottom: 8px; font-weight: 700;
+  }
+  .shortcuts { display: flex; flex-direction: column; gap: 6px; }
+  .shortcut {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 12px; border-radius: 10px;
+    background: var(--surface-2); border: 1px solid var(--border);
+    color: var(--text); text-decoration: none;
+    transition: transform 0.05s ease, border-color 0.15s ease;
+  }
+  .shortcut:hover { border-color: #2a3f55; transform: translateY(-1px); }
+  .shortcut .icon {
+    width: 30px; height: 30px; border-radius: 8px;
+    display: grid; place-items: center;
+    font-weight: 800; font-size: 11px;
+    background: #0b1220; border: 1px solid var(--border); color: var(--accent);
+  }
+  .shortcut .meta { min-width: 0; flex: 1; }
+  .shortcut .label { font-size: 12px; font-weight: 700; color: #e6edf5; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .shortcut .sub { font-size: 11px; color: var(--text-dim); }
+  .shortcut .badge {
+    font-size: 10px; font-weight: 700; padding: 3px 7px; border-radius: 999px;
+    background: #0b1220; border: 1px solid var(--border);
+  }
+  .shortcut .badge.ok { color: var(--ok); border-color: #15533a; }
+  .shortcut .badge.err { color: var(--danger); border-color: #5c1f1f; }
+
+  .agents { display: flex; flex-direction: column; gap: 6px; }
+  .agent {
+    display: grid; grid-template-columns: 110px 1fr 90px; gap: 8px;
+    align-items: center;
+    padding: 10px 12px; border-radius: 10px;
+    background: var(--surface-2); border: 1px solid var(--border);
+  }
+  .agent-name { font-size: 13px; font-weight: 700; color: var(--text); display: flex; align-items: center; gap: 8px; }
+  .agent-name .icon {
+    width: 22px; height: 22px; border-radius: 6px;
+    display: grid; place-items: center;
+    font-weight: 800; font-size: 10px;
+    background: #0b1220; border: 1px solid var(--border); color: var(--accent);
+  }
+  .agent-task { font-size: 12px; color: var(--text-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .agent-status {
+    font-size: 11px; font-weight: 700; text-align: right;
+    padding: 4px 8px; border-radius: 999px;
+    background: #0b1220; border: 1px solid var(--border);
+    color: var(--text-dim);
+  }
+  .agent-status.idle { color: #8fa3b8; }
+  .agent-status.running { color: var(--warn); border-color: #5e4a16; }
+  .agent-status.error { color: var(--danger); border-color: #5c1f1f; }
+  .agent-status.done { color: var(--ok); border-color: #15533a; }
+
+  .metrics { display: flex; flex-direction: column; gap: 8px; }
+  .metric {
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 10px;
+  }
+  .metric .label { font-size: 10px; letter-spacing: 0.12em; color: var(--text-dim); }
+  .metric .val { font-size: 18px; font-weight: 800; color: var(--text); margin-top: 4px; }
+  .accuracy {
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 10px;
+  }
+  .accuracy .label { font-size: 10px; letter-spacing: 0.14em; color: var(--text-dim); }
+  .accuracy .val { font-size: 16px; font-weight: 800; color: var(--text); margin-top: 4px; }
+
+  main {
+    background: var(--bg);
+    padding: 18px;
+    display: flex; flex-direction: column; gap: 14px;
+    overflow-y: auto;
+  }
+
+  .live-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  @media (max-width: 1000px){ .live-grid { grid-template-columns: 1fr; } }
+  .live-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 12px; min-height: 120px;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .live-card h4 {
+    font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--text-dim); font-weight: 700;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .live-card .body {
+    flex: 1; font-size: 12px; color: var(--text-dim);
+    overflow: hidden; position: relative;
+  }
+  .log-line { margin: 3px 0; font-size: 11px; line-height: 1.4; }
+  .log-line .t { color: #465a72; margin-right: 6px; }
+  .log-line.info { color: var(--info); }
+  .log-line.ok { color: var(--ok); }
+  .log-line.warn { color: var(--warn); }
+  .log-line.error { color: var(--danger); }
+  .log-line .sub { color: #4b5d73; font-size: 11px; }
+
+  .charts-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  @media (max-width: 1000px){ .charts-row { grid-template-columns: 1fr; } }
+  .chart-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 12px; min-height: 260px; display: flex; flex-direction: column;
+  }
+  .chart-card h4 {
+    font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--text-dim); font-weight: 700; margin-bottom: 8px;
+  }
+  .chart-card canvas { flex: 1 1 auto; width: 100% !important; height: 100% !important; }
+
+  .decisions { display: flex; flex-direction: column; gap: 8px; }
+  .decision {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 12px; display: flex; flex-direction: column; gap: 6px;
+  }
+  .decision-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .decision-agent { font-size: 12px; font-weight: 800; color: var(--accent); letter-spacing: 0.08em; }
+  .decision-type { font-size: 11px; color: var(--text-dim); }
+  .decision-time { font-size: 11px; color: #4b5d73; }
+  .decision-payload { font-size: 12px; color: var(--text); word-break: break-word; }
+  .decision-actions { display: flex; gap: 8px; margin-top: 4px; }
+  .decision-actions button {
+    background: transparent; border: 1px solid var(--border); color: var(--text);
+    padding: 5px 10px; border-radius: 8px; cursor: pointer;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+  }
+  .decision-actions button.approve { border-color: var(--accent); color: var(--accent); }
+  .decision-actions button.reject { border-color: var(--danger); color: var(--danger); }
+
+  .terminal-wrap {
+    background: #05080d; border: 1px solid #142233; border-radius: 12px;
+    padding: 10px; display: flex; flex-direction: column; gap: 8px;
+  }
+  .terminal {
+    background: transparent; border: none; outline: none;
+    height: 120px; overflow: auto;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px;
+    color: var(--text);
+  }
+  .t-line { margin: 2px 0; }
+  .t-line .ts { color: #465a72; margin-right: 6px; }
+  .t-line.info { color: var(--info); }
+  .t-line.ok { color: var(--ok); }
+  .t-line.warn { color: var(--warn); }
+  .t-line.error { color: var(--danger); }
+  .t-line.cmd { color: var(--text); }
+  .t-line.reply { color: var(--text-dim); }
+  .cmd-bar { display: flex; gap: 6px; }
+  .cmd-bar input {
+    flex: 1; background: var(--surface-2); color: var(--text);
+    border: 1px solid var(--border); padding: 8px 12px; border-radius: 10px;
+    font-family: inherit; font-size: 13px;
+  }
+  .cmd-bar button {
+    background: var(--accent); color: #0a0f18; border: none;
+    padding: 8px 12px; border-radius: 10px; font-weight: 800;
+    cursor: pointer; letter-spacing: 0.08em; font-size: 12px;
+  }
+  .empty { color: var(--text-dim); font-size: 12px; }
+</style>
+</head>
+<body>
+  <div id="login-screen" style="position:fixed;inset:0;background:#0a0d12;color:#e6edf5;display:flex;align-items:center;justify-content:center;z-index:9999;">
+    <form id="login-form" style="background:#0f1520;padding:20px;border-radius:12px;border:1px solid #1c2736;display:flex;flex-direction:column;gap:12px;width:320px;">
+      <div style="font-weight:800;letter-spacing:0.12em;color:#00ff9d;">OPERATOR // CONTROL CENTER</div>
+      <input id="login-user" type="text" placeholder="username" autocomplete="username" style="background:#0a0f18;color:#e6edf5;border:1px solid #1c2736;padding:10px;border-radius:8px;"/>
+      <input id="login-pass" type="password" placeholder="password" autocomplete="current-password" style="background:#0a0f18;color:#e6edf5;border:1px solid #1c2736;padding:10px;border-radius:8px;"/>
+      <button type="submit" style="background:#00ff9d;color:#0a0d12;font-weight:800;padding:10px;border-radius:8px;border:none;cursor:pointer;">LOGIN</button>
+      <div id="login-error" style="color:#f87171;font-size:12px;min-height:16px;"></div>
+    </form>
+  </div>
+  <div class="app">
+    <header>
+      <div class="brand">OPERATOR // CONTROL CENTER</div>
+      <div class="status-cluster">
+        <div class="pill"><span class="dot" id="net-dot"></span><span id="net-label">NET --</span></div>
+        <div class="pill"><span class="dot ok"></span>LIVE</div>
+        <div class="pill" id="clock">--</div>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <div>
+        <h3>Shortcuts</h3>
+        <div class="shortcuts" id="shortcuts">Loading...</div>
+      </div>
+
+      <div>
+        <h3>Active Agents</h3>
+        <div class="agents" id="agents">Loading...</div>
+      </div>
+
+      <div>
+        <h3>System</h3>
+        <div class="metrics">
+          <div class="metric"><div class="label">Dividend Budget</div><div class="val" id="kpi-budget">--</div></div>
+          <div class="metric"><div class="label">Blended Yield</div><div class="val" id="kpi-yield">--</div></div>
+          <div class="metric"><div class="label">Annual Proj</div><div class="val" id="kpi-annual">--</div></div>
+        </div>
+        <div class="accuracy" style="margin-top:10px"><div class="label">APPROVAL ACCURACY</div><div class="val" id="accuracy-val">--</div></div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="live-grid">
+        <div class="live-card">
+          <h4>Research Feed</h4>
+          <div class="body" id="research-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Dividend Agent</h4>
+          <div class="body" id="dividend-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Daytrader</h4>
+          <div class="body" id="daytrader-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Capital Agent</h4>
+          <div class="body" id="capital-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Gold Stocks</h4>
+          <div class="body" id="gold_stocks-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Gold Bars</h4>
+          <div class="body" id="gold_bars-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Oil Stocks</h4>
+          <div class="body" id="oil_stocks-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Oil Opportunity</h4>
+          <div class="body" id="oil_opportunity-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>IT Agent</h4>
+          <div class="body" id="it-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Master</h4>
+          <div class="body" id="master-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Trump / Gov Contracts</h4>
+          <div class="body" id="trumpgov-feed"><div class="empty">Waiting for agent...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Gold Price</h4>
+          <div class="body" id="gold_price-feed"><div class="empty">Loading...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Oil Price</h4>
+          <div class="body" id="oil_price-feed"><div class="empty">Loading...</div></div>
+        </div>
+        <div class="live-card">
+          <h4>Political Impact</h4>
+          <div class="body" id="politics-feed"><div class="empty">Loading...</div></div>
+        </div>
+      </div>
+
+      <div class="charts-row">
+        <div class="chart-card">
+          <h4>System Metrics</h4>
+          <canvas id="system-chart" width="400" height="200"></canvas>
+        </div>
+        <div class="chart-card">
+          <h4>Ticker Prices</h4>
+          <canvas id="ticker-chart" width="400" height="200"></canvas>
+        </div>
+      </div>
+
+      <div class="section" style="margin-top:4px">
+        <div class="section-head"><h2>Pending Decisions</h2></div>
+        <div class="decisions" id="decisions">Loading...</div>
+      </div>
+
+      <div class="terminal-wrap">
+        <div class="terminal" id="term"></div>
+        <div class="cmd-bar">
+          <input id="inp" placeholder="run research|dividend|daytrader|capital|gold_stocks|gold_bars|oil_stocks|oil_opportunity|it|master|trumpgov | approve <id> | reject <id>"/>
+          <button id="send">SEND</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/static/chart.umd.min.js"></script>
+  <script>
+  document.getElementById('login-form').addEventListener('submit', async function(e){
+    e.preventDefault(); var er=document.getElementById('login-error'); er.textContent='';
+    var u=document.getElementById('login-user').value.trim(); var p=document.getElementById('login-pass').value;
+    try{
+      var res=await fetch(apiUrl('/api/login'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:u,password:p})});
+      var data=await res.json(); if(!res.ok){throw new Error(data.error||'login failed');}
+      localStorage.setItem('dash_token',data.token);
+      document.getElementById('login-screen').style.display='none';
+      location.reload();
+    }catch(err){er.textContent=err.message;}
+  });
+  </script>
+
+<script>
+window.addEventListener('DOMContentLoaded', function(){
+  try { if(localStorage.getItem('dash_token')) document.getElementById('login-screen').style.display='none'; } catch(e){}
+});
+
+/* dashboard runtime */
+(function(){
+var _AUTH_HEADERS=(function(){var t=localStorage.getItem('dash_token');if(!t)return {};return {'Authorization':'Bearer '+t};})();
+function apiUrl(p){return location.protocol+'//'+location.host+p;}
+function esc(t){return String(t==null?'':t).replace(/[&<>"']/g,function(m){return ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;'})[m];});}
+
+function append(kind,text){
+  var d=document.createElement('div');d.className='t-line '+kind;
+  var ts=document.createElement('span');ts.className='ts';
+  ts.textContent=new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+  d.appendChild(ts);d.appendChild(document.createTextNode(text));
+  term.appendChild(d);term.scrollTop=term.scrollHeight;trimTerm();
+}
+function trimTerm(){while(term.children.length>160){term.removeChild(term.firstChild);}}
+
+var feeds={};
+['research','dividend','daytrader','capital','gold_stocks','gold_bars','oil_stocks','oil_opportunity','it','master','trumpgov','gold_price','oil_price','politics'].forEach(function(n){
+  feeds[n]=document.getElementById(n+'-feed');
+});
+
+function pushFeed(name,text,level){
+  var el=feeds[name];if(!el)return;
+  if(el.querySelector('.empty'))el.innerHTML='';
+  var line=document.createElement('div');line.className='log-line '+(level||'info');
+  var t=document.createElement('span');t.className='t';
+  t.textContent=new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+  line.appendChild(t);line.appendChild(document.createTextNode(text));el.appendChild(line);
+  while(el.children.length>60)el.removeChild(el.firstChild);
+}
+
+var _wsToken=(function(){try{return localStorage.getItem('dash_token');}catch(e){return '';}})();
+var ws=new WebSocket((location.protocol==='https:'?'wss://':'ws://')+location.host+'/ws?token='+encodeURIComponent(_wsToken));
+var els={};
+els.agents=document.getElementById('agents');
+els.kpiBudget=document.getElementById('kpi-budget');
+els.kpiYield=document.getElementById('kpi-yield');
+els.kpiAnnual=document.getElementById('kpi-annual');
+els.decisions=document.getElementById('decisions');
+els.accuracy=document.getElementById('accuracy-val');
+els.shortcuts=document.getElementById('shortcuts');
+els.netDot=document.getElementById('net-dot');
+els.netLabel=document.getElementById('net-label');
+els.clock=document.getElementById('clock');
+els.term=document.getElementById('term');
+els.inp=document.getElementById('inp');
+els.send=document.getElementById('send');
+
+var agentMeta={
+  research:{name:'Research',icon:'R',color:'#60a5fa'},
+  dividend:{name:'Dividend',icon:'D',color:'#00ff9d'},
+  daytrader:{name:'Daytrader',icon:'T',color:'#fbbf24'},
+  capital:{name:'Capital',icon:'C',color:'#f472b6'},
+  gold_stocks:{name:'Gold Stocks',icon:'G',color:'#fbbf24'},
+  gold_bars:{name:'Gold Bars',icon:'B',color:'#facc15'},
+  oil_stocks:{name:'Oil Stocks',icon:'O',color:'#f87171'},
+  oil_opportunity:{name:'Oil Opp',icon:'E',color:'#fb923c'},
+  it:{name:'IT',icon:'I',color:'#c084fc'},
+  master:{name:'Master',icon:'M',color:'#a78bfa'},
+  trumpgov:{name:'Trump/Gov',icon:'G',color:'#f87171'}
+};
+
+var systemChartCtx=document.getElementById('system-chart').getContext('2d');
+var tickerChartCtx=document.getElementById('ticker-chart').getContext('2d');
+var systemChart=null,tickerChart=null;
+
+try {
+  if(systemChartCtx){
+    systemChart=new Chart(systemChartCtx,{type:'line',data:{labels:[],datasets:[
+      {label:'CPU %',data:[],borderColor:'#60a5fa',tension:0.3,pointRadius:0,borderWidth:2},
+      {label:'MEM %',data:[],borderColor:'#f472b6',tension:0.3,pointRadius:0,borderWidth:2},
+      {label:'LOAD1',data:[],borderColor:'#fbbf24',tension:0.3,pointRadius:0,borderWidth:2}
+    ]},options:{responsive:true,maintainAspectRatio:false,animation:false,plugins:{legend:{labels:{color:'#7b93a8',font:{size:10}}}},scales:{x:{ticks:{color:'#465a72',font:{size:9}},grid:{color:'#1c2736'}},y:{ticks:{color:'#465a72',font:{size:9}},grid:{color:'#1c2736'},min:0}}}});
+  }
+  if(tickerChartCtx){
+    tickerChart=new Chart(tickerChartCtx,{type:'line',data:{labels:[],datasets:[]},options:{responsive:true,maintainAspectRatio:false,animation:false,plugins:{legend:{labels:{color:'#7b93a8',font:{size:9}}}},scales:{x:{ticks:{color:'#465a72',font:{size:9}},grid:{color:'#1c2736'}},y:{ticks:{color:'#465a72',font:{size:9}},grid:{color:'#1c2736'}}}}});
+  }
+}catch(e){append('error','chart init failed: '+e.message);}
+
+var metricsHistory=[];var tickerData={};
+
+function renderAgents(runs){
+  var el=els.agents;el.innerHTML='';
+  if(!runs||!Object.keys(runs).length){el.innerHTML='<div class="empty">No agent runs yet</div>';return;}
+  Object.keys(runs).forEach(function(k){
+    var v=runs[k];var cfg=agentMeta[k]||{name:k,icon:'?',color:'#94a3b8'};
+    var s=(v&&v.status)||'idle';var d=(v&&v.detail)||'';
+    var dot=s==='done'?'ok':s==='error'?'danger':s==='running'?'warn':'';
+    var row=document.createElement('div');row.className='agent';
+    row.innerHTML='<div class="agent-name"><span class="icon">'+esc(cfg.icon)+'</span>'+esc(cfg.name)+'</div>'+
+      '<div class="agent-task" title="'+esc(d)+'">'+esc(d||'idle')+'</div>'+
+      '<div class="agent-status '+s+'"><span class="dot '+dot+'"></span>'+s.toUpperCase()+'</div>';
+    el.appendChild(row);
+  });
+}
+
+function renderDecisions(list){
+  if(!list||!list.length){els.decisions.innerHTML='<div class="empty">No pending decisions</div>';return;}
+  els.decisions.innerHTML='';
+  list.forEach(function(d){
+    var payload=d.payload||{};var detail='';
+    if(d.type==='rebalance')detail='Allocations: '+JSON.stringify(payload.allocations||[]);
+    else if(d.type==='trade')detail='Trade '+(payload.side||'')+' '+(payload.symbol||'');
+    else if(d.type==='fix')detail='Fix '+(payload.issue_type||'')+' ('+(payload.priority||'')+')';
+    else if(d.type==='bank_setup')detail='Provider: '+(payload.provider||'')+' | Action: '+(payload.action||'');
+    else if(d.type==='investment_suggestion')detail=(payload.symbol||'')+' '+(payload.type||'')+' | Target: +'+(payload.target_return_pct||0).toFixed(0)+'% in '+(payload.expected_hold||'30-90 days');
+    else if(d.type==='buy_gold_bar')detail='Buy '+(payload.weight_oz||0)+'oz '+(payload.source||'')+' @ $'+(payload.price_per_oz||0).toFixed(2)+' via '+(payload.payment_method||'');
+    else if(d.type==='gold_profit_split')detail='GLD profit $'+(payload.profit||0).toFixed(2)+' split: savings '+((payload.to_capital_savings||0)/Math.max(payload.profit||1,0.01)*100).toFixed(0)+'%';
+    else if(d.type==='oil_profit_split')detail=(payload.symbol||'oil')+' profit $'+(payload.profit||0).toFixed(2)+' split: savings '+((payload.to_capital_savings||0)/Math.max(payload.profit||1,0.01)*100).toFixed(0)+'%';
+    else detail=JSON.stringify(payload);
+    var timeStr=d.submitted_at?new Date(d.submitted_at*1000).toLocaleString([],{hour:'2-digit',minute:'2-digit'}):'';
+    var box=document.createElement('div');box.className='decision';
+    box.innerHTML='<div class="decision-head"><div><div class="decision-agent">'+esc(d.agent)+'</div><div class="decision-type">'+esc(d.type)+'</div></div><div class="decision-time">'+esc(timeStr)+'</div></div>'+
+      '<div class="decision-payload" title="'+esc(detail)+'">'+esc(detail)+'</div>'+
+      '<div class="decision-actions"><button class="approve" onclick="sendCmd("approve '+d.id+'")">APPROVE</button><button class="reject" onclick="sendCmd("reject '+d.id+'")">REJECT</button></div>';
+    els.decisions.appendChild(box);
+  });
+}
+
+function renderIntegrations(list){
+  if(!list||!list.length){els.shortcuts.innerHTML='<div class="empty">No integrations configured</div>';return;}
+  els.shortcuts.innerHTML='';
+  list.forEach(function(it){
+    var badge=document.createElement('span');badge.className='badge '+(it.linked?'ok':'err');
+    badge.textContent=it.linked?'LINKED':'LINK';
+    var a=document.createElement('a');a.className='shortcut';
+    if(it.linked&&it.base_url){a.href=esc(it.base_url);a.target='_blank';a.rel='noopener';}
+    else{a.href='#';a.onclick=function(e){e.preventDefault();linkIntegration(it);};}
+    var icon=document.createElement('div');icon.className='icon';
+    icon.textContent=(it.label||it.key||'?').charAt(0).toUpperCase();
+    var meta=document.createElement('div');meta.className='meta';
+    meta.innerHTML='<div class="label">'+esc(it.label||it.key)+'</div><div class="sub">'+esc(it.linked?(it.note||'Connected'):'Click to link account')+'</div>';
+    a.appendChild(icon);a.appendChild(meta);a.appendChild(badge);
+    els.shortcuts.appendChild(a);
+  });
+}
+
+async function refreshMetrics(){
+  try{
+    var r=await fetch(apiUrl('/api/metrics?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(res){return res.json();}).catch(function(){return null;});
+    if(!r)return;
+    var sys=r.system||{};var now=new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+    metricsHistory.push({t:now,cpu:sys.cpu||0,mem:sys.mem||0,load1:sys.load1||0});
+    if(metricsHistory.length>60)metricsHistory.shift();
+    try{
+      if(systemChart){
+        systemChart.data.labels=metricsHistory.map(function(m){return m.t;});
+        systemChart.data.datasets[0].data=metricsHistory.map(function(m){return m.cpu;});
+        systemChart.data.datasets[1].data=metricsHistory.map(function(m){return m.mem;});
+        systemChart.data.datasets[2].data=metricsHistory.map(function(m){return m.load1;});
+        systemChart.update('none');
+      }
+    }catch(e){append('error','system chart update failed: '+e.message);}
+    try{
+      var ticks=r.tickers||{};var symbols=Object.keys(ticks);tickerData=ticks;
+      if(tickerChart&&symbols.length){
+        tickerChart.data.datasets=symbols.map(function(sym,idx){
+          var rows=(ticks[sym]||[]).slice(-60);
+          return {label:sym,data:rows.map(function(r){return r.price;}),borderColor:'hsl('+(idx*55)%360+',70%,60%)',tension:0.3,pointRadius:0,borderWidth:2};
+        });
+        tickerChart.data.labels=symbols[0]?(ticks[symbols[0]]||[]).slice(-60).map(function(_,i){return '';}):[];
+        tickerChart.update('none');
+      }else if(tickerChart){tickerChart.data.datasets=[];tickerChart.data.labels=[];tickerChart.update('none');}
+    }catch(e){append('error','ticker chart update failed: '+e.message);}
+  }catch(e){}
+}
+
+async function refresh(){
+  try{
+    var st=await fetch(apiUrl('/api/status?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(r){return r.json();}).catch(function(){return null;});
+    var br=await fetch(apiUrl('/api/briefing?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(r){return r.json();}).catch(function(){return null;});
+    var dec=await fetch(apiUrl('/api/decisions?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(r){return r.json();}).catch(function(){return null;});
+    var integ=await fetch(apiUrl('/api/integrations?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(r){return r.json();}).catch(function(){return null;});
+    if(st){
+      renderAgents((st.runs)||{});
+      renderKPIs((st.portfolio)||{});
+      renderAccuracy((st.accuracy)||{});
+    }
+    if(dec)renderDecisions((dec.pending)||[]);
+    if(integ)renderIntegrations((integ.integrations)||[]);
+    var conn=(br&&br.brief&&br.brief.connectivity)||null;
+    if(conn&&conn.connected!==undefined){
+      els.netDot.className='dot '+(conn.connected?'ok':'danger');
+      els.netLabel.textContent=conn.connected?'NET LIVE':'NET DOWN';
+    }
+  }catch(e){}
+  await refreshMetrics();
+  await renderAgentFeeds();
+  await renderGold();
+  await renderOil();
+  await renderPolitics();
+}
+setInterval(refresh,2000);refresh();
+
+var lastLogCount=0;
+async function renderLogs(){
+  try{
+    var r=await fetch(apiUrl('/api/logs?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})});
+    var data=await r.json();
+    var lines=(data&&data.lines)||[];
+    if(!lines.length)return;
+    var since=Math.max(0,lines.length-60);
+    for(var i=since;i<lines.length;i++){
+      var ln=lines[i];var kind=(ln.level||'info').toLowerCase();
+      append(kind,'['+ln.time+'] ['+ln.agent+'] '+ln.msg);
+    }
+    while(term.children.length>300){term.removeChild(term.firstChild);}
+    lastLogCount=lines.length;
+  }catch(e){}
+}
+setInterval(renderLogs,1000);renderLogs();
+
+function renderKPIs(p){
+  try{
+    var d=p&&p.dividend?p.dividend:{};
+    els.kpiBudget.textContent='$'+((d.monthly_budget!==undefined?d.monthly_budget:0)).toFixed(2);
+    els.kpiYield.textContent=((d.blended_yield!==undefined?d.blended_yield:0)).toFixed(2)+'%';
+    els.kpiAnnual.textContent='$'+((d.annualized_project!==undefined?d.annualized_project:0)).toFixed(2);
+  }catch(e){}
+}
+function renderAccuracy(acc){
+  if(!acc){els.accuracy.textContent='--';return;}
+  var vals=Object.keys(acc).map(function(k){return acc[k];}).filter(function(v){return v!==null&&v!==undefined;});
+  if(!vals.length){els.accuracy.textContent='--';return;}
+  var avg=vals.reduce(function(a,b){return a+b;},0)/vals.length;
+  els.accuracy.textContent=(avg*100).toFixed(1)+'%';
+}
+
+async function renderAgentFeeds(){
+  var names=['research','dividend','daytrader','capital','gold_stocks','gold_bars','oil_stocks','oil_opportunity','it','master','trumpgov'];
+  names.forEach(function(name){
+    (function(){
+      try{
+        fetch(apiUrl('/api/agent/'+name+'?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(res){return res.json();}).then(function(data){
+          var el=feeds[name];if(!el||!data)return;var html='';
+          if(name==='research'){
+            var stories=(data.top_stories||[]).slice(0,6);
+            var live=(data.live_feed||[]).slice(-3).reverse();
+            live.forEach(function(s){
+              var timeStr=s.ts?new Date(s.ts).toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'}):'';
+              html+='<div class="log-line info">'+esc(s.message)+' <span class="sub">'+timeStr+'</span></div>';
+            });
+            stories.forEach(function(s){
+              html+='<div class="log-line"><a href="'+esc(s.url)+'" target="_blank">'+esc(s.title)+'</a><div class="sub">'+esc(s.description||'')+'</div></div>';
+            });
+            var tickers=data.tickers_mentioned||{};
+            if(Object.keys(tickers).length){
+              html+='<div class="sub" style="margin-top:6px">Tickers: '+Object.keys(tickers).slice(0,8).map(function(t){return '<span class="badge">'+esc(t)+'</span>';}).join(' ')+'</div>';
+            }
+          }else if(name==='gold_stocks'){
+            (data.trades||[]).slice(-4).forEach(function(t){
+              html+='<div class="log-line '+(t.win?'ok':'danger')+'">'+esc(t.symbol)+' PnL: $'+t.pnl.toFixed(2)+' <span class="sub">'+esc(t.date)+'</span></div>';
+            });
+            if(data.cash!==undefined)html+='<div class="sub">Cash: $'+data.cash.toFixed(2)+'</div>';
+          }else if(name==='gold_bars'){
+            (data.purchases||[]).slice(-4).forEach(function(b){
+              html+='<div class="log-line">'+esc(b.source)+' '+(b.weight_oz||0)+'oz @ $'+(b.price_per_oz||0).toFixed(2)+' <span class="sub">'+esc(b.status||'')+'</span></div>';
+            });
+          }else if(name==='oil_stocks'){
+            (data.trades||[]).slice(-4).forEach(function(t){
+              html+='<div class="log-line '+(t.win?'ok':'danger')+'">'+esc(t.symbol)+' PnL: $'+t.pnl.toFixed(2)+' <span class="sub">'+esc(t.date)+'</span></div>';
+            });
+            if(data.cash!==undefined)html+='<div class="sub">Cash: $'+data.cash.toFixed(2)+'</div>';
+          }else if(name==='oil_opportunity'){
+            (data.opportunities||[]).slice(-4).forEach(function(o){
+              html+='<div class="log-line">'+esc(o.symbol)+' est +'+(o.est_return*100).toFixed(1)+'% conf '+(o.confidence*100).toFixed(0)+'% <span class="sub">'+esc(o.status||'')+'</span></div>';
+            });
+          }else if(name==='trumpgov'){
+            html+='<div class="sub">Suggestions: '+(data.suggestions_made||0)+' | High Impact: '+(data.high_impact_count||0)+'</div>';
+            html+='<div class="sub">Submitted today: '+(data.daily_suggestions||0)+'</div>';
+          }else if(name==='dividend'){
+            (data.allocations||[]).slice(0,4).forEach(function(a){
+              html+='<div class="log-line ok">'+esc(a.symbol)+' $'+a.amount.toFixed(2)+' yield '+a.yield.toFixed(1)+'%</div>';
+            });
+            html+='<div class="sub">Monthly: $'+(data.monthly_budget||0).toFixed(2)+'</div>';
+          }else if(name==='daytrader'){
+            (data.trades||[]).slice(-4).forEach(function(t){
+              html+='<div class="log-line '+(t.win?'ok':'danger')+'">'+esc(t.symbol)+' '+(t.side||'')+' PnL: $'+t.pnl.toFixed(2)+' <span class="sub">'+esc(t.date)+'</span></div>';
+            });
+            if(data.cash!==undefined)html+='<div class="sub">Cash: $'+data.cash.toFixed(2)+'</div>';
+          }else if(name==='capital'){
+            if(data.trades&&data.trades.length){
+              var last=data.trades[data.trades.length-1];
+              html+='<div class="log-line">Last trade: '+esc(last.symbol)+' $'+(last.amount||0).toFixed(2)+' <span class="sub">'+esc(last.date||'')+'</span></div>';
+            }
+            html+='<div class="sub">Daily trades: '+(data.daily_trades||0)+'</div>';
+          }else if(name==='it'){
+            (data.queue||[]).slice(-4).forEach(function(q){
+              html+='<div class="log-line warn">'+esc((q.payload&&q.payload.issue_type)||q.type)+' <span class="sub">'+esc((q.payload&&q.payload.priority)||'')+'</span></div>';
+            });
+            var learn=data.learning||{};
+            if(learn.total_fixes){
+              html+='<div class="sub" style="margin-top:6px">Fixes: '+learn.total_fixes+' | Success: '+(learn.accuracy_pct||0).toFixed(1)+'%</div>';
+              if((learn.lessons_learned||[]).length){
+                html+='<div class="sub">Latest lesson: '+esc(learn.lessons_learned[0])+'</div>';
+              }
+            }
+          }else if(name==='master'){
+            var entries=Object.entries(data.runs||{});
+            if(entries.length){
+              html+='<div class="sub">Agent status</div>';
+              entries.forEach(function(pair){var k=pair[0],v=pair[1];
+                var dot=v.status==='done'?'ok':v.status==='error'?'danger':v.status==='running'?'warn':'';
+                html+='<div class="log-line '+dot+'">'+esc(k)+': '+esc(v.status)+' '+esc((v.detail||'').slice(0,40))+'</div>';
+              });
+            }
+          }
+          if(!html)html='<div class="empty">No recent output</div>';
+          el.innerHTML=html;
+        }).catch(function(){});
+      }catch(e){}
+    })();
+  });
+}
+
+async function renderGold(){
+  try{
+    var r=await fetch(apiUrl('/api/gold?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(res){return res.json();}).catch(function(){return null;});
+    var el=feeds.gold_price;if(!el||!r)return;var html='';
+    if(r.price)html+='<div class="log-line ok"><strong>GC=F</strong> $'+r.price.toFixed(2)+'</div>';
+    else html+='<div class="empty">Price unavailable</div>';
+    (r.gold_stocks&&r.gold_stocks.trades||[]).slice(-2).forEach(function(t){
+      html+='<div class="log-line '+(t.win?'ok':'danger')+'">GLD PnL: $'+t.pnl.toFixed(2)+' <span class="sub">'+esc(t.date)+'</span></div>';
+    });
+    (r.gold_bars&&r.gold_bars.purchases||[]).slice(-2).forEach(function(b){
+      html+='<div class="log-line">Bar: '+esc(b.source)+' '+(b.weight_oz||0)+'oz @ $'+(b.price_per_oz||0).toFixed(2)+'</div>';
+    });
+    el.innerHTML=html||'<div class="empty">No data</div>';
+  }catch(e){}
+}
+
+async function renderOil(){
+  try{
+    var r=await fetch(apiUrl('/api/oil?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(res){return res.json();}).catch(function(){return null;});
+    var el=feeds.oil_price;if(!el||!r)return;var html='';
+    if(r.price)html+='<div class="log-line ok"><strong>CL=F</strong> $'+r.price.toFixed(2)+'</div>';
+    else html+='<div class="empty">Price unavailable</div>';
+    (r.oil_stocks&&r.oil_stocks.trades||[]).slice(-2).forEach(function(t){
+      html+='<div class="log-line '+(t.win?'ok':'danger')+'">'+esc(t.symbol)+' PnL: $'+t.pnl.toFixed(2)+' <span class="sub">'+esc(t.date)+'</span></div>';
+    });
+    (r.oil_opportunity&&r.oil_opportunity.opportunities||[]).slice(-2).forEach(function(o){
+      html+='<div class="log-line">'+esc(o.symbol)+' est +'+(o.est_return*100).toFixed(1)+'% <span class="sub">'+esc(o.status||'')+'</span></div>';
+    });
+    el.innerHTML=html||'<div class="empty">No data</div>';
+  }catch(e){}
+}
+
+async function renderPolitics(){
+  try{
+    var r=await fetch(apiUrl('/api/politics?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(res){return res.json();}).catch(function(){return null;});
+    var el=feeds.politics;if(!el||!r)return;var html='';
+    html+='<div class="sub">Suggestions: '+(r.suggestions||0)+' | High impact: '+(r.high_impact||0)+'</div>';
+    (r.top_political_stories||[]).slice(0,5).forEach(function(s){
+      html+='<div class="log-line"><a href="'+esc(s.url)+'" target="_blank">'+esc(s.title)+'</a></div>';
+    });
+    el.innerHTML=html||'<div class="empty">No data</div>';
+  }catch(e){}
+}
+
+function sendCmd(v){if(!v)return;append('cmd','> '+v);ws.send(v);}
+function sendCommand(){
+  var v=els.inp.value.trim();if(!v)return;
+  sendCmd(v);els.inp.value='';
+}
+els.send.addEventListener('click',sendCommand);
+els.inp.addEventListener('keydown',function(e){if(e.key==='Enter')sendCommand();});
+
+function linkIntegration(it){
+  var key=it.key||it.type;
+  var label=it.label||key;
+  var existing=(it.api_key||it.api_secret||it.redirect_uri)||'';
+  var ak=existing?it.api_key:'';
+  var sec=existing?it.api_secret:'';
+  var ruri=it.redirect_uri||location.protocol+'//'+location.host+'/dashboard/callback/'+key;
+  var html='<div id="link-modal" style="position:fixed;inset:0;background:#0a0d12cc;color:#e6edf5;display:flex;align-items:center;justify-content:center;z-index:9999;">'+
+    '<form id="link-form" style="background:#0f1520;padding:18px;border-radius:12px;border:1px solid #1c2736;display:flex;flex-direction:column;gap:12px;width:340px;">'+
+    '<div style="font-weight:800;letter-spacing:0.12em;color:#00ff9d;">LINK '+esc(label.toUpperCase())+'</div>'+
+    '<input id="link-key" type="hidden" value="'+esc(key)+'" />'+
+    '<label style="font-size:11px;color:#7b93a8">API KEY<input id="link-api-key" value="'+esc(ak)+'" style="width:100%;background:#0a0f18;color:#e6edf5;border:1px solid #1c2736;padding:9px;border-radius:8px;margin-top:6px;"/></label>'+
+    '<label style="font-size:11px;color:#7b93a8">API SECRET<input id="link-api-secret" type="password" value="'+esc(sec)+'" style="width:100%;background:#0a0f18;color:#e6edf5;border:1px solid #1c2736;padding:9px;border-radius:8px;margin-top:6px;"/></label>'+
+    '<label style="font-size:11px;color:#7b93a8">REDIRECT URI<input id="link-redirect" value="'+esc(ruri)+'" style="width:100%;background:#0a0f18;color:#e6edf5;border:1px solid #1c2736;padding:9px;border-radius:8px;margin-top:6px;"/></label>'+
+    '<div style="display:flex;gap:8px;"><button type="submit" style="flex:1;background:#00ff9d;color:#0a0d12;font-weight:800;padding:10px;border-radius:8px;border:none;cursor:pointer;">SAVE & LINK</button><button type="button" id="link-cancel" style="flex:1;background:#0f1520;color:#e6edf5;border:1px solid #1c2736;padding:10px;border-radius:8px;cursor:pointer;">CANCEL</button></div>'+
+    '<div id="link-error" style="color:#f87171;font-size:12px;min-height:16px;"></div>'+
+    '</form></div>';
+  var wrap=document.createElement('div');wrap.innerHTML=html;
+  document.body.appendChild(wrap.firstElementChild||wrap);
+  document.getElementById('link-cancel').addEventListener('click',function(){document.getElementById('link-modal').remove();});
+  document.getElementById('link-form').addEventListener('submit',async function(e){
+    e.preventDefault();
+    var errEl=document.getElementById('link-error');errEl.textContent='';
+    var payload={api_key:document.getElementById('link-api-key').value||'', api_secret:document.getElementById('link-api-secret').value||'', redirect_uri:document.getElementById('link-redirect').value||''};
+    try{
+      var res=await fetch(apiUrl('/api/integrations/'+encodeURIComponent(key)+'/link'),{method:'POST', headers:(_AUTH_HEADERS||{}), body:JSON.stringify(payload)});
+      var data=await res.json();
+      if(!res.ok){throw new Error(data.error||'link failed');}
+      document.getElementById('link-modal').remove();
+      refresh();
+    }catch(ex){errEl.textContent=ex.message;}
+  });
+}
+
+setInterval(function(){els.clock.textContent=new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'});},1000);
+els.clock.textContent=new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+
+append('info','dashboard loaded — waiting for live updates');
+
+fetch(apiUrl('/api/healthz')).then(function(r){return r.json();}).then(function(d){
+  append('ok','healthz ok — pending='+(d.pending_decisions||0));
+}).catch(function(e){
+  append('error','healthz failed: '+e.message);
+});
+
+ws.onopen=function(){append('ok','terminal: connected');};
+ws.onmessage=function(ev){
+  try{
+    var msg=JSON.parse(ev.data);
+    if(msg.agent&&msg.message){pushFeed(msg.agent,msg.message,msg.level||'info');}
+    append('reply',JSON.stringify(msg,null,2));
+  }catch(e){append('reply',ev.data);}
+  trimTerm();
+};
+ws.onerror=function(){append('error','terminal: error');};
+ws.onclose=function(){append('warn','terminal: closed');};
+})();
+</script>
+</body>
+</html>

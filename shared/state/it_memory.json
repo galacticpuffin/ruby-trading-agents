@@ -1,0 +1,3536 @@
+{
+  "fix_history": [
+    {
+      "ts": 1783031646.5128574,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031646.5389266,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031647.9256182,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031647.9517357,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031649.3925617,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031649.4210405,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031650.8495436,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031650.876044,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031652.33569,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031652.3618848,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031653.765852,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031653.7920475,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031655.2376647,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031655.263903,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031656.721392,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031656.7479215,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031658.1245215,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031658.1510777,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031659.6110613,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031659.638234,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031660.9889174,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031661.0151985,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031662.5621057,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031662.5884194,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031664.1414254,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031664.1677139,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031665.7998,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031665.8259757,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031667.2150862,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031667.2411754,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031668.6696825,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031668.6959953,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031670.3311977,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031670.357718,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031671.7708473,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031671.7993746,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031673.187158,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031673.2153375,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031674.6966352,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031674.7231755,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031676.0826554,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031676.1088507,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031677.5871909,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031677.613673,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031679.0322099,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031679.0583074,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031680.5006804,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031680.5287726,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031681.9148474,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031681.942162,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031683.445941,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031683.4724684,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031684.863325,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031684.8894362,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031686.2508492,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031686.2772384,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031687.6647966,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031687.6912696,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031689.033196,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031689.0596094,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031690.4739215,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031690.500063,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031691.8859298,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031691.9120278,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031693.3839858,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031694.7601888,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031694.788484,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031696.2722056,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031696.2985544,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031697.9793704,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031698.0058296,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031699.6328864,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031699.6590729,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031701.2439027,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031701.270102,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031702.7392337,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031702.7656682,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031704.1141582,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031704.1407194,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031705.5654314,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031705.591762,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031706.9953868,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031707.0220814,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031708.403103,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031708.4299278,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031709.7846522,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031709.813333,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031711.3104448,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031711.336802,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031713.037816,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031713.0674329,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031714.5233634,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031714.5526547,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031716.010464,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031716.0373893,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031717.4262843,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031717.4552681,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031718.7920554,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031718.8197706,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031720.2282856,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031720.2547238,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031721.7604463,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031721.7886326,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031723.2338011,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031723.2604518,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031724.6467838,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031724.673065,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031726.1424012,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031726.1686723,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031727.5886242,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031727.6146748,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031728.9894235,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031729.017123,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031730.4673212,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031730.4942968,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031731.873918,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031731.9001613,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031733.3433843,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031733.3695478,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031734.7808397,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031734.8072243,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031736.157731,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031736.1843162,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031737.6982272,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031739.352559,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031740.6828685,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031742.168652,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031742.1950567,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031743.7362325,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031743.7635562,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031745.266584,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031746.673913,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031748.1312747,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031749.5985038,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031751.0204628,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031752.4634995,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031753.8917325,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031753.9182494,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031755.3715448,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031755.3978567,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031756.774059,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031756.8005443,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031758.1920102,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031758.2184212,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031759.6500657,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031759.6764283,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031761.1146848,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031761.143044,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031762.544787,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031762.571664,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031764.03009,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031764.0568442,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031765.4248574,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031765.4514425,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031766.9278045,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031766.9554064,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031768.4000678,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031768.4262836,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031770.0280745,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031770.0547888,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031771.6218367,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031771.6482854,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031773.115121,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031773.1414664,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031774.7587411,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031774.7865808,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031776.2591639,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031776.2855797,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031778.7962017,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031778.8224428,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031780.2289228,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031780.2556455,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031902.6621192,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031902.6864638,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783032803.1029665,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783032803.1262927,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033002.9153478,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033004.3176086,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033005.8109267,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033007.1983826,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033008.6601357,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033010.056913,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033011.467792,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033013.0633621,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033014.543205,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033015.9357913,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033017.3982694,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033018.8450708,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033020.252556,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033021.6626415,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033023.029396,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033024.5396695,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033026.2111053,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033027.65103,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033029.1432412,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033030.5277574,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033031.9147139,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033033.4177656,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033035.2806334,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033036.6559582,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033038.1091416,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033039.5760148,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033041.0174668,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033042.3885446,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033043.9141955,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033045.4517128,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033046.8609586,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033048.259898,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033049.7368503,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033051.3224545,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033052.7224216,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033054.2769976,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033055.678627,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033057.1405265,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033058.680758,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033060.112718,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033061.484175,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033063.070008,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033064.4830039,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033065.9182835,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033067.3209922,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033068.8148966,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033070.303686,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033071.6963024,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033073.17251,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033074.6298864,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033076.0877576,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033077.5385711,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033079.0486832,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033080.4590538,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033081.8772335,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033083.487673,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033084.9459136,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033086.4037578,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033087.8538342,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033089.3097854,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033090.6811042,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033092.1207955,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033093.5320194,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033094.9037337,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033096.3602104,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033097.768296,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033099.268915,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033100.6318235,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033102.1629474,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033103.6160035,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033105.0147133,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033106.4473279,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033107.8932846,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033109.2870753,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033110.7727664,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033112.327159,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033113.8649533,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033115.304968,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033116.8683014,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033116.8953161,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033118.432926,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033118.4601429,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033120.0741794,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033120.1015043,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033121.572446,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033121.5989792,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033123.220198,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033123.2473838,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033124.6688187,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033124.6947782,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033126.083516,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033126.109459,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033127.5163977,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033127.5426607,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033129.1323104,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033129.1586773,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033130.7220685,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033130.747955,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033132.2026086,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033132.228784,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033133.96306,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033133.9896297,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033135.4168174,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033135.442774,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033136.8599594,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033136.8865619,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033138.4444478,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033138.471068,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033139.9806197,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033140.007077,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033141.3870451,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033141.413568,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033143.1971104,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033143.2235093,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033144.6906683,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033144.7183177,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033146.1294093,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033146.1555972,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033147.68979,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033147.7158608,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033149.1494439,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033149.1755612,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033150.6808765,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033150.707245,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033152.220753,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033152.2469594,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033153.8139453,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033153.839946,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033155.341538,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033155.3675206,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033156.795918,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033156.8219466,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033158.3204386,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033158.3464622,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033159.825657,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033159.8516707,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033161.3039443,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033161.3307598,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033162.845382,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033162.8715181,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033164.3227036,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033164.3488042,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033165.8213844,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033165.8475611,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033167.2410467,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033167.2675428,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033168.8827662,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033168.9090624,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033170.3748171,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033170.400983,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033172.014599,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033172.0417328,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033173.462958,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033173.48932,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033175.1628702,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033175.188808,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033176.7395482,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033176.771648,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033178.1598995,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033178.185889,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033179.6695979,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033179.696191,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033181.1723473,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033181.198644,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033182.7307143,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033182.7567704,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033184.2953157,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033184.3221388,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033185.9273605,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033185.9616694,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033187.3418317,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033187.3679142,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033188.9830523,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033189.0090005,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033190.458824,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033190.485231,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033192.030551,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033192.0567791,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033193.4510567,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033193.4771218,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033195.1572719,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033195.183122,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033196.6289704,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033196.6551695,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033198.1473706,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033198.1737857,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033199.8259764,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033199.8534527,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033216.2043407,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033216.230529,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033232.6535578,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033232.6795695,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033249.1550164,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033249.181252,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033261.518791,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033261.5467908,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033263.5927958,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033263.6188524,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033280.0161011,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033280.0428717,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033294.4085486,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033294.4367328,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033296.497585,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033296.5236018,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033312.9691138,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033312.995452,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033326.8209856,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033326.8471966,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033328.1684537,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033328.19485,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033329.543429,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033329.5698996,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033330.9600046,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033330.9864466,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033332.4013903,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033332.4274561,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033348.8240294,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033348.8502512,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033365.2396097,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033365.266123,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033381.7189198,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033381.7450998,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033393.5163817,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033393.5445585,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033395.1094494,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033395.135667,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033411.5212085,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033411.5473378,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033426.4788973,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033426.5074885,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033428.553014,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033428.5791547,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033445.0548031,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033445.0807605,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033458.984021,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033459.0102646,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033475.4252937,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033475.4514186,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033489.1915188,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033489.2197065,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033505.7497208,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033505.7759507,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033520.7541847,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033520.7817776,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033522.5301867,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033522.5567589,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033539.0489366,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033539.0751123,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033553.0058856,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033553.0339596,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033555.0147972,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033555.0420098,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033571.4995508,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033571.5255709,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033585.244544,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033585.2711122,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033601.6572556,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033601.6832385,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033615.3177228,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033615.3442917,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033631.8467894,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033631.8729086,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033645.535206,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033645.5621994,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033662.1265643,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033662.1527653,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033675.6678512,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033675.6940231,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033692.185813,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033692.2126448,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 5 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033705.7762554,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033705.8029726,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033707.3934743,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033722.31447,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033722.3408403,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033735.9175386,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033735.9438334,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033752.4057548,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033752.4320958,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033766.102258,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033766.128371,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033782.6341565,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033782.6601934,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033796.2192326,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033796.245574,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033812.6816914,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033812.7079277,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033822.1651452,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033822.1949348,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033823.7878551,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033823.8200128,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033826.05448,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033826.082842,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033828.4709518,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033828.499006,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033830.6648486,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033830.6937938,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033832.954724,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033832.982111,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033835.085108,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033835.113496,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033836.6876962,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033836.7163782,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033838.2931583,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033838.3261547,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033840.646401,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033840.6740677,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033842.819124,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033842.852979,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033845.0459287,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033845.0795941,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033847.2537267,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033847.2838316,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033848.861898,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033848.88885,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033851.0443935,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033851.0709407,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033852.4699633,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033852.4959078,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033853.8634126,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033853.889524,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783033855.2707407,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783033855.2972217,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783034607.7552998,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    }
+  ],
+  "error_patterns": {
+    "decision_queue_overflow": 2054,
+    "error_storm": 365
+  },
+  "success_rates": {
+    "decision_queue_overflow": {
+      "attempts": 2054,
+      "successes": 2054
+    },
+    "error_storm": {
+      "attempts": 365,
+      "successes": 365
+    }
+  },
+  "lessons_learned": [
+    "decision_queue_overflow: Decision submitted: it_1782850847226_2929",
+    "decision_queue_overflow: Archive queued",
+    "decision_queue_overflow: Archived 109 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 44 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 8 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 2 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 1 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 4 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 3 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 5 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 7 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 6 expired decisions, 100 remaining",
+    "error_storm: Decision submitted: it_1783031497586_9871",
+    "error_storm: Initiated daemon restart"
+  ],
+  "total_fixes": 2419,
+  "successful_fixes": 2419
+}

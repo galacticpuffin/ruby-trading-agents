@@ -1,0 +1,17 @@
+[Unit]
+Description=Trading Dashboard (FastAPI control panel)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/clawdette/trading-agents
+ExecStart=/home/clawdette/trading-agents/.venv/bin/python3 /home/clawdette/trading-agents/control/app.py
+Restart=on-failure
+RestartSec=2
+Environment=PYTHONUNBUFFERED=1
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,4 @@
+{"ts": 1782775434.9132795, "agent": "research", "level": "error", "message": "hermes_tools.web_search unavailable: No module named 'hermes_tools'"}
+{"ts": 1782775434.9136689, "agent": "research", "level": "ok", "message": "Briefing built: 0 validated items, connected=False"}
+{"ts": 1782775490.1279128, "agent": "research", "level": "error", "message": "hermes_tools.web_search unavailable: No module named 'hermes_tools'"}
+{"ts": 1782775490.1285746, "agent": "research", "level": "ok", "message": "Briefing built: 0 validated items, connected=False"}

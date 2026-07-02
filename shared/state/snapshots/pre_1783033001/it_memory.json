@@ -1,0 +1,3536 @@
+{
+  "fix_history": [
+    {
+      "ts": 1783030515.076851,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030516.4838166,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030517.912538,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030519.3795664,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030520.7993114,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030522.6748793,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030524.1769416,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030525.6039224,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030527.010071,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030528.5270045,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030529.9397092,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030531.5487707,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030533.0285096,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 5 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030534.4380162,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030535.8437552,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030537.4337296,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030538.9189498,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030540.45138,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030541.9728007,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030543.4449937,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030544.9715824,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030546.394812,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030547.8196812,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030549.4169362,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030550.9521785,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030552.5062256,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030553.921705,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030555.3488061,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030557.029952,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030558.4230065,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030560.042819,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030561.6213117,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030563.1582837,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030564.540057,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030565.9471312,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030567.4091241,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030569.071811,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030570.491861,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030572.0125456,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030573.5211632,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030575.0057528,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030576.4230602,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030577.97553,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030579.4632246,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030581.0486712,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030582.5295215,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 5 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030584.118603,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030585.5764136,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030587.108857,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030733.0356867,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030734.4500856,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 5 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030735.9541502,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 7 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030737.4140406,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030738.8598294,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030740.2445283,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030741.9816327,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030743.3880267,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030744.8989847,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030746.4656827,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030747.83077,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030749.3738208,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030750.76084,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030760.2168572,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030761.615623,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030763.01968,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030764.402406,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030765.8287246,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030767.278329,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030768.6685278,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030770.0832329,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030771.5131721,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030773.3278694,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030774.7653656,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030776.1411936,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030777.7361875,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030779.2257535,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030780.8312345,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030782.3718033,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030783.8707976,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030785.3631318,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030786.7695718,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030788.21278,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030789.6606991,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030791.1287081,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 6 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030792.602926,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 5 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030794.045965,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030795.442979,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030796.8668625,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030798.2734969,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030799.704844,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030801.2676177,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030802.909982,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030804.5048978,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030805.9884698,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030807.6440852,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030809.1478643,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030810.6164458,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030812.0161936,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030813.4395504,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030814.842352,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030816.3395085,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030817.766639,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030819.1295354,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030820.8320625,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030822.36115,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030823.908061,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030825.3919234,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030826.9231095,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030828.5379028,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030830.0345488,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030831.7054586,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030833.2177823,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030834.7509017,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030836.250858,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030837.9609065,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030839.3274713,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 5 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030840.7084856,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030842.2123144,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030843.7429087,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030845.1623251,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030846.6876998,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030848.116013,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030849.5404606,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030851.0001671,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030852.4039283,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030853.8896527,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030855.3342502,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030856.8078678,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030858.307402,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030859.7004528,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030861.0802271,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030862.5651453,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030864.025266,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030865.5228543,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030867.012217,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030868.6865132,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030870.0919955,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030871.5105152,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030872.9279897,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030874.406109,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030875.8636196,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030877.2591736,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030878.7326157,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030880.2262442,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030881.7610412,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030883.2490773,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030884.7539258,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 5 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030886.3708932,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 6 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030887.9709198,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030889.5337586,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030890.960108,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030892.4077163,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030893.8797371,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030895.342823,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030896.746948,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030898.1850495,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030899.6217737,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030900.9919918,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030902.396654,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030904.0065613,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030905.5679307,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030907.1869247,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030908.638969,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030910.091326,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030911.4919715,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030912.9077764,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030914.458363,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030915.9825377,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030917.3378441,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030918.7907925,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030920.2298563,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030921.604161,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030923.0432305,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030924.4730802,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030925.8698406,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030927.2825973,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030929.0123725,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030930.428612,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030931.893616,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030933.2783148,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 5 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030934.8219569,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 5 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030936.2545629,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030937.65303,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030939.1829228,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030940.8617332,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030942.210616,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030943.7509046,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030945.3703687,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030946.7705152,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030948.1592202,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030949.5957887,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030951.1001883,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030952.7554476,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030954.1588058,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030955.8217883,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030957.316337,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030958.7853312,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030960.2037983,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030961.6517813,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030963.0397656,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030964.4244182,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030965.8163297,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030967.2710028,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030968.6731608,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030970.1453834,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030971.5828586,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030972.9236534,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030974.3016953,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030975.9112635,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030977.301044,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030978.9623034,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030980.4377975,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 6 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030981.8855083,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030983.2969522,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030984.8473458,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030986.3104062,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030987.6974025,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783030989.2644842,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031497.5891643,
+      "issue_type": "error_storm",
+      "action": "proposed_fix",
+      "success": true,
+      "detail": "Decision submitted: it_1783031497586_9871"
+    },
+    {
+      "ts": 1783031498.958923,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031500.3557284,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031501.75999,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031503.9218118,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031505.3159268,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031506.7149696,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031508.1070387,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031509.5876317,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031510.9816625,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031512.3862576,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031513.7433887,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031515.1327713,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031516.6539683,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031518.1042092,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031519.441082,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031520.9316344,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031522.4262998,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031524.0161428,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031525.4092543,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031526.8509386,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031528.3310409,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031531.2107384,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031532.656444,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031545.4528568,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031546.854185,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031548.2346356,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031549.6194453,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031551.0222533,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031552.4249694,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031553.791994,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031555.1644785,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031556.5780087,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031557.9585752,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031574.4098842,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031575.8264222,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031577.2992842,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031578.7762163,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031580.2615042,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031581.671404,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031583.0832155,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031584.5128443,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031585.9542458,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031587.3471162,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031588.8807425,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031590.3309176,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031591.8503633,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031593.2118754,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031594.7444773,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031596.240412,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031597.6947663,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031599.2519045,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031600.8050396,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031602.2161589,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031603.6110487,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031605.1345866,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031606.6811502,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031606.7079372,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031608.1926336,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031608.2196505,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031609.7926602,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031611.2264843,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031611.2525518,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031612.6767507,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031612.70403,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031614.1748471,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031614.2010288,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031615.7992134,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031617.378515,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031617.4046414,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031618.9263852,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031618.9524503,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031620.3527234,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031620.3809311,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031621.9365108,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031621.9632611,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031623.5353348,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031623.561958,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031625.0934796,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031625.1196358,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031626.5288105,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031626.5549836,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031627.9844944,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031628.010779,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031629.3779058,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031629.4045064,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031630.821385,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031630.8481872,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031632.368813,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031632.3953733,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031634.0077202,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031634.0347352,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031635.4859736,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031635.5141,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031637.083947,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031637.115643,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031638.5204744,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031638.5472646,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031640.2574546,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031640.285499,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031641.876648,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031641.9028075,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031643.4663875,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031643.4923995,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031645.0026305,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031645.0319018,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031646.5128574,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031646.5389266,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031647.9256182,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031647.9517357,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031649.3925617,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031649.4210405,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031650.8495436,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031650.876044,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031652.33569,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031652.3618848,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031653.765852,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031653.7920475,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031655.2376647,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031655.263903,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031656.721392,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031656.7479215,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031658.1245215,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031658.1510777,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031659.6110613,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031659.638234,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031660.9889174,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031661.0151985,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031662.5621057,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031662.5884194,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031664.1414254,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031664.1677139,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031665.7998,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031665.8259757,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031667.2150862,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031667.2411754,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031668.6696825,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031668.6959953,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031670.3311977,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031670.357718,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031671.7708473,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031671.7993746,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031673.187158,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031673.2153375,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031674.6966352,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031674.7231755,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031676.0826554,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031676.1088507,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031677.5871909,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031677.613673,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031679.0322099,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031679.0583074,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031680.5006804,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031680.5287726,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031681.9148474,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031681.942162,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031683.445941,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031683.4724684,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031684.863325,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031684.8894362,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031686.2508492,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031686.2772384,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031687.6647966,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031687.6912696,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031689.033196,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031689.0596094,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031690.4739215,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031690.500063,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031691.8859298,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031691.9120278,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031693.3839858,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031694.7601888,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031694.788484,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031696.2722056,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031696.2985544,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031697.9793704,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031698.0058296,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031699.6328864,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031699.6590729,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031701.2439027,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031701.270102,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031702.7392337,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031702.7656682,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031704.1141582,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031704.1407194,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031705.5654314,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031705.591762,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031706.9953868,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031707.0220814,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031708.403103,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031708.4299278,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031709.7846522,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031709.813333,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031711.3104448,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031711.336802,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031713.037816,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031713.0674329,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031714.5233634,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031714.5526547,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031716.010464,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031716.0373893,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031717.4262843,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031717.4552681,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031718.7920554,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031718.8197706,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031720.2282856,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031720.2547238,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031721.7604463,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031721.7886326,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031723.2338011,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031723.2604518,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031724.6467838,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031724.673065,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031726.1424012,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031726.1686723,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031727.5886242,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031727.6146748,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031728.9894235,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031729.017123,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031730.4673212,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031730.4942968,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031731.873918,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031731.9001613,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031733.3433843,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031733.3695478,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031734.7808397,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031734.8072243,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031736.157731,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031736.1843162,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031737.6982272,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031739.352559,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031740.6828685,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031742.168652,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031742.1950567,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031743.7362325,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031743.7635562,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031745.266584,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031746.673913,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031748.1312747,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031749.5985038,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031751.0204628,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031752.4634995,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031753.8917325,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031753.9182494,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031755.3715448,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031755.3978567,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031756.774059,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031756.8005443,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031758.1920102,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031758.2184212,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031759.6500657,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031759.6764283,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031761.1146848,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031761.143044,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031762.544787,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031762.571664,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031764.03009,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031764.0568442,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031765.4248574,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031765.4514425,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031766.9278045,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031766.9554064,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031768.4000678,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031768.4262836,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031770.0280745,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031770.0547888,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031771.6218367,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031771.6482854,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031773.115121,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031773.1414664,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031774.7587411,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031774.7865808,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031776.2591639,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031776.2855797,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031778.7962017,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031778.8224428,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031780.2289228,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031780.2556455,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 2 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783031902.6621192,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783031902.6864638,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 4 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783032803.1029665,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783032803.1262927,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    }
+  ],
+  "error_patterns": {
+    "decision_queue_overflow": 1932,
+    "error_storm": 163
+  },
+  "success_rates": {
+    "decision_queue_overflow": {
+      "attempts": 1932,
+      "successes": 1932
+    },
+    "error_storm": {
+      "attempts": 163,
+      "successes": 163
+    }
+  },
+  "lessons_learned": [
+    "decision_queue_overflow: Decision submitted: it_1782850847226_2929",
+    "decision_queue_overflow: Archive queued",
+    "decision_queue_overflow: Archived 109 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 44 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 8 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 2 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 1 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 4 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 3 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 5 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 7 expired decisions, 100 remaining",
+    "decision_queue_overflow: Archived 6 expired decisions, 100 remaining",
+    "error_storm: Decision submitted: it_1783031497586_9871",
+    "error_storm: Initiated daemon restart"
+  ],
+  "total_fixes": 2095,
+  "successful_fixes": 2095
+}
