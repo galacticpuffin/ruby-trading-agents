@@ -1,5 +1,5 @@
 {
-  "cash": 97.41,
+  "cash": 111.8,
   "trades": [
     {
       "date": "2026-07-02",
@@ -21,11 +21,25 @@
       "pnl": 0.41,
       "cash_after": 97.41,
       "win": true
+    },
+    {
+      "date": "2026-07-02",
+      "symbol": "GLD",
+      "pnl": 9.85,
+      "cash_after": 107.26,
+      "win": true
+    },
+    {
+      "date": "2026-07-02",
+      "symbol": "GLD",
+      "pnl": 4.54,
+      "cash_after": 111.8,
+      "win": true
     }
   ],
   "starting_cash": 100,
   "status": "initialized",
-  "last_run": "2026-07-02 08:53 PM",
+  "last_run": "2026-07-02 09:09 PM",
   "last_run_date": "2026-07-02",
   "daily_trades": 0,
   "start_cash": 100.0

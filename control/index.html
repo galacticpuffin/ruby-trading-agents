@@ -372,21 +372,47 @@
   <script src="/static/chart.umd.min.js"></script>
   <script>
   document.getElementById('login-form').addEventListener('submit', async function(e){
-    e.preventDefault(); var er=document.getElementById('login-error'); er.textContent='';
-    var u=document.getElementById('login-user').value.trim(); var p=document.getElementById('login-pass').value;
+    e.preventDefault();
+    var er=document.getElementById('login-error');
+    var btn=document.querySelector('#login-form button[type=\"submit\"]');
+    if(btn){ btn.disabled=true; btn.textContent='AUTHENTICATING...'; }
+    er.textContent='';
     try{
+      var u=document.getElementById('login-user').value.trim();
+      var p=document.getElementById('login-pass').value.trim();
+      if(!u||!p){
+        er.textContent='Enter both username and password';
+        if(btn){ btn.disabled=false; btn.textContent='LOGIN'; }
+        return;
+      }
       var res=await fetch(apiUrl('/api/login'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:u,password:p})});
-      var data=await res.json(); if(!res.ok){throw new Error(data.error||'login failed');}
+      var data=await res.json();
+      if(!res.ok){
+        var msg=data.error||('login failed (HTTP '+res.status+')');
+        throw new Error(msg);
+      }
       localStorage.setItem('dash_token',data.token);
+      er.textContent='';
       document.getElementById('login-screen').style.display='none';
       location.reload();
-    }catch(err){er.textContent=err.message;}
+    }catch(err){
+      er.textContent=err.message||'login error';
+      if(btn){ btn.disabled=false; btn.textContent='LOGIN'; }
+    }
   });
   </script>
 
 <script>
 window.addEventListener('DOMContentLoaded', function(){
-  try { if(localStorage.getItem('dash_token')) document.getElementById('login-screen').style.display='none'; } catch(e){}
+  try {
+    var t = localStorage.getItem('dash_token');
+    if (t) {
+      // Quick validation: try a lightweight endpoint with stored token
+      fetch(apiUrl('/api/status?t='+Date.now()), {headers: {'Authorization':'Bearer '+t}, cache:'no-store'})
+        .then(function(r){ if(r.status===401){ localStorage.removeItem('dash_token'); location.reload(); } })
+        .catch(function(){ localStorage.removeItem('dash_token'); });
+    }
+  } catch(e){}
 });
 
 function renderRunShortcuts(list){

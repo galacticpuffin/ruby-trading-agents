@@ -130,7 +130,7 @@ async def login(request: Request):
     except Exception:
         return JSONResponse({"error": "invalid json"}, status_code=400)
     user = (body.get("username") or "").strip()
-    pwd = body.get("password") or ""
+    pwd = (body.get("password") or "").strip()
     if not user or not pwd:
         return JSONResponse({"error": "missing fields"}, status_code=400)
     if user != _DASH_USER or pwd != _DASH_PASS:

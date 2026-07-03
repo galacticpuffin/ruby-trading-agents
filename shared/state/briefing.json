@@ -1,33 +1,19 @@
 {
-  "generated_at": "2026-07-02 08:47 PM",
+  "generated_at": "2026-07-02 09:09 PM",
   "agent": "research",
   "connectivity": {
     "connected": true,
-    "fetched": 43,
+    "fetched": 45,
     "validated": 25,
-    "duration_s": 3.38
+    "duration_s": 3.39
   },
   "top_stories": [
-    {
-      "title": "Google Ventures makes surprise $30 million SpaceX-era bet",
-      "url": "https://www.thestreet.com/investing/google-ventures-makes-surprise-30-million-spacex-era-bet",
-      "description": "The next major space company might not be building rockets It may not be launching satellites into space, flying tourists to the edge of the atmosphere, or competing with Elon Musk\u2019s SpaceX for the next big thing in orbit. Instead, it might accomplish something a little less glamorous: helping ...",
-      "date": "2026-07-03T00:03:00+00:00",
-      "score": 5
-    },
     {
       "title": "META Stock Ends Best Week In Two Months: Launches Gaming App For Vibe Coders Named 'Pocket'",
       "url": "https://stocktwits.com/news-articles/markets/equity/meta-stock-ends-best-week-in-two-months-launches-gaming-app-for-vibe-coders-named-pocket/cZm97hBR7ja",
       "description": "Meta Platforms Inc. released an experimental app called Pocket, allowing users to build and share instantly playable mini-games using simple text prompts.",
       "date": "2026-07-03T00:30:06+00:00",
       "score": 5
-    },
-    {
-      "title": "Dow Jones Futures: Dow Hits High But AI Tumbles; Apple, Robinhood Are Buys As Tesla, Sandisk Dive",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-ai-tumbles-apple-robinhood-buy-signals-tesla-sandisk-dive/?src=A00220&yptr=yahoo",
-      "description": "The stock market had strong weekly gains, but it didn't feel that way with Sandisk and other AI plays selling off Thursday.",
-      "date": "2026-07-02T23:51:19+00:00",
-      "score": 4
     },
     {
       "title": "Iren (NasdaqGS:IREN) Stock Sees Fair Value Lift On AI Data Center Contract Optimism",
@@ -37,10 +23,17 @@
       "score": 4
     },
     {
-      "title": "IEFA vs. VXUS: Both Are Cheap. Both Are Broad. Here Is the Key Difference Long-Term Investors Need to Understand.",
-      "url": "https://www.fool.com/investing/2026/07/02/iefa-vs-vxus-both-cheap-broad-here-is-difference/",
-      "description": "These international stock ETFs from iShares and Vanguard are very different once you look under the surface.",
-      "date": "2026-07-03T00:20:00+00:00",
+      "title": "Micron Day Is Here!",
+      "url": "https://www.fool.com/investing/2026/07/02/micron-day-is-here/",
+      "description": "Micron's latest earnings report will tell us a great deal about the future of memory and compute demand.",
+      "date": "2026-07-03T00:53:19+00:00",
+      "score": 4
+    },
+    {
+      "title": "Is Tilray a Textbook Value Trap -- or the Most Undervalued Cannabis Stock on the Market?",
+      "url": "https://www.fool.com/investing/2026/07/02/is-tilray-a-textbook-value-trap-or-the-most-underv/",
+      "description": "There are much better ways to spend $5.",
+      "date": "2026-07-03T00:50:00+00:00",
       "score": 4
     },
     {
@@ -65,13 +58,6 @@
       "score": 4
     },
     {
-      "title": "Small Cap Watch:  Riversgold, Orthocell, Archer and EMC Gold advance key growth plans",
-      "url": "https://www.proactiveinvestors.com/companies/news/1094890/small-cap-watch-riversgold-orthocell-archer-and-emc-gold-advance-key-growth-plans-1094890.html",
-      "description": "The S&P/ASX Small Ordinaries Index (ASX) edged higher, adding 10.70 points, or 0.31%, to 3,407.70 yesterday. Despite the daily lift, the index remains lower over the past five sessions, down 26.30 points, or 0.77%, to 3,406.10, reflecting a still-cautious tone across the small-cap...",
-      "date": "2026-07-03T00:09:00+00:00",
-      "score": 4
-    },
-    {
       "title": "Goldman Sachs delivers honest verdict on gold\u2019s selloff",
       "url": "https://www.thestreet.com/investing/goldman-sachs-delivers-honest-verdict-on-golds-selloff",
       "description": "Gold investors were bracing for more sluggishness. Following months of pressure, investors expected the next big call on the shiny yellow metal to be much more defensive, especially as rate-cut hopes faded and the dollar regained some bite. For context, gold was recently trading near the low ...",
@@ -79,10 +65,24 @@
       "score": 4
     },
     {
+      "title": "Why Lockheed Martin (LMT) Stock Is Trading Up Today",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-lockheed-martin-lmt-stock-010024790.html",
+      "description": "Shares of security and Aerospace company Lockheed Martin (NYSE:LMT) jumped 3.8% in the afternoon session after Citi upgraded its stock rating to Buy and the company announced a series of significant defense contracts, signaling strong business momentum.",
+      "date": "2026-07-03T01:00:24+00:00",
+      "score": 4
+    },
+    {
       "title": "LMT Stock Gains Nearly 5% \u2014 Lockheed Martin Emerges As Frontrunner For Ultra Maritime In Potential $3.5B Deal",
       "url": "https://stocktwits.com/news-articles/markets/equity/lmt-stock-gains-lockheed-martin-leads-race-for-ultra-maritime-3-5b-deal/cZm973IR7j9",
       "description": "The defense giant is reportedly leading a competitive auction for Advent International-owned Ultra Maritime, with a deal potentially coming as early as next week.",
       "date": "2026-07-03T00:20:10+00:00",
+      "score": 4
+    },
+    {
+      "title": "Google Ventures makes surprise $30 million SpaceX-era bet",
+      "url": "https://www.thestreet.com/investing/google-ventures-makes-surprise-30-million-spacex-era-bet",
+      "description": "The next major space company might not be building rockets It may not be launching satellites into space, flying tourists to the edge of the atmosphere, or competing with Elon Musk\u2019s SpaceX for the next big thing in orbit. Instead, it might accomplish something a little less glamorous: helping ...",
+      "date": "2026-07-03T00:03:00+00:00",
       "score": 4
     },
     {
@@ -104,6 +104,13 @@
       "url": "https://finance.yahoo.com/video/inside-securitizes-spac-ipo-tokenization-203100628.html",
       "description": "Securitize CEO Carlos Domingo joins Yahoo Finance to discuss the company's planned IPO via SPAC, why financial markets need a tokenization platform, and how investors could benefit.",
       "date": "2026-07-02T20:31:00+00:00",
+      "score": 3
+    },
+    {
+      "title": "Dow Jones Futures: Dow Hits High But AI Tumbles; Apple, Robinhood Are Buys As Tesla, Sandisk Dive",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-ai-tumbles-apple-robinhood-buy-signals-tesla-sandisk-dive/?src=A00220&yptr=yahoo",
+      "description": "The stock market had strong weekly gains, but it didn't feel that way with Sandisk and other AI plays selling off Thursday.",
+      "date": "2026-07-02T23:51:19+00:00",
       "score": 3
     },
     {
@@ -142,6 +149,13 @@
       "score": 3
     },
     {
+      "title": "Small Cap Watch:  Riversgold, Orthocell, Archer and EMC Gold advance key growth plans",
+      "url": "https://www.proactiveinvestors.com/companies/news/1094890/small-cap-watch-riversgold-orthocell-archer-and-emc-gold-advance-key-growth-plans-1094890.html",
+      "description": "The S&P/ASX Small Ordinaries Index (ASX) edged higher, adding 10.70 points, or 0.31%, to 3,407.70 yesterday. Despite the daily lift, the index remains lower over the past five sessions, down 26.30 points, or 0.77%, to 3,406.10, reflecting a still-cautious tone across the small-cap...",
+      "date": "2026-07-03T00:09:00+00:00",
+      "score": 3
+    },
+    {
       "title": "Sector Update: Energy Stocks Rise Late Afternoon",
       "url": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-rise-afternoon-195459455.html",
       "description": "Energy stocks were higher late Thursday afternoon, with the NYSE Energy Sector Index rising 0.9% and",
@@ -168,1001 +182,217 @@
       "description": "Here is a way to get paid a meaningful income right now on your RTX shares, an income you keep no matter what, in exchange for agreeing to sell at a price above today's.",
       "date": "2026-07-02T20:52:28+00:00",
       "score": 3
-    },
-    {
-      "title": "U.S. Refiners Are Running \u201cIncredibly Hard.\u201d Here\u2019s Why Gas Prices Aren\u2019t Falling",
-      "url": "https://247wallst.com/investing/2026/07/02/u-s-refiners-are-running-incredibly-hard-heres-why-gas-prices-arent-falling/",
-      "description": "Crude oil has fallen sharply from its spring highs, yet many drivers are still paying far more at the pump than they were expecting. In a recent CNBC segment, Helima Croft, Head of Global Commodity Strategy at RBC Capital Markets, argued that tight gasoline supplies, U.S. refiners already running \u201cincredibly hard,\u201d and a potentially pivotal ... U.S. Refiners Are Running \u201cIncredibly Hard.\u201d Here\u2019s Why Gas Prices Aren\u2019t Falling",
-      "date": "2026-07-02T18:52:44+00:00",
-      "score": 3
-    },
-    {
-      "title": "Chevron (CVX) Stock Looks Near Fair Value With Strong Returns But Rich Earnings",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/chevron-cvx-stock-looks-near-191356823.html",
-      "description": "Chevron stock has almost doubled investors' money over the past five years, yet recent share price weakness and a mixed valuation score suggest it may no longer be an obvious bargain at around US$165.69. Chevron has delivered a 97.6% total return over five years, which puts the recent short term pullback into context and raises the question of how much of the story is already in the price. The long term power deal with Microsoft for Project Kilby can support expectations for durable cash...",
-      "date": "2026-07-02T19:13:56+00:00",
-      "score": 3
     }
   ],
   "tickers_mentioned": {
-    "GOOGL": 1,
+    "META": 2,
     "O": 25,
     "T": 25,
-    "META": 2,
     "SPY": 2,
     "SCHD": 1,
+    "GOOGL": 1,
     "IWM": 1
   },
   "ticker_series": {
-    "GOOGL": [
+    "META": [
       {
-        "ts": 1783039657.7574537,
-        "price": 359.91,
+        "ts": 1783040947.243632,
+        "price": 582.9,
         "delta": 0.0
       },
       {
-        "ts": 1783039662.651143,
-        "price": 359.91,
+        "ts": 1783040948.7214112,
+        "price": 582.9,
         "delta": 0.0
       },
       {
-        "ts": 1783039674.5706675,
-        "price": 359.91,
+        "ts": 1783040949.80147,
+        "price": 582.9,
         "delta": 0.0
       },
       {
-        "ts": 1783039696.7889755,
-        "price": 359.91,
+        "ts": 1783040950.8883646,
+        "price": 582.9,
         "delta": 0.0
       },
       {
-        "ts": 1783039708.908558,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039730.9547396,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039743.2072654,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039765.2018368,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039777.6924202,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039799.5554667,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039812.0568442,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039833.8846962,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039846.3855677,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039868.2097752,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039877.1578388,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039902.5299325,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039912.147174,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039936.8727045,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039946.3338132,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039963.7256927,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039971.4872627,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039980.8751488,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040006.0285177,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040013.8851159,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040023.309401,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040024.908447,
-        "price": 359.91,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040026.027641,
-        "price": 359.91,
+        "ts": 1783040973.4357085,
+        "price": 582.9,
         "delta": 0.0
       }
     ],
     "O": [
       {
-        "ts": 1783039657.7574537,
+        "ts": 1783040947.243632,
         "price": 63.84,
         "delta": 0.0
       },
       {
-        "ts": 1783039662.651143,
+        "ts": 1783040948.7214112,
         "price": 63.84,
         "delta": 0.0
       },
       {
-        "ts": 1783039674.5706675,
+        "ts": 1783040949.80147,
         "price": 63.84,
         "delta": 0.0
       },
       {
-        "ts": 1783039696.7889755,
+        "ts": 1783040950.8883646,
         "price": 63.84,
         "delta": 0.0
       },
       {
-        "ts": 1783039708.908558,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039730.9547396,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039743.2072654,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039765.2018368,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039777.6924202,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039799.5554667,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039812.0568442,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039833.8846962,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039846.3855677,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039868.2097752,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039877.1578388,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039902.5299325,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039912.147174,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039936.8727045,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039946.3338132,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039963.7256927,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039971.4872627,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039980.8751488,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040006.0285177,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040013.8851159,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040023.309401,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040024.908447,
-        "price": 63.84,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040026.027641,
+        "ts": 1783040973.4357085,
         "price": 63.84,
         "delta": 0.0
       }
     ],
     "T": [
       {
-        "ts": 1783039657.7574537,
+        "ts": 1783040947.243632,
         "price": 20.58,
         "delta": 0.0
       },
       {
-        "ts": 1783039662.651143,
+        "ts": 1783040948.7214112,
         "price": 20.58,
         "delta": 0.0
       },
       {
-        "ts": 1783039674.5706675,
+        "ts": 1783040949.80147,
         "price": 20.58,
         "delta": 0.0
       },
       {
-        "ts": 1783039696.7889755,
+        "ts": 1783040950.8883646,
         "price": 20.58,
         "delta": 0.0
       },
       {
-        "ts": 1783039708.908558,
+        "ts": 1783040973.4357085,
         "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039730.9547396,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039743.2072654,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039765.2018368,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039777.6924202,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039799.5554667,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039812.0568442,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039833.8846962,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039846.3855677,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039868.2097752,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039877.1578388,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039902.5299325,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039912.147174,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039936.8727045,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039946.3338132,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039963.7256927,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039971.4872627,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039980.8751488,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040006.0285177,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040013.8851159,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040023.309401,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040024.908447,
-        "price": 20.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040026.027641,
-        "price": 20.58,
-        "delta": 0.0
-      }
-    ],
-    "META": [
-      {
-        "ts": 1783039657.7574537,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039662.651143,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039674.5706675,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039696.7889755,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039708.908558,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039730.9547396,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039743.2072654,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039765.2018368,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039777.6924202,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039799.5554667,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039812.0568442,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039833.8846962,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039846.3855677,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039868.2097752,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039877.1578388,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039902.5299325,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039912.147174,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039936.8727045,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039946.3338132,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039963.7256927,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039971.4872627,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039980.8751488,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040006.0285177,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040013.8851159,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040023.309401,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040024.908447,
-        "price": 582.9,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040026.027641,
-        "price": 582.9,
         "delta": 0.0
       }
     ],
     "SPY": [
       {
-        "ts": 1783039657.7574537,
+        "ts": 1783040947.243632,
         "price": 744.78,
         "delta": 0.0
       },
       {
-        "ts": 1783039662.651143,
+        "ts": 1783040948.7214112,
         "price": 744.78,
         "delta": 0.0
       },
       {
-        "ts": 1783039674.5706675,
+        "ts": 1783040949.80147,
         "price": 744.78,
         "delta": 0.0
       },
       {
-        "ts": 1783039696.7889755,
+        "ts": 1783040950.8883646,
         "price": 744.78,
         "delta": 0.0
       },
       {
-        "ts": 1783039708.908558,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039730.9547396,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039743.2072654,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039765.2018368,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039777.6924202,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039799.5554667,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039812.0568442,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039833.8846962,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039846.3855677,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039868.2097752,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039877.1578388,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039902.5299325,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039912.147174,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039936.8727045,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039946.3338132,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039963.7256927,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039971.4872627,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039980.8751488,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040006.0285177,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040013.8851159,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040023.309401,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040024.908447,
-        "price": 744.78,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040026.027641,
+        "ts": 1783040973.4357085,
         "price": 744.78,
         "delta": 0.0
       }
     ],
     "SCHD": [
       {
-        "ts": 1783039657.7574537,
+        "ts": 1783040947.243632,
         "price": 32.39,
         "delta": 0.0
       },
       {
-        "ts": 1783039662.651143,
+        "ts": 1783040948.7214112,
         "price": 32.39,
         "delta": 0.0
       },
       {
-        "ts": 1783039674.5706675,
+        "ts": 1783040949.80147,
         "price": 32.39,
         "delta": 0.0
       },
       {
-        "ts": 1783039696.7889755,
+        "ts": 1783040950.8883646,
         "price": 32.39,
         "delta": 0.0
       },
       {
-        "ts": 1783039708.908558,
+        "ts": 1783040973.4357085,
         "price": 32.39,
+        "delta": 0.0
+      }
+    ],
+    "GOOGL": [
+      {
+        "ts": 1783040947.243632,
+        "price": 359.91,
         "delta": 0.0
       },
       {
-        "ts": 1783039730.9547396,
-        "price": 32.39,
+        "ts": 1783040948.7214112,
+        "price": 359.91,
         "delta": 0.0
       },
       {
-        "ts": 1783039743.2072654,
-        "price": 32.39,
+        "ts": 1783040949.80147,
+        "price": 359.91,
         "delta": 0.0
       },
       {
-        "ts": 1783039765.2018368,
-        "price": 32.39,
+        "ts": 1783040950.8883646,
+        "price": 359.91,
         "delta": 0.0
       },
       {
-        "ts": 1783039777.6924202,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039799.5554667,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039812.0568442,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039833.8846962,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039846.3855677,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039868.2097752,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039877.1578388,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039902.5299325,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039912.147174,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039936.8727045,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039946.3338132,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039963.7256927,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039971.4872627,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039980.8751488,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040006.0285177,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040013.8851159,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040023.309401,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040024.908447,
-        "price": 32.39,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040026.027641,
-        "price": 32.39,
+        "ts": 1783040973.4357085,
+        "price": 359.91,
         "delta": 0.0
       }
     ],
     "IWM": [
       {
-        "ts": 1783039657.7574537,
+        "ts": 1783040947.243632,
         "price": 297.58,
         "delta": 0.0
       },
       {
-        "ts": 1783039662.651143,
+        "ts": 1783040948.7214112,
         "price": 297.58,
         "delta": 0.0
       },
       {
-        "ts": 1783039674.5706675,
+        "ts": 1783040949.80147,
         "price": 297.58,
         "delta": 0.0
       },
       {
-        "ts": 1783039696.7889755,
+        "ts": 1783040950.8883646,
         "price": 297.58,
         "delta": 0.0
       },
       {
-        "ts": 1783039708.908558,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039730.9547396,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039743.2072654,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039765.2018368,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039777.6924202,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039799.5554667,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039812.0568442,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039833.8846962,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039846.3855677,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039868.2097752,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039877.1578388,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039902.5299325,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039912.147174,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039936.8727045,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039946.3338132,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039963.7256927,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039971.4872627,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783039980.8751488,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040006.0285177,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040013.8851159,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040023.309401,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040024.908447,
-        "price": 297.58,
-        "delta": 0.0
-      },
-      {
-        "ts": 1783040026.027641,
+        "ts": 1783040973.4357085,
         "price": 297.58,
         "delta": 0.0
       }
     ],
     "GLD": [
       {
-        "ts": 1783040023.309401,
+        "ts": 1783040948.7214112,
         "price": 378.13,
         "delta": 0.0
       }
     ],
     "XLE": [
       {
-        "ts": 1783040024.908447,
+        "ts": 1783040949.80147,
         "price": 53.22,
         "delta": 0.0
       }
