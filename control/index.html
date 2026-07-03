@@ -494,6 +494,7 @@ function renderDecisions(list){
     else if(d.type==='trade')detail='Trade '+(payload.side||'')+' '+(payload.symbol||'');
     else if(d.type==='fix')detail='Fix '+(payload.issue_type||'')+' ('+(payload.priority||'')+')';
     else if(d.type==='bank_setup')detail='Provider: '+(payload.provider||'')+' | Action: '+(payload.action||'');
+    else if(d.type==='capital_injection')detail='Agent: '+(payload.agent||'')+' | Amount: $'+(payload.amount||0)+' | Via: '+(payload.provider||'');
     else if(d.type==='investment_suggestion')detail=(payload.symbol||'')+' '+(payload.type||'')+' | Target: +'+(payload.target_return_pct||0).toFixed(0)+'% in '+(payload.expected_hold||'30-90 days');
     else if(d.type==='buy_gold_bar')detail='Buy '+(payload.weight_oz||0)+'oz '+(payload.source||'')+' @ $'+(payload.price_per_oz||0).toFixed(2)+' via '+(payload.payment_method||'');
     else if(d.type==='gold_profit_split')detail='GLD profit $'+(payload.profit||0).toFixed(2)+' split: savings '+((payload.to_capital_savings||0)/Math.max(payload.profit||1,0.01)*100).toFixed(0)+'%';
@@ -633,18 +634,22 @@ async function renderAgentFeeds(){
         fetch(apiUrl('/api/agent/'+name+'?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(res){return res.json();}).then(function(data){
           var el=feeds[name];if(!el||!data)return;var html='';
           if(name==='research'){
-            var stories=(data.top_stories||[]).slice(0,6);
-            var live=(data.live_feed||[]).slice(-3).reverse();
+            var stories=(data.top_stories||[]).slice(0,12);
+            var live=(data.live_feed||[]).slice(-8).reverse();
             live.forEach(function(s){
               var timeStr=s.ts?new Date(s.ts).toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'}):'';
-              html+='<div class="log-line info">'+esc(s.message)+' <span class="sub">'+timeStr+'</span></div>';
+              var tickers=(s.tickers||[]).slice(0,4).map(function(t){return '<span class="badge">'+esc(t)+'</span>';}).join(' ');
+              html+='<div class="log-line info">'+esc(s.message||'Live scan')+' <span class="sub">'+timeStr+' | validated '+(s.validated||0)+'</span> '+(tickers?'<div class="sub">'+tickers+'</div>':'')+'</div>';
             });
             stories.forEach(function(s){
               html+='<div class="log-line"><a href="'+esc(s.url)+'" target="_blank">'+esc(s.title)+'</a><div class="sub">'+esc(s.description||'')+'</div></div>';
             });
+            if((data.connectivity||{}).connected){
+              html+='<div class="sub">Live connected | validated '+(data.connectivity.validated||0)+' | duration '+(data.connectivity.duration_s||0)+'s</div>';
+            }
             var tickers=data.tickers_mentioned||{};
             if(Object.keys(tickers).length){
-              html+='<div class="sub" style="margin-top:6px">Tickers: '+Object.keys(tickers).slice(0,8).map(function(t){return '<span class="badge">'+esc(t)+'</span>';}).join(' ')+'</div>';
+              html+='<div class="sub" style="margin-top:6px">Tickers: '+Object.keys(tickers).slice(0,12).map(function(t){return '<span class="badge">'+esc(t)+'</span>';}).join(' ')+'</div>';
             }
           }else if(name==='gold_stocks'){
             (data.trades||[]).slice(-4).forEach(function(t){

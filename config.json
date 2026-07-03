@@ -137,11 +137,8 @@
     "webull": {
       "label": "Webull",
       "base_url": "https://webull.com",
-      "linked": true,
-      "note": "Click Link in the control panel to connect.",
-      "api_key": "test",
-      "api_secret": "test",
-      "redirect_uri": "http://127.0.0.1:8080/callback"
+      "linked": false,
+      "note": "Not yet linked — click Link to connect after account setup."
     },
     "robinhood": {
       "label": "Robinhood",

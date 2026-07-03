@@ -116,8 +116,30 @@ async def api_run_agent(agent: str):
 @app.post("/api/approve/{decision_id}")
 async def api_approve(decision_id: str):
     try:
-        from shared.decisions import approve_decision
+        from shared.decisions import approve_decision, get_pending_decisions
         ok = approve_decision(decision_id.strip(), "approved")
+        if ok:
+            try:
+                pending = get_pending_decisions()
+                target = next((d for d in pending if d.get("id") == decision_id), None)
+                if target and target.get("type") == "capital_injection":
+                    agent_name = target.get("agent")
+                    amount = float((target.get("payload") or {}).get("amount", 0))
+                    if agent_name and amount > 0:
+                        portfolio_path = STATE_DIR / "portfolio.json"
+                        portfolio = load_json(portfolio_path) if portfolio_path.exists() else {}
+                        agent_state = portfolio.get(agent_name, {})
+                        if not isinstance(agent_state, dict):
+                            agent_state = {}
+                        current = float(agent_state.get("cash", 0))
+                        agent_state["cash"] = round(current + amount, 2)
+                        agent_state["starting_cash"] = agent_state.get("starting_cash", amount)
+                        portfolio[agent_name] = agent_state
+                        portfolio.setdefault("current_cash", 0)
+                        portfolio["current_cash"] = round(float(portfolio.get("current_cash", 0)) + amount, 2)
+                        save_json(portfolio_path, portfolio)
+            except Exception:
+                pass
         return JSONResponse({"ok": ok, "decision_id": decision_id, "action": "approved" if ok else "not_found"})
     except Exception as e:
         return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
@@ -146,11 +168,42 @@ async def api_decisions():
 @app.get("/api/agent/{agent}")
 async def api_agent_detail(agent: str):
     try:
+        if agent == "research":
+            try:
+                brief = load_json(BRIEF)
+                validated = ((brief.get("connectivity") or {}).get("validated") if isinstance(brief, dict) else None)
+                stories = (brief.get("top_stories") or [])[:12] if isinstance(brief, dict) else []
+                tickers = (brief.get("tickers_mentioned") or {}) if isinstance(brief, dict) else {}
+                live_feed = []
+                research_live = STATE_DIR / "research_live.jsonl"
+                if research_live.exists():
+                    try:
+                        lines = research_live.read_text(encoding="utf-8", errors="ignore").splitlines()[-200:]
+                        for line in lines:
+                            line = line.strip()
+                            if not line:
+                                continue
+                            try:
+                                live_feed.append(json.loads(line))
+                            except Exception:
+                                pass
+                    except Exception:
+                        pass
+                data = {
+                    "agent": "research",
+                    "connectivity": (brief.get("connectivity") if isinstance(brief, dict) else {}),
+                    "top_stories": stories,
+                    "tickers_mentioned": tickers,
+                    "live_feed": sorted(live_feed, key=lambda x: x.get("ts", 0))[-50:],
+                }
+            except Exception:
+                data = {}
+            return JSONResponse(data)
         data = load_json(STATE_DIR / f"{agent}.json")
         if not data:
             return JSONResponse({})
         return JSONResponse(data)
-    except Exception as e:
+    except Exception:
         return JSONResponse({})
 
 

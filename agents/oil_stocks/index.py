@@ -126,7 +126,7 @@ def run():
                 "to_oil_opportunity_agent": to_oil_opp,
                 "to_savings": to_savings,
                 "remaining_reinvested": remaining_reinvested,
-            })
+            }, auto_approve=True)
             log("oil_stocks", "info", f"Profit split: ${to_oil_opp} to Oil Opportunity agent, ${to_savings} to savings, ${remaining_reinvested} reinvested")
     except Exception as e:
         log("oil_stocks", "error", f"Failed to submit split decision: {e}")

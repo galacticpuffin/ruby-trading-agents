@@ -20,8 +20,10 @@ def load_json(path):
 def save_json(path, data):
     path.write_text(json.dumps(data, indent=2, default=str))
 
-def submit_decision(agent, decision_type, payload):
-    """Agents call this to queue a decision for operator approval."""
+def submit_decision(agent, decision_type, payload, auto_approve=False):
+    """Agents call this to queue a decision for operator approval.
+    If auto_approve=True, the decision is immediately approved and logged.
+    """
     decisions = load_json(DECISIONS_PATH)
     queue = decisions.setdefault("queue", [])
     # Deduplicate: skip if an identical pending decision already exists
@@ -44,6 +46,9 @@ def submit_decision(agent, decision_type, payload):
         "operator_action": None,
     }
     queue.append(decision)
+    if auto_approve:
+        approve_decision(decision["id"], action="auto_approved")
+        return decision["id"]
     save_json(DECISIONS_PATH, decisions)
     return decision["id"]
 

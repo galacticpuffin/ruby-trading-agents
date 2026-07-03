@@ -101,6 +101,28 @@ def propose_integrated_action(state):
                 "priority": "medium",
                 "action": "enable_capital_one_bank_integration",
             })
+
+        # Propose funding injections for agents below starting cash when bank is enabled
+        if isinstance(capital_one, dict) and capital_one.get("enabled") and capital_one.get("access_token"):
+            agent_cash_map = {
+                "daytrader": portfolio.get("daytrader", {}).get("cash"),
+                "gold_stocks": portfolio.get("gold_stocks", {}).get("cash"),
+                "oil_stocks": portfolio.get("oil_stocks", {}).get("cash"),
+                "gold_bars": portfolio.get("gold_bars", {}).get("cash"),
+                "capital": portfolio.get("capital", {}).get("cash"),
+                "oil_opportunity": portfolio.get("oil_opportunity", {}).get("cash"),
+            }
+            for agent_name, cash in agent_cash_map.items():
+                if not isinstance(cash, (int, float)) or cash < 100:
+                    proposals.append({
+                        "type": "capital_injection",
+                        "agent": agent_name,
+                        "amount": 100,
+                        "provider": "capital_one",
+                        "required_approval": True,
+                        "priority": "medium",
+                        "action": "fund_agent_starting_capital",
+                    })
     except Exception as e:
         proposals.append({
             "type": "error",

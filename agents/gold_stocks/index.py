@@ -133,7 +133,7 @@ def run():
                 "to_gold_bars_agent": to_gold_bars,
                 "to_savings": to_savings,
                 "remaining_reinvested": remaining_reinvested,
-            })
+            }, auto_approve=True)
             log("gold_stocks", "info", f"Profit split: ${to_gold_bars} to Gold Bars agent, ${to_savings} to savings, ${remaining_reinvested} reinvested")
     except Exception as e:
         log("gold_stocks", "error", f"Failed to submit split decision: {e}")
