@@ -11,8 +11,8 @@ from pathlib import Path
 BASE = Path('/home/clawdette/trading-agents')
 STATE = BASE / 'shared' / 'state'
 HOST = 'http://127.0.0.1:8080'
-CREDS = ('operator', 'Tacostand86!')
 INITIAL_TOTAL = 300.0  # daytrader + gold_stocks + oil_stocks
+DEFAULT_ROUNDS = 200
 
 AGENT_FILE_MAP = {
     'research': BASE / 'agents' / 'research' / 'index.py',
@@ -29,11 +29,9 @@ AGENT_FILE_MAP = {
 }
 
 
-def fetch_json(path, token=None, data=None, method='GET'):
+def fetch_json(path, data=None, method='GET'):
     url = HOST + path
     headers = {'Accept': 'application/json'}
-    if token:
-        headers['Authorization'] = f'Bearer {token}'
     if data is not None and method == 'POST':
         headers['Content-Type'] = 'application/json'
         data = json.dumps(data).encode()
@@ -51,18 +49,11 @@ def fetch_json(path, token=None, data=None, method='GET'):
         return None, {'error': str(e)}
 
 
-def login():
-    code, body = fetch_json('/api/login', data={'username': CREDS[0], 'password': CREDS[1]}, method='POST')
-    if code == 200:
-        return body.get('token')
-    return None
-
-
 def get_agent_cash():
     folio_path = STATE / 'portfolio.json'
     folio = json.loads(folio_path.read_text()) if folio_path.exists() else {}
     out = {}
-    for a in ['daytrader', 'gold_stocks', 'oil_stocks']:
+    for a in AGENT_FILE_MAP:
         out[a] = folio.get(a, {}).get('cash', 0.0)
     return out
 
@@ -70,9 +61,9 @@ def get_agent_cash():
 def reset_folio():
     folio_path = STATE / 'portfolio.json'
     folio = json.loads(folio_path.read_text()) if folio_path.exists() else {}
-    folio['daytrader'] = {'cash': 100.0, 'start_cash': 100.0, 'max_cash': 100.0, 'daily_wins': 0, 'daily_losses': 0, 'trades': []}
-    folio['gold_stocks'] = {'cash': 100.0, 'start_cash': 100.0, 'trades': []}
-    folio['oil_stocks'] = {'cash': 100.0, 'start_cash': 100.0, 'trades': []}
+    for a in AGENT_FILE_MAP:
+        folio.setdefault(a, {})['cash'] = 100.0
+        folio[a]['start_cash'] = 100.0
     folio_path.write_text(json.dumps(folio, indent=2))
 
 
@@ -130,15 +121,15 @@ def run_agent(agent, path):
         return {'ok': False, 'error': str(e)[:200], 'returncode': -1}
 
 
-def submit_and_approve_all(token):
-    code, body = fetch_json('/api/decisions', token=token)
+def submit_and_approve_all():
+    code, body = fetch_json('/api/decisions')
     pending = []
     if code == 200 and isinstance(body, dict):
         pending = [d for d in body.get('pending', []) if isinstance(d, dict) and d.get('id')]
     approved = 0
     for d in pending:
         did = d['id']
-        c, _ = fetch_json(f'/api/approve/{did}', token=token, data={}, method='POST')
+        c, _ = fetch_json(f'/api/approve/{did}', data={}, method='POST')
         if c == 200:
             approved += 1
     return len(pending), approved
@@ -151,10 +142,11 @@ def run_round(round_num):
         if not res['ok']:
             errors[agent] = res.get('error') or res.get('stderr') or 'unknown error'
     
-    token = login()
     pending = approved = 0
-    if token:
-        pending, approved = submit_and_approve_all(token)
+    try:
+        pending, approved = submit_and_approve_all()
+    except Exception as e:
+        errors['approvals'] = str(e)
     
     cash = get_agent_cash()
     total_cash = sum(cash.values())
@@ -172,19 +164,19 @@ def run_round(round_num):
 
 
 def main():
-    rounds_to_run = 3
-    max_rounds = 15
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--rounds', type=int, default=DEFAULT_ROUNDS, help='number of rounds to run')
+    args = parser.parse_args()
+    max_rounds = args.rounds
+    rounds_to_run = max_rounds
     history = []
     reached_target = False
     
     snapshot_state()
     reset_folio()
     clear_decisions()
-    initial_folio = {
-        'daytrader': 100.0,
-        'gold_stocks': 100.0,
-        'oil_stocks': 100.0,
-    }
+    initial_folio = {a: 100.0 for a in AGENT_FILE_MAP}
     
     for i in range(1, max_rounds + 1):
         result = run_round(i)
@@ -199,7 +191,7 @@ def main():
             for agent, err in result['errors'].items():
                 print(f'  FAIL {agent}: {err[:120]}')
         
-        if acc >= 99.0 and cash >= INITIAL_TOTAL and err_count == 0:
+        if acc >= 99.0 and all(cash >= 100.0 for cash in result.get('cash', {}).values()) and err_count == 0:
             reached_target = True
             print('TARGET_REACHED')
             break

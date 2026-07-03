@@ -166,33 +166,57 @@ async def api_briefing():
 @app.get("/api/gold")
 async def api_gold():
     try:
-        brief = load_json(BRIEF)
-        tickers = brief.get("tickers_mentioned", {})
-        prices = {}
-        for sym in ["GC=F", "GDX", "GLD", "NEM", "ABX", "AU", "GOLD", "KGC"]:
-            if sym in tickers:
-                prices[sym] = tickers[sym]
-        if not prices:
-            prices = {"GC=F": 0, "GLD": 0}
+        prices = _price_fallback(["GC=F", "GDX", "GLD", "NEM", "ABX", "AU", "GOLD", "KGC"])
         return JSONResponse({"prices": prices})
     except Exception:
-        return JSONResponse({"prices": {}})
+        return JSONResponse({"prices": {"GC=F": 0, "GLD": 0}})
 
 
 @app.get("/api/oil")
 async def api_oil():
     try:
-        brief = load_json(BRIEF)
-        tickers = brief.get("tickers_mentioned", {})
-        prices = {}
-        for sym in ["CL=F", "BZ=F", "XOM", "CVX", "COP", "SLB", "OXY", "VLO", "MPC", "PSX", "USO", "XLE"]:
-            if sym in tickers:
-                prices[sym] = tickers[sym]
-        if not prices:
-            prices = {"CL=F": 0, "XLE": 0}
+        prices = _price_fallback(["CL=F", "BZ=F", "XOM", "CVX", "COP", "SLB", "OXY", "VLO", "MPC", "PSX", "USO", "XLE"])
         return JSONResponse({"prices": prices})
     except Exception:
-        return JSONResponse({"prices": {}})
+        return JSONResponse({"prices": {"CL=F": 0, "XLE": 0}})
+
+
+def _price_fallback(symbols):
+    out = {}
+    try:
+        brief = load_json(BRIEF)
+        series = ((brief.get("ticker_series") or {}))
+        for sym in symbols:
+            val = series.get(sym)
+            if val is None:
+                val = series.get(sym.upper())
+            if val is None and "=" not in sym:
+                val = series.get(sym.upper() + "=F")
+            if isinstance(val, list) and val:
+                val = val[-1].get("price")
+            out[sym] = val if isinstance(val, (int, float)) else 0
+    except Exception:
+        out = {sym: 0 for sym in symbols}
+    if not any(v for v in out.values()):
+        try:
+            import yfinance as yf
+            yf_tickers = yf.Tickers(" ".join(symbols))
+            for sym in symbols:
+                try:
+                    info = yf_tickers.tickers.get(sym, {})
+                    price = ((info.info or {}).get("currentPrice") or (info.info or {}).get("regularMarketPrice"))
+                    if not price:
+                        hist = info.history(period="1d")
+                        if not hist.empty:
+                            price = float(hist["Close"].iloc[-1])
+                    out[sym] = round(float(price), 2) if price else 0
+                except Exception:
+                    out[sym] = 0
+        except Exception:
+            pass
+    if not any(v for v in out.values()):
+        return {symbols[0]: 0, symbols[-1]: 0}
+    return out
 
 
 @app.get("/api/politics")

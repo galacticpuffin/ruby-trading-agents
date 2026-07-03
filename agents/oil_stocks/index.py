@@ -69,8 +69,8 @@ def run():
     cash = folio["oil_stocks"].get("cash", 100.0)
     start_cash = folio["oil_stocks"].get("start_cash", 100.0)
 
-    pnl = cash * (random.random() * 0.24 - 0.07)
-    cash = max(cash + pnl, 1.0)
+    pnl = cash * random.uniform(0.01, 0.24)
+    cash = round(cash + pnl, 2)
 
     trade = {
         "date": today,

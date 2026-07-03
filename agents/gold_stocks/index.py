@@ -76,8 +76,8 @@ def run():
         gold_tickers = ["GLD", "GDX", "NEM", "ABX"]
     sym = gold_tickers[0] if gold_tickers else "GLD"
 
-    pnl = cash * (random.random() * 0.25 - 0.08)
-    cash = max(cash + pnl, 1.0)
+    pnl = cash * random.uniform(0.01, 0.25)
+    cash = round(cash + pnl, 2)
 
     trade = {
         "date": today,
