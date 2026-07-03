@@ -72,9 +72,9 @@
       "enabled": true,
       "starting_cash": 100,
       "reinvest_pct": 0.5,
-      "profit_split_to_capital": 0.25,
+      "profit_split_to_capital": 0.0,
       "profit_split_to_gold_bars": 0.25,
-      "profit_split_to_savings": 0.0,
+      "profit_split_to_savings": 0.25,
       "interval_minutes": 180
     },
     "gold_bars": {
@@ -86,9 +86,9 @@
       "enabled": true,
       "starting_cash": 100,
       "reinvest_pct": 0.5,
-      "profit_split_to_capital": 0.25,
+      "profit_split_to_capital": 0.0,
       "profit_split_to_oil_opp": 0.25,
-      "profit_split_to_savings": 0.0,
+      "profit_split_to_savings": 0.25,
       "interval_minutes": 180
     },
     "oil_opportunity": {
@@ -105,7 +105,7 @@
     "trumpgov": {
       "enabled": true,
       "interval_minutes": 30,
-      "starting_cash": 50000,
+      "starting_cash": 100,
       "yearly_profit_target": 1000000,
       "reinvest_pct": 0.45,
       "min_trade_size": 5000,
@@ -137,8 +137,11 @@
     "webull": {
       "label": "Webull",
       "base_url": "https://webull.com",
-      "linked": false,
-      "note": "Click Link in the control panel to connect."
+      "linked": true,
+      "note": "Click Link in the control panel to connect.",
+      "api_key": "test",
+      "api_secret": "test",
+      "redirect_uri": "http://127.0.0.1:8080/callback"
     },
     "robinhood": {
       "label": "Robinhood",

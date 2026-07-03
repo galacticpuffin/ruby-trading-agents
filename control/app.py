@@ -143,6 +143,68 @@ async def api_decisions():
         return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
 
 
+@app.get("/api/agent/{agent}")
+async def api_agent_detail(agent: str):
+    try:
+        data = load_json(STATE_DIR / f"{agent}.json")
+        if not data:
+            return JSONResponse({})
+        return JSONResponse(data)
+    except Exception as e:
+        return JSONResponse({})
+
+
+@app.get("/api/briefing")
+async def api_briefing():
+    try:
+        data = load_json(BRIEF)
+        return JSONResponse(data)
+    except Exception:
+        return JSONResponse({})
+
+
+@app.get("/api/gold")
+async def api_gold():
+    try:
+        brief = load_json(BRIEF)
+        tickers = brief.get("tickers_mentioned", {})
+        prices = {}
+        for sym in ["GC=F", "GDX", "GLD", "NEM", "ABX", "AU", "GOLD", "KGC"]:
+            if sym in tickers:
+                prices[sym] = tickers[sym]
+        if not prices:
+            prices = {"GC=F": 0, "GLD": 0}
+        return JSONResponse({"prices": prices})
+    except Exception:
+        return JSONResponse({"prices": {}})
+
+
+@app.get("/api/oil")
+async def api_oil():
+    try:
+        brief = load_json(BRIEF)
+        tickers = brief.get("tickers_mentioned", {})
+        prices = {}
+        for sym in ["CL=F", "BZ=F", "XOM", "CVX", "COP", "SLB", "OXY", "VLO", "MPC", "PSX", "USO", "XLE"]:
+            if sym in tickers:
+                prices[sym] = tickers[sym]
+        if not prices:
+            prices = {"CL=F": 0, "XLE": 0}
+        return JSONResponse({"prices": prices})
+    except Exception:
+        return JSONResponse({"prices": {}})
+
+
+@app.get("/api/politics")
+async def api_politics():
+    try:
+        brief = load_json(BRIEF)
+        impact = brief.get("political_impact", {})
+        return JSONResponse(impact if impact else {"high_impact": 0, "suggestions": []})
+    except Exception:
+        return JSONResponse({"high_impact": 0, "suggestions": []})
+
+
 @app.websocket("/ws")
 async def ws_endpoint(websocket: WebSocket):
     await websocket.accept()
@@ -192,7 +254,8 @@ async def api_integrations():
         cfg = json.loads(CONFIG_PATH.read_text())
     except Exception:
         cfg = {}
-    return JSONResponse(cfg.get("brokers", {}))
+    brokers = cfg.get("brokers", {})
+    return JSONResponse({"integrations": [dict(v, key=k) for k,v in brokers.items()]})
 
 
 @app.post("/api/integrations")
@@ -204,7 +267,25 @@ async def api_integrations_save(request: Request):
         cfg = {"brokers": {}}
     cfg.setdefault("brokers", {}).update(body)
     CONFIG_PATH.write_text(json.dumps(cfg, indent=2))
-    return JSONResponse({"ok": True, "brokers": cfg.get("brokers", {})})
+    return JSONResponse({"ok": True, "integrations": [dict(v, key=k) for k,v in cfg.get("brokers", {}).items()]})
+
+
+@app.post("/api/integrations/{key}/link")
+async def api_integrations_link(key: str, request: Request):
+    body = await request.json()
+    try:
+        cfg = json.loads(CONFIG_PATH.read_text())
+    except Exception:
+        cfg = {"brokers": {}}
+    section = cfg.setdefault("brokers", {}).setdefault(key, {})
+    section.update({
+        "linked": True,
+        "api_key": body.get("api_key", ""),
+        "api_secret": body.get("api_secret", ""),
+        "redirect_uri": body.get("redirect_uri", ""),
+    })
+    CONFIG_PATH.write_text(json.dumps(cfg, indent=2))
+    return JSONResponse({"ok": True, "key": key})
 
 
 def _invoke_agent(agent: str):

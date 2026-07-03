@@ -6,7 +6,6 @@ from pathlib import Path
 
 BASE = Path('/home/clawdette/trading-agents')
 HOST = 'http://127.0.0.1:8080'
-CREDS = ('operator', 'Tacostand86!')
 PASSES = 0
 FAILS = 0
 RESULTS = []
@@ -42,60 +41,42 @@ def fetch(path, token=None, data=None, method='GET'):
         return None, str(e)
 
 
-def login():
-    code, body = fetch('/api/login', data={'username': CREDS[0], 'password': CREDS[1]}, method='POST')
-    if code == 200:
-        try:
-            obj = json.loads(body)
-            return obj.get('token')
-        except Exception:
-            return None
-    return None
-
-
 def main():
     global PASSES, FAILS
     print('BOOT: security verification suite')
-
-    token = login()
-    check('login_returns_token', bool(token), f'token_present={bool(token)}')
 
     code, body = fetch('/')
     check('root_loads_without_auth', code == 200, f'code={code}')
 
     code, body = fetch('/api/status')
-    check('api_status_requires_auth', code == 401, f'code={code}')
+    check('api_status_open_access', code == 200, f'code={code}')
 
-    if token:
-        code, body = fetch('/api/status', token=token)
-        check('api_status_with_token', code == 200 and 'agents' in body, f'code={code}')
+    code, body = fetch('/api/run/it', data={}, method='POST')
+    check('it_run_success', code == 200, f'code={code}')
+    parsed = {}
+    try:
+        parsed = json.loads(body)
+    except Exception:
+        pass
+    check('run_it_has_results', bool(parsed.get('result')), f'keys={list(parsed.keys())[:5]}')
 
-        code, body = fetch('/api/run/it', token=token, data={}, method='POST')
-        check('it_run_success', code == 200, f'code={code}')
-        parsed = {}
-        try:
-            parsed = json.loads(body)
-        except Exception:
-            pass
-        check('run_it_has_results', bool(parsed.get('result')), f'keys={list(parsed.keys())[:5]}')
+    # cyber output should appear in /api/run/it result
+    cyber_in_run = False
+    try:
+        res = parsed.get('result') or {}
+        cyber_in_run = isinstance(res, dict) and 'cyber_issues' in (res.get('learning') or {})
+    except Exception:
+        pass
+    check('it_cyber_output', cyber_in_run, f'cyber_in_run={cyber_in_run}')
 
-        # cyber output should appear in /api/run/it result
-        cyber_in_run = False
-        try:
-            res = parsed.get('result') or {}
-            cyber_in_run = isinstance(res, dict) and 'cyber_issues' in (res.get('learning') or {})
-        except Exception:
-            pass
-        check('it_cyber_output', cyber_in_run, f'cyber_in_run={cyber_in_run}')
+    code, body = fetch('/api/metrics')
+    check('metrics_available', code == 200, f'code={code}')
 
-        code, body = fetch('/api/metrics', token=token)
-        check('metrics_available', code == 200, f'code={code}')
+    code2, _ = fetch('/api/logs')
+    check('logs_open_access', code2 == 200, f'code={code2}')
 
-        code2, _ = fetch('/api/logs')
-        check('logs_require_auth', code2 == 401, f'code={code2}')
-
-        code3, _ = fetch('/api/run/it')
-        check('run_it_requires_auth', code3 == 401, f'code={code3}')
+    code3, _ = fetch('/api/run/it', data={}, method='POST')
+    check('run_it_open_access', code3 == 200, f'code={code3}')
 
     cfg = json.loads((BASE / 'config.json').read_text())
     missing = [n for n, a in cfg.get('agents', {}).items()

@@ -134,8 +134,8 @@ def run():
         from control.app import broadcast_sync
         broadcast_sync({
             "agent": "oil_stocks",
-            "message": f"{sym} -> PnL ${pnl:.2f} ({'WIN' if is_win else 'LOSS'}) cash ${cash:.2f}",
-            "level": "ok" if is_win else "warn",
+            "message": f"{sym} -> PnL ${pnl:.2f} ({'WIN' if pnl >= 0 else 'LOSS'}) cash ${cash:.2f}",
+            "level": "ok" if pnl >= 0 else "warn",
         })
     except Exception:
         pass

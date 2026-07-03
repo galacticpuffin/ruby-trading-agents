@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RUBY // Operator Control Center</title>
+<title>RUBY // CONTROL CENTER</title>
 <style>
   :root {
     --bg: #0a0d12;
@@ -23,7 +23,7 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
-    background: var(--bg) url('/assets/ruby-logo.png') center center no-repeat fixed;
+    background: var(--bg) url('/static/assets/ruby-neon-bg.png') center center no-repeat fixed;
     background-size: 400px 400px;
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -35,8 +35,8 @@
     grid-template-columns: 300px 1fr;
     grid-template-rows: auto 1fr;
     min-height: 100vh;
-    background: rgba(10,13,18,0.55);
-    backdrop-filter: blur(6px);
+    background: rgba(10,13,18,0.25);
+    backdrop-filter: blur(2px);
   }
   @media (max-width: 960px){ .app { grid-template-columns: 1fr; } }
 
@@ -47,7 +47,7 @@
     background: var(--surface);
     border-bottom: 1px solid var(--border);
   }
-  .brand { font-size: 13px; font-weight: 800; letter-spacing: 0.14em; color: var(--accent); }
+  .header-rule { display:flex; height:3px; background:linear-gradient(90deg, #ff2222, #ff8844, #ff2222); box-shadow: 0 0 18px #ff2222; }
   .status-cluster { display: flex; gap: 10px; align-items: center; }
   .pill {
     font-size: 11px; font-weight: 600;
@@ -240,8 +240,12 @@
 <body>
   <div class="app">
     <header>
-      <div class="brand">OPERATOR // CONTROL CENTER</div>
-      <div class="status-cluster">
+    <div>
+      <div class="header-rule"></div>
+      <div class="brand" style="padding-top:10px;font-size:14px;font-weight:900;letter-spacing:0.16em;color:#ff3333;text-shadow:0 0 18px #ff2222, 0 0 4px #ff8844;">RUBY</div>
+      <div class="header-rule" style="margin-top:10px;"></div>
+    </div>
+    <div class="status-cluster">
         <div class="pill"><span class="dot" id="net-dot"></span><span id="net-label">NET --</span></div>
         <div class="pill"><span class="dot ok"></span>LIVE</div>
         <div class="pill" id="clock">--</div>
@@ -559,7 +563,7 @@ async function refresh(){
   try{
     var st=await fetch(apiUrl('/api/status?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(r){return r.json();}).catch(function(){return null;});
     var br=await fetch(apiUrl('/api/briefing?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(r){return r.json();}).catch(function(){return null;});
-    var dec=await fetch(apiUrl('/api/decisions?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(r){return r.json();}).catch(function(){return null;});
+    var dec=await fetch(apiUrl('/api/decisions?t='+Date.now()),{method:'POST',cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(r){return r.json();}).catch(function(){return null;});
     var integ=await fetch(apiUrl('/api/integrations?t='+Date.now()),{cache:'no-store', headers:(_AUTH_HEADERS||{})}).then(function(r){return r.json();}).catch(function(){return null;});
     if(st){
       renderAgents((st.runs)||{});
