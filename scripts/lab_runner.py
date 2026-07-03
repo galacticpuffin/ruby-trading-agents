@@ -6,7 +6,7 @@ from pathlib import Path
 
 BASE = Path('/home/clawdette/trading-agents')
 HOST = 'http://127.0.0.1:8080'
-CREDS = ('operator', 'change-me')
+CREDS = ('operator', 'Tacostand86!')
 
 
 def fetch(path, token=None, data=None, method='GET'):

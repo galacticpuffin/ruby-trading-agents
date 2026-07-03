@@ -70,9 +70,13 @@ def run():
     cash = folio["gold_stocks"].get("cash", 100.0)
     start_cash = folio["gold_stocks"].get("start_cash", 100.0)
 
-    is_win = True
-    pnl = cash * (0.08 + random.random() * 0.35)
+    tickers = get_research_brief()
+    gold_tickers = [t for t in tickers if any(x in t.upper() for x in ["GC=", "GDX", "GLD", "GOLD", "NEM", "ABX", "AU", "KGC"])]
+    if not gold_tickers:
+        gold_tickers = ["GLD", "GDX", "NEM", "ABX"]
+    sym = gold_tickers[0] if gold_tickers else "GLD"
 
+    pnl = cash * (random.random() * 0.25 - 0.08)
     cash = max(cash + pnl, 1.0)
 
     trade = {

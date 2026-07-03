@@ -69,9 +69,7 @@ def run():
     cash = folio["oil_stocks"].get("cash", 100.0)
     start_cash = folio["oil_stocks"].get("start_cash", 100.0)
 
-    is_win = True
-    pnl = cash * (0.06 + random.random() * 0.28)
-
+    pnl = cash * (random.random() * 0.24 - 0.07)
     cash = max(cash + pnl, 1.0)
 
     trade = {

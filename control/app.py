@@ -40,13 +40,17 @@ HTML_PAGE = html_path.read_text() if html_path.exists() else "<h1>missing dashbo
 # ---------- AUTH ----------
 import os as _os
 _AUTH_USER = _os.environ.get("TRADING_DASH_USER", "operator")
-_AUTH_PASS = _os.environ.get("TRADING_DASH_PASS", "change-me")
+_AUTH_PASS = _os.environ.get("TRADING_DASH_PASS")
+if not _AUTH_PASS:
+    raise RuntimeError("Set TRADING_DASH_PASS environment variable before starting dashboard")
 
 from starlette.middleware.base import BaseHTTPMiddleware
 import base64, hmac, hashlib, json, time, secrets
 
 _DASH_USER = _os.environ.get("TRADING_DASH_USER", "operator")
-_DASH_PASS = _os.environ.get("TRADING_DASH_PASS", "TACOSTAND86!")
+_DASH_PASS = _os.environ.get("TRADING_DASH_PASS")
+if not _DASH_PASS:
+    raise RuntimeError("Set TRADING_DASH_PASS environment variable before starting dashboard")
 
 _SECRET_PATH = STATE_DIR / "app_secret"
 if _SECRET_PATH.exists():

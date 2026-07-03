@@ -66,11 +66,8 @@ def run():
 
     if folio["daytrader"].get("active_trade") is None and last_trade_date != today:
         sym = tickers[0] if tickers else "SPY"
-        is_win = True
-        pnl = cash * (0.15 + random.random() * 0.45)
-        daily_wins += 1
-
-        cash = max(cash + pnl, 1)
+        pnl = cash * (random.random() * 0.50 - 0.15)
+        cash = max(cash + pnl, 1.0)
         if cash > max_cash:
             max_cash = cash
 
@@ -79,7 +76,7 @@ def run():
             "symbol": sym,
             "pnl": round(pnl, 2),
             "cash_after": round(cash, 2),
-            "win": True,
+            "win": pnl >= 0,
         }
         tr.append(trade)
         folio["daytrader"]["trades"] = tr[-100:]

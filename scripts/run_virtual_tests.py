@@ -11,7 +11,7 @@ from pathlib import Path
 BASE = Path('/home/clawdette/trading-agents')
 STATE = BASE / 'shared' / 'state'
 HOST = 'http://127.0.0.1:8080'
-CREDS = ('operator', 'change-me')
+CREDS = ('operator', 'Tacostand86!')
 INITIAL_TOTAL = 300.0  # daytrader + gold_stocks + oil_stocks
 
 AGENT_FILE_MAP = {

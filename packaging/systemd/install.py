@@ -26,7 +26,7 @@ ExecStart=/home/clawdette/trading-agents/.venv/bin/python3 /home/clawdette/tradi
 Restart=on-failure
 RestartSec=2
 Environment=TRADING_DASH_USER=operator
-Environment=TRADING_DASH_PASS=change-me
+Environment=TRADING_DASH_PASS=Tacostand86!
 Environment=PYTHONUNBUFFERED=1
 StandardOutput=journal
 StandardError=journal
