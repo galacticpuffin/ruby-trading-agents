@@ -194,6 +194,7 @@ async def api_agent_detail(agent: str):
                     "connectivity": (brief.get("connectivity") if isinstance(brief, dict) else {}),
                     "top_stories": stories,
                     "tickers_mentioned": tickers,
+                    "predictions": ((brief.get("predictions") or [])[:10] if isinstance(brief, dict) else []),
                     "live_feed": sorted(live_feed, key=lambda x: x.get("ts", 0))[-50:],
                 }
             except Exception:

@@ -65,8 +65,45 @@ def approve_decision(decision_id, action="approved"):
             approved.setdefault("history", []).append(d)
             save_json(APPROVED_PATH, approved)
             save_json(DECISIONS_PATH, decisions)
+            try:
+                _apply_decision(d)
+            except Exception:
+                pass
             return True
     return False
+
+
+def _apply_decision(d):
+    dtype = d.get("type")
+    payload = d.get("payload") or {}
+    if dtype in ("gold_profit_split", "oil_profit_split", "profit_split"):
+        portfolio_path = STATE_DIR / "portfolio.json"
+        portfolio = load_json(portfolio_path) if portfolio_path.exists() else {}
+        savings = portfolio.get("savings", {})
+        if not isinstance(savings, dict):
+            savings = {}
+        savings["cash"] = round(float(savings.get("cash", 0)) + float(payload.get("to_savings", 0)), 2)
+        savings["source"] = f"{d.get('agent','unknown')}_profit_split"
+        portfolio["savings"] = savings
+        portfolio.setdefault("current_cash", 0)
+        portfolio["current_cash"] = round(float(portfolio.get("current_cash", 0)) + float(payload.get("to_savings", 0)), 2)
+        save_json(portfolio_path, portfolio)
+    if dtype == "capital_injection":
+        agent_name = d.get("agent")
+        amount = float(payload.get("amount", 0))
+        if agent_name and amount > 0:
+            portfolio_path = STATE_DIR / "portfolio.json"
+            portfolio = load_json(portfolio_path) if portfolio_path.exists() else {}
+            agent_state = portfolio.get(agent_name, {})
+            if not isinstance(agent_state, dict):
+                agent_state = {}
+            current = float(agent_state.get("cash", 0))
+            agent_state["cash"] = round(current + amount, 2)
+            agent_state["starting_cash"] = agent_state.get("starting_cash", amount)
+            portfolio[agent_name] = agent_state
+            portfolio.setdefault("current_cash", 0)
+            portfolio["current_cash"] = round(float(portfolio.get("current_cash", 0)) + amount, 2)
+            save_json(portfolio_path, portfolio)
 
 def get_pending_decisions():
     decisions = load_json(DECISIONS_PATH).get("queue", [])

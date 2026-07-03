@@ -202,6 +202,55 @@ def save_conn_state(connected, source_count, duration_s):
         "duration_s": duration_s,
     })
 
+DIRECTION_MAP = {
+    "defense": "buy",
+    "trade": "sell",
+    "energy": "buy",
+    "healthcare": "buy",
+    "technology": "buy",
+    "infrastructure": "buy",
+    "agriculture": "buy",
+    "macro": "hold",
+}
+
+def generate_predictions(brief):
+    predictions = []
+    tickers = brief.get("tickers_mentioned", {}) or {}
+    stories = brief.get("top_stories", []) or []
+    if not tickers and not stories:
+        return predictions
+
+    scored = sorted(tickers.items(), key=lambda x: x[1], reverse=True)[:8]
+    seen = set()
+    for sym, count in scored:
+        best_story = None
+        for it in stories:
+            text = ((it.get("title") or "") + " " + (it.get("description") or "")).upper()
+            if sym in text:
+                best_story = it
+                break
+        direction = "buy"
+        if best_story:
+            text = ((best_story.get("title") or "") + " " + (best_story.get("description") or "")).lower()
+            for key, d in DIRECTION_MAP.items():
+                if key in text:
+                    direction = d
+                    break
+        confidence = round(min(0.99, 0.55 + (count * 0.05) + ((best_story or {}).get("score", 0) * 0.02)), 2)
+        if sym in seen:
+            continue
+        seen.add(sym)
+        predictions.append({
+            "symbol": sym,
+            "direction": direction,
+            "confidence": confidence,
+            "timeframe": "1-3 days",
+            "reasoning": f"Top ticker hit ({count})" + (f" backed by news" if best_story else ""),
+        })
+
+    predictions.sort(key=lambda x: x["confidence"], reverse=True)
+    return predictions[:10]
+
 def build_briefing():
     t0 = time.time()
     set_run_status("research", "running", "connectivity check")
@@ -224,12 +273,15 @@ def build_briefing():
         },
         "top_stories": ranked,
         "tickers_mentioned": {},
+        "predictions": [],
     }
     for it in ranked:
         text = (it.get("title","") + " " + it.get("description","")).upper()
         for t in ["AAPL","MSFT","NVDA","GOOGL","AMZN","META","SPY","QQQ","IWM","SOXX","JEPI","JEPQ","SCHD","VYM","O","T"]:
             if t in text:
                 brief["tickers_mentioned"][t] = brief["tickers_mentioned"].get(t, 0) + 1
+
+    brief["predictions"] = generate_predictions(brief)
 
     save_json(BRIEF_PATH, brief)
     save_conn_state(bool(connected and validated), len(validated), round(time.time() - t0, 2))
@@ -238,8 +290,8 @@ def build_briefing():
         update_ticker_series()
     except Exception:
         pass
-    log("research", "ok", f"Briefing built: {len(ranked)} validated items, connected={bool(connected and validated)}")
-    set_run_status("research", "done", f"{len(ranked)} items, connectivity={bool(connected and validated)}")
+    log("research", "ok", f"Briefing built: {len(ranked)} validated items, {len(brief['predictions'])} predictions")
+    set_run_status("research", "done", f"{len(ranked)} items, {len(brief['predictions'])} predictions")
     return brief
 
 
@@ -273,6 +325,18 @@ def start_live_mode():
                             title = (it.get("title") or "").strip()
                             if title:
                                 msgs.append(title[:120])
+                        try:
+                            preds = []
+                            try:
+                                from shared.core import load_json
+                                b = load_json(BRIEF_PATH)
+                                preds = (b.get("predictions") or [])[:3]
+                            except Exception:
+                                pass
+                            for p in preds:
+                                msgs.append(f"PRED {p.get('symbol','')} {p.get('direction','')} {int((p.get('confidence') or 0)*100)}%")
+                        except Exception:
+                            pass
                         if not msgs and watchlist:
                             msgs.append(f"Live scan: {len(validated)} items; tracking {tickers[:4]}")
                         msg = " | ".join(msgs) if msgs else "Live scan complete"

@@ -273,6 +273,7 @@
           <div class="metric"><div class="label">Dividend Budget</div><div class="val" id="kpi-budget">--</div></div>
           <div class="metric"><div class="label">Blended Yield</div><div class="val" id="kpi-yield">--</div></div>
           <div class="metric"><div class="label">Annual Proj</div><div class="val" id="kpi-annual">--</div></div>
+          <div class="metric"><div class="label">Savings</div><div class="val" id="kpi-savings">--</div></div>
         </div>
         <div class="accuracy" style="margin-top:10px"><div class="label">APPROVAL ACCURACY</div><div class="val" id="accuracy-val">--</div></div>
       </div>
@@ -427,6 +428,7 @@ els.agents=document.getElementById('agents');
 els.kpiBudget=document.getElementById('kpi-budget');
 els.kpiYield=document.getElementById('kpi-yield');
 els.kpiAnnual=document.getElementById('kpi-annual');
+els.kpiSavings=document.getElementById('kpi-savings');
 els.decisions=document.getElementById('decisions');
 els.accuracy=document.getElementById('accuracy-val');
 els.shortcuts=document.getElementById('shortcuts');
@@ -616,6 +618,8 @@ function renderKPIs(p){
     els.kpiBudget.textContent='$'+((d.monthly_budget!==undefined?d.monthly_budget:0)).toFixed(2);
     els.kpiYield.textContent=((d.blended_yield!==undefined?d.blended_yield:0)).toFixed(2)+'%';
     els.kpiAnnual.textContent='$'+((d.annualized_project!==undefined?d.annualized_project:0)).toFixed(2);
+    var savings=(p&&p.savings)?p.savings:{};
+    els.kpiSavings.textContent='$'+((savings.cash!==undefined?savings.cash:0)).toFixed(2);
   }catch(e){}
 }
 function renderAccuracy(acc){
@@ -650,6 +654,17 @@ async function renderAgentFeeds(){
             var tickers=data.tickers_mentioned||{};
             if(Object.keys(tickers).length){
               html+='<div class="sub" style="margin-top:6px">Tickers: '+Object.keys(tickers).slice(0,12).map(function(t){return '<span class="badge">'+esc(t)+'</span>';}).join(' ')+'</div>';
+            }
+            var preds=data.predictions||[];
+            if(preds.length){
+              html+='<div class="sub" style="margin-top:8px; font-weight:700">PREDICTIONS</div>';
+              preds.slice(0,8).forEach(function(p){
+                var conf=((p.confidence||0)*100).toFixed(0);
+                var cls='ok';
+                if(p.direction==='sell')cls='warn';
+                if(p.direction==='hold')cls='info';
+                html+='<div class="log-line '+cls+'">'+esc(p.symbol)+' '+esc(p.direction||'buy')+' | '+conf+'% | '+(p.timeframe||'1-3 days')+' <div class="sub">'+esc(p.reasoning||'')+'</div></div>';
+              });
             }
           }else if(name==='gold_stocks'){
             (data.trades||[]).slice(-4).forEach(function(t){

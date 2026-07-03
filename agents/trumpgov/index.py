@@ -195,7 +195,7 @@ def run():
     state.setdefault("trades", [])
     state.setdefault("last_run", "")
     state.setdefault("last_run_date", "")
-    state.setdefault("virtual_cash", float(trump_cfg.get("starting_cash", 50000)))
+    state.setdefault("cash", float(trump_cfg.get("starting_cash", 100)))
     state.setdefault("realized_profit", 0.0)
     state.setdefault("suggestions_made", 0)
 
