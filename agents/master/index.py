@@ -142,8 +142,8 @@ def submit_decisions(proposals):
             d.get("agent") == "master"
             and d.get("type") == p.get("type")
             and d.get("payload") == p
-            and d.get("status") == "pending"
-            for d in queue
+            and d.get("status") in ("pending", "resolved")
+            for d in queue + data.get("approved_history", [])
         )
         if exists:
             continue
