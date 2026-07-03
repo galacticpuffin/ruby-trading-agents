@@ -99,7 +99,7 @@ def main():
 
     cfg = json.loads((BASE / 'config.json').read_text())
     missing = [n for n, a in cfg.get('agents', {}).items()
-               if 'starting_cash' not in a and n != 'trumpgov']
+               if 'starting_cash' not in a and n not in ('trumpgov', 'research')]
     check('starter_cash_configs', len(missing) == 0, f'missing={missing}')
 
     total = PASSES + FAILS

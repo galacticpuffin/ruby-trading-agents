@@ -238,15 +238,6 @@
 </style>
 </head>
 <body>
-  <div id="login-screen" style="position:fixed;inset:0;background:#0a0d12;color:#e6edf5;display:flex;align-items:center;justify-content:center;z-index:9999;">
-    <form id="login-form" style="background:#0f1520;padding:20px;border-radius:12px;border:1px solid #1c2736;display:flex;flex-direction:column;gap:12px;width:320px;">
-      <div style="font-weight:800;letter-spacing:0.12em;color:#00ff9d;">RUBY // OPERATOR CONTROL CENTER</div>
-      <input id="login-user" type="text" placeholder="username" autocomplete="username" style="background:#0a0f18;color:#e6edf5;border:1px solid #1c2736;padding:10px;border-radius:8px;"/>
-      <input id="login-pass" type="password" placeholder="password" autocomplete="current-password" style="background:#0a0f18;color:#e6edf5;border:1px solid #1c2736;padding:10px;border-radius:8px;"/>
-      <button type="submit" style="background:#00ff9d;color:#0a0d12;font-weight:800;padding:10px;border-radius:8px;border:none;cursor:pointer;">LOGIN</button>
-      <div id="login-error" style="color:#f87171;font-size:12px;min-height:16px;"></div>
-    </form>
-  </div>
   <div class="app">
     <header>
       <div class="brand">OPERATOR // CONTROL CENTER</div>
@@ -371,50 +362,10 @@
 
   <script src="/static/chart.umd.min.js"></script>
   <script>
-  document.getElementById('login-form').addEventListener('submit', async function(e){
-    e.preventDefault();
-    var er=document.getElementById('login-error');
-    var btn=document.querySelector('#login-form button[type=\"submit\"]');
-    if(btn){ btn.disabled=true; btn.textContent='AUTHENTICATING...'; }
-    er.textContent='';
-    try{
-      var u=document.getElementById('login-user').value.trim();
-      var p=document.getElementById('login-pass').value.trim();
-      if(!u||!p){
-        er.textContent='Enter both username and password';
-        if(btn){ btn.disabled=false; btn.textContent='LOGIN'; }
-        return;
-      }
-      var res=await fetch(apiUrl('/api/login'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:u,password:p})});
-      var data=await res.json();
-      if(!res.ok){
-        var msg=data.error||('login failed (HTTP '+res.status+')');
-        throw new Error(msg);
-      }
-      localStorage.setItem('dash_token',data.token);
-      er.textContent='';
-      document.getElementById('login-screen').style.display='none';
-      location.reload();
-    }catch(err){
-      er.textContent=err.message||'login error';
-      if(btn){ btn.disabled=false; btn.textContent='LOGIN'; }
-    }
-  });
+  // login removed; dashboard is now open-access
   </script>
 
 <script>
-window.addEventListener('DOMContentLoaded', function(){
-  try {
-    var t = localStorage.getItem('dash_token');
-    if (t) {
-      // Quick validation: try a lightweight endpoint with stored token
-      fetch(apiUrl('/api/status?t='+Date.now()), {headers: {'Authorization':'Bearer '+t}, cache:'no-store'})
-        .then(function(r){ if(r.status===401){ localStorage.removeItem('dash_token'); location.reload(); } })
-        .catch(function(){ localStorage.removeItem('dash_token'); });
-    }
-  } catch(e){}
-});
-
 function renderRunShortcuts(list){
   var container = document.getElementById('run-shortcuts');
   if(!container) return;
@@ -437,7 +388,7 @@ function renderRunShortcuts(list){
 
 /* dashboard runtime */
 (function(){
-var _AUTH_HEADERS=(function(){var t=localStorage.getItem('dash_token');if(!t)return {};return {'Authorization':'Bearer '+t};})();
+var _AUTH_HEADERS=(function(){return {};})();
 function apiUrl(p){return location.protocol+'//'+location.host+p;}
 function esc(t){return String(t==null?'':t).replace(/[&<>"']/g,function(m){return ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;'})[m];});}
 
