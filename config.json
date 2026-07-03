@@ -152,13 +152,15 @@
   },
   "banking": {
     "capital_one": {
+      "label": "Capital One",
+      "base_url": "https://capitalone.com",
       "client_id": "",
       "client_secret": "",
       "access_token": "",
       "refresh_token": "",
       "account_id": "",
       "enabled": false,
-      "note": "Add real Capital One Dev Environment credentials here via SSH on the Pi. Do not paste secrets into chat."
+      "note": "Click Link to connect your Capital One bank account for spending/saving."
     }
   }
 }

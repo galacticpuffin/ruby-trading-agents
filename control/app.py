@@ -254,8 +254,16 @@ async def api_integrations():
         cfg = json.loads(CONFIG_PATH.read_text())
     except Exception:
         cfg = {}
-    brokers = cfg.get("brokers", {})
-    return JSONResponse({"integrations": [dict(v, key=k) for k,v in brokers.items()]})
+    items = []
+    for k, v in cfg.get("brokers", {}).items():
+        it = dict(v, key=k)
+        it["type"] = "broker"
+        items.append(it)
+    for k, v in cfg.get("banking", {}).items():
+        it = dict(v, key=k)
+        it["type"] = "bank"
+        items.append(it)
+    return JSONResponse({"integrations": items})
 
 
 @app.post("/api/integrations")
@@ -264,10 +272,16 @@ async def api_integrations_save(request: Request):
     try:
         cfg = json.loads(CONFIG_PATH.read_text())
     except Exception:
-        cfg = {"brokers": {}}
-    cfg.setdefault("brokers", {}).update(body)
+        cfg = {"brokers": {}, "banking": {}}
+    itype = (body or {}).get("type", "broker")
+    key = body.get("key")
+    if not key:
+        return JSONResponse({"ok": False, "error": "missing key"}, status_code=400)
+    section_key = "banking" if itype == "bank" else "brokers"
+    section = cfg.setdefault(section_key, {})
+    section[key] = {k: v for k, v in body.items() if k not in ("type", "key")}
     CONFIG_PATH.write_text(json.dumps(cfg, indent=2))
-    return JSONResponse({"ok": True, "integrations": [dict(v, key=k) for k,v in cfg.get("brokers", {}).items()]})
+    return JSONResponse({"ok": True, "integrations": _normalize_integrations(cfg)})
 
 
 @app.post("/api/integrations/{key}/link")
@@ -276,16 +290,40 @@ async def api_integrations_link(key: str, request: Request):
     try:
         cfg = json.loads(CONFIG_PATH.read_text())
     except Exception:
-        cfg = {"brokers": {}}
-    section = cfg.setdefault("brokers", {}).setdefault(key, {})
+        cfg = {"brokers": {}, "banking": {}}
+    # Support both broker and bank keys
+    section = cfg.get("brokers", {}).get(key)
+    if section is None:
+        section = cfg.setdefault("banking", {}).setdefault(key, {})
+    else:
+        cfg.setdefault("brokers", {})[key] = section
     section.update({
         "linked": True,
-        "api_key": body.get("api_key", ""),
-        "api_secret": body.get("api_secret", ""),
-        "redirect_uri": body.get("redirect_uri", ""),
+        "api_key": body.get("api_key", section.get("api_key", "") if isinstance(section, dict) else ""),
+        "api_secret": body.get("api_secret", section.get("api_secret", "") if isinstance(section, dict) else ""),
+        "redirect_uri": body.get("redirect_uri", section.get("redirect_uri", "") if isinstance(section, dict) else ""),
+        "client_id": body.get("client_id", section.get("client_id", "") if isinstance(section, dict) else ""),
+        "client_secret": body.get("client_secret", section.get("client_secret", "") if isinstance(section, dict) else ""),
+        "access_token": body.get("access_token", section.get("access_token", "") if isinstance(section, dict) else ""),
+        "refresh_token": body.get("refresh_token", section.get("refresh_token", "") if isinstance(section, dict) else ""),
+        "account_id": body.get("account_id", section.get("account_id", "") if isinstance(section, dict) else ""),
+        "enabled": True,
     })
     CONFIG_PATH.write_text(json.dumps(cfg, indent=2))
     return JSONResponse({"ok": True, "key": key})
+
+
+def _normalize_integrations(cfg):
+    items = []
+    for k, v in cfg.get("brokers", {}).items():
+        it = dict(v, key=k)
+        it["type"] = "broker"
+        items.append(it)
+    for k, v in cfg.get("banking", {}).items():
+        it = dict(v, key=k)
+        it["type"] = "bank"
+        items.append(it)
+    return items
 
 
 def _invoke_agent(agent: str):
