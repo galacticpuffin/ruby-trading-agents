@@ -11,3 +11,10 @@ node_modules/
 *.jsonl
 shared/state/*.json
 shared/state/snapshots/
+# Secrets
+app_secret
+*.secret
+*.pem
+*.key
+.env.local
+.env.*.local
