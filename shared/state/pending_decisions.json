@@ -1,159 +1,6 @@
 {
   "queue": [
     {
-      "id": "gold_bars_1783033173247",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "JM Bullion",
-        "url": "https://www.jmbullion.com",
-        "weight_oz": 20,
-        "price_per_oz": 2386.73,
-        "total_usd": 47734.67,
-        "payment_method": "capital_one"
-      },
-      "status": "pending",
-      "submitted_at": 1783033173.2473958,
-      "decided_at": null,
-      "operator_action": null
-    },
-    {
-      "id": "gold_bars_1783033174945",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Kitco",
-        "url": "https://www.kitco.com",
-        "weight_oz": 5,
-        "price_per_oz": 2815.17,
-        "total_usd": 14075.85,
-        "payment_method": "capital_one"
-      },
-      "status": "pending",
-      "submitted_at": 1783033174.945659,
-      "decided_at": null,
-      "operator_action": null
-    },
-    {
-      "id": "gold_bars_1783033176527",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "APMEX",
-        "url": "https://www.apmex.com",
-        "weight_oz": 10,
-        "price_per_oz": 2842.18,
-        "total_usd": 28421.83,
-        "payment_method": "capital_one"
-      },
-      "status": "pending",
-      "submitted_at": 1783033176.5276916,
-      "decided_at": null,
-      "operator_action": null
-    },
-    {
-      "id": "gold_bars_1783033177946",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Provident Metals",
-        "url": "https://www.providentmetals.com",
-        "weight_oz": 5,
-        "price_per_oz": 2766.92,
-        "total_usd": 13834.62,
-        "payment_method": "capital_one"
-      },
-      "status": "pending",
-      "submitted_at": 1783033177.9462655,
-      "decided_at": null,
-      "operator_action": null
-    },
-    {
-      "id": "gold_bars_1783033179458",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Provident Metals",
-        "url": "https://www.providentmetals.com",
-        "weight_oz": 5,
-        "price_per_oz": 2568.77,
-        "total_usd": 12843.86,
-        "payment_method": "capital_one"
-      },
-      "status": "pending",
-      "submitted_at": 1783033179.4581816,
-      "decided_at": null,
-      "operator_action": null
-    },
-    {
-      "id": "gold_bars_1783033180956",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Provident Metals",
-        "url": "https://www.providentmetals.com",
-        "weight_oz": 2,
-        "price_per_oz": 2533.14,
-        "total_usd": 5066.27,
-        "payment_method": "capital_one"
-      },
-      "status": "pending",
-      "submitted_at": 1783033180.956493,
-      "decided_at": null,
-      "operator_action": null
-    },
-    {
-      "id": "gold_bars_1783033182518",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "JM Bullion",
-        "url": "https://www.jmbullion.com",
-        "weight_oz": 1,
-        "price_per_oz": 2740.61,
-        "total_usd": 2740.61,
-        "payment_method": "capital_one"
-      },
-      "status": "pending",
-      "submitted_at": 1783033182.5185657,
-      "decided_at": null,
-      "operator_action": null
-    },
-    {
-      "id": "gold_bars_1783033184082",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "APMEX",
-        "url": "https://www.apmex.com",
-        "weight_oz": 1,
-        "price_per_oz": 2807.19,
-        "total_usd": 2807.19,
-        "payment_method": "capital_one"
-      },
-      "status": "pending",
-      "submitted_at": 1783033184.08218,
-      "decided_at": null,
-      "operator_action": null
-    },
-    {
-      "id": "gold_bars_1783033185703",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "APMEX",
-        "url": "https://www.apmex.com",
-        "weight_oz": 10,
-        "price_per_oz": 2320.45,
-        "total_usd": 23204.54,
-        "payment_method": "capital_one"
-      },
-      "status": "pending",
-      "submitted_at": 1783033185.7035072,
-      "decided_at": null,
-      "operator_action": null
-    },
-    {
       "id": "gold_bars_1783033187130",
       "agent": "gold_bars",
       "type": "buy_gold_bar",
@@ -165,10 +12,10 @@
         "total_usd": 2389.1,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033187.130783,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.1067328,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033188769",
@@ -182,10 +29,10 @@
         "total_usd": 5627.75,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033188.7696722,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.1294215,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033190242",
@@ -199,10 +46,10 @@
         "total_usd": 13225.18,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033190.2427998,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.152267,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033191817",
@@ -216,10 +63,10 @@
         "total_usd": 4634.71,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033191.8175337,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.175283,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033193237",
@@ -233,10 +80,10 @@
         "total_usd": 26452.03,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033193.237484,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.1980371,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033194942",
@@ -250,10 +97,10 @@
         "total_usd": 2891.91,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033194.9420888,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.2211287,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033196417",
@@ -267,10 +114,10 @@
         "total_usd": 25014.41,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033196.4178994,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.244478,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033197934",
@@ -284,10 +131,10 @@
         "total_usd": 2891.65,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033197.9345336,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.2680159,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033199615",
@@ -301,10 +148,10 @@
         "total_usd": 27799.91,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033199.6153963,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.2909894,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033215993",
@@ -318,10 +165,10 @@
         "total_usd": 25622.48,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033215.9936807,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.314748,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033232440",
@@ -335,10 +182,10 @@
         "total_usd": 51450.91,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033232.4405158,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.3370216,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033248937",
@@ -352,10 +199,10 @@
         "total_usd": 5435.73,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033248.9376814,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.3600445,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033261270",
@@ -369,10 +216,10 @@
         "total_usd": 12228.21,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033261.2701197,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.3830848,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033263380",
@@ -386,10 +233,10 @@
         "total_usd": 47002.95,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033263.3802087,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.4062662,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033279776",
@@ -403,10 +250,10 @@
         "total_usd": 13081.48,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033279.776494,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.4293876,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033294147",
@@ -420,10 +267,10 @@
         "total_usd": 2846.78,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033294.1472433,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.4525747,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033296286",
@@ -437,10 +284,10 @@
         "total_usd": 4611.59,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033296.2864664,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.475767,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033312754",
@@ -454,10 +301,10 @@
         "total_usd": 13521.83,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033312.754668,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.498979,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033326608",
@@ -471,10 +318,10 @@
         "total_usd": 5567.85,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033326.6089594,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.5220854,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033327952",
@@ -488,10 +335,10 @@
         "total_usd": 28764.41,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033327.952465,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.545231,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033329329",
@@ -505,10 +352,10 @@
         "total_usd": 49750.07,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033329.3293087,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.5683558,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033330732",
@@ -522,10 +369,10 @@
         "total_usd": 28513.51,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033330.732859,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.5917003,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033332191",
@@ -539,10 +386,10 @@
         "total_usd": 2834.73,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033332.1916928,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.677103,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033348608",
@@ -556,10 +403,10 @@
         "total_usd": 12904.37,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033348.6086206,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.6996183,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033365023",
@@ -573,10 +420,10 @@
         "total_usd": 2699.01,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033365.0233352,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.722841,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033381505",
@@ -590,10 +437,10 @@
         "total_usd": 28363.01,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033381.5055315,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.7460244,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033393261",
@@ -607,10 +454,10 @@
         "total_usd": 12467.11,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033393.2619314,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.7692769,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033394890",
@@ -624,10 +471,10 @@
         "total_usd": 46171.56,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033394.8909645,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.7927685,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033411308",
@@ -641,10 +488,10 @@
         "total_usd": 47068.07,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033411.3088248,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.8163376,
+      "operator_action": "approved"
     },
     {
       "id": "gold_stocks_1783033419161",
@@ -657,10 +504,10 @@
         "to_gold_bars_agent": 7704365238693397.0,
         "remaining_reinvested": 1.5408730477386794e+16
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033419.1615143,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.8400154,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033426217",
@@ -674,10 +521,10 @@
         "total_usd": 5591.49,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033426.2178361,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.8633952,
+      "operator_action": "approved"
     },
     {
       "id": "it_1783033426476",
@@ -692,10 +539,10 @@
         "approved_action": null,
         "operator_action": null
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033426.4769208,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783037086.4091372,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033428341",
@@ -709,10 +556,10 @@
         "total_usd": 2796.34,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033428.3412735,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.8868606,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033444838",
@@ -726,10 +573,10 @@
         "total_usd": 2656.02,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033444.8381834,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.910494,
+      "operator_action": "approved"
     },
     {
       "id": "it_1783033445053",
@@ -744,10 +591,10 @@
         "approved_action": null,
         "operator_action": null
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033445.0532458,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783037086.4335032,
+      "operator_action": "approved"
     },
     {
       "id": "trumpgov_1783033445398",
@@ -767,10 +614,10 @@
         "expected_hold": "30-90 days",
         "target_return_pct": 15.0
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033445.398413,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.933746,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033458772",
@@ -784,10 +631,10 @@
         "total_usd": 13998.07,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033458.7721984,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.9571223,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033475214",
@@ -801,10 +648,10 @@
         "total_usd": 4797.2,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033475.2147284,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035657.980636,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033488942",
@@ -818,10 +665,10 @@
         "total_usd": 11586.32,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033488.9426386,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.0040317,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033505538",
@@ -835,10 +682,10 @@
         "total_usd": 49134.41,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033505.5380096,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.0276153,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033520505",
@@ -852,10 +699,10 @@
         "total_usd": 47370.36,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033520.5053022,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.0510437,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033522312",
@@ -869,10 +716,10 @@
         "total_usd": 5154.22,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033522.3128011,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.0746295,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033538834",
@@ -886,10 +733,10 @@
         "total_usd": 4737.38,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033538.834578,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.09811,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033552736",
@@ -903,10 +750,10 @@
         "total_usd": 27436.16,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033552.7366784,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.2633061,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033554800",
@@ -920,10 +767,10 @@
         "total_usd": 24277.83,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033554.8005424,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.2859957,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033571286",
@@ -937,10 +784,10 @@
         "total_usd": 2589.85,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033571.28682,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.3090546,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033585029",
@@ -954,10 +801,10 @@
         "total_usd": 2776.7,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033585.0292017,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.332525,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033601443",
@@ -971,10 +818,10 @@
         "total_usd": 23686.23,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033601.4439294,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.3588226,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033615103",
@@ -988,10 +835,10 @@
         "total_usd": 4847.39,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033615.1035113,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.4822137,
+      "operator_action": "approved"
     },
     {
       "id": "it_1783033615320",
@@ -1046,10 +893,10 @@
         "total_usd": 5133.04,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033631.6335657,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.574723,
+      "operator_action": "approved"
     },
     {
       "id": "trumpgov_1783033632208",
@@ -1070,10 +917,10 @@
         "expected_hold": "30-90 days",
         "target_return_pct": 15.0
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033632.208587,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.5975723,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033645324",
@@ -1087,10 +934,10 @@
         "total_usd": 49511.38,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033645.3240044,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.6206331,
+      "operator_action": "approved"
     },
     {
       "id": "it_1783033645537",
@@ -1129,10 +976,10 @@
         "expected_hold": "30-90 days",
         "target_return_pct": 15.0
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033645.889219,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.6442273,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033661911",
@@ -1146,10 +993,10 @@
         "total_usd": 12773.51,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033661.9115958,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.6679676,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033675453",
@@ -1163,10 +1010,10 @@
         "total_usd": 2875.97,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033675.4532738,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.6917586,
+      "operator_action": "approved"
     },
     {
       "id": "trumpgov_1783033682351",
@@ -1187,10 +1034,10 @@
         "expected_hold": "30-90 days",
         "target_return_pct": 15.0
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033682.3518023,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.7156122,
+      "operator_action": "approved"
     },
     {
       "id": "trumpgov_1783033682353",
@@ -1211,10 +1058,10 @@
         "expected_hold": "30-90 days",
         "target_return_pct": 15.0
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033682.3537924,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.7392576,
+      "operator_action": "approved"
     },
     {
       "id": "trumpgov_1783033682355",
@@ -1235,10 +1082,10 @@
         "expected_hold": "30-90 days",
         "target_return_pct": 15.0
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033682.3557734,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.7630332,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033691972",
@@ -1252,10 +1099,10 @@
         "total_usd": 5789.71,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033691.972988,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.7868385,
+      "operator_action": "approved"
     },
     {
       "id": "it_1783033692188",
@@ -1287,10 +1134,10 @@
         "total_usd": 4991.73,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033705.5603049,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.810647,
+      "operator_action": "approved"
     },
     {
       "id": "master_1783033707494_4007",
@@ -1318,10 +1165,10 @@
         "total_usd": 2386.33,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033722.101772,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.8344955,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033735703",
@@ -1335,10 +1182,10 @@
         "total_usd": 26645.05,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033735.7037706,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.8582423,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033752191",
@@ -1352,10 +1199,10 @@
         "total_usd": 2485.57,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033752.1916435,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.8820498,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033765888",
@@ -1369,10 +1216,10 @@
         "total_usd": 2405.12,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033765.8889503,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.9063747,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033782421",
@@ -1386,10 +1233,10 @@
         "total_usd": 5522.41,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033782.421996,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.930616,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033796007",
@@ -1403,10 +1250,10 @@
         "total_usd": 4649.86,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033796.0078769,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.9536548,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033812470",
@@ -1420,10 +1267,10 @@
         "total_usd": 49565.45,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033812.4701564,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035658.977746,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033821915",
@@ -1437,10 +1284,10 @@
         "total_usd": 2653.97,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033821.9156234,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.001325,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033823530",
@@ -1454,10 +1301,10 @@
         "total_usd": 46844.59,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033823.5307589,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.0251951,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033825802",
@@ -1471,10 +1318,10 @@
         "total_usd": 5410.79,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033825.802679,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.0489306,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033828209",
@@ -1488,10 +1335,10 @@
         "total_usd": 11962.31,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033828.2090917,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.072852,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033830394",
@@ -1505,10 +1352,10 @@
         "total_usd": 25847.89,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033830.3948622,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.0966182,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033832677",
@@ -1522,10 +1369,10 @@
         "total_usd": 55881.97,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033832.6775174,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.1204169,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033834814",
@@ -1539,10 +1386,10 @@
         "total_usd": 11734.08,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033834.8143973,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.144244,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033836422",
@@ -1556,10 +1403,10 @@
         "total_usd": 13074.86,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033836.4228508,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.1680143,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033838022",
@@ -1573,10 +1420,10 @@
         "total_usd": 50385.86,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033838.022441,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.191912,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033840380",
@@ -1590,10 +1437,10 @@
         "total_usd": 14100.8,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033840.380399,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.2157428,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033842563",
@@ -1607,10 +1454,10 @@
         "total_usd": 27997.08,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033842.5636582,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.2395983,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033844775",
@@ -1624,10 +1471,10 @@
         "total_usd": 11968.63,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033844.7751532,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.2634382,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033847013",
@@ -1641,10 +1488,10 @@
         "total_usd": 12391.25,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033847.0137556,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.2873127,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033848639",
@@ -1658,10 +1505,10 @@
         "total_usd": 24083.23,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033848.639134,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.311517,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033850812",
@@ -1675,10 +1522,10 @@
         "total_usd": 12359.48,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033850.812889,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.3351555,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033852257",
@@ -1692,10 +1539,10 @@
         "total_usd": 2569.55,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033852.257611,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.3590581,
+      "operator_action": "approved"
     },
     {
       "id": "it_1783033852468",
@@ -1710,10 +1557,10 @@
         "approved_action": null,
         "operator_action": null
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033852.4683745,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783037086.4576516,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033853652",
@@ -1727,10 +1574,10 @@
         "total_usd": 55573.45,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033853.6523333,
-      "decided_at": null,
-      "operator_action": null
+      "decided_at": 1783035659.3830245,
+      "operator_action": "approved"
     },
     {
       "id": "gold_bars_1783033855057",
@@ -1744,8 +1591,200 @@
         "total_usd": 2776.69,
         "payment_method": "capital_one"
       },
-      "status": "pending",
+      "status": "resolved",
       "submitted_at": 1783033855.057916,
+      "decided_at": 1783035659.4067905,
+      "operator_action": "approved"
+    },
+    {
+      "id": "trumpgov_1783035485536",
+      "agent": "trumpgov",
+      "type": "investment_suggestion",
+      "payload": {
+        "symbol": "NVDA",
+        "type": "quick_flip",
+        "reason": "Policy impact: ['energy', 'technology'] | SLB (SLB) Secures Seven Year Kuwait Oil Deal And Opens Global Tech Hub",
+        "source_url": "https://finance.yahoo.com/energy/articles/slb-slb-secures-seven-kuwait-181421636.html",
+        "source_title": "SLB (SLB) Secures Seven Year Kuwait Oil Deal And Opens Global Tech Hub",
+        "sectors": [
+          "energy",
+          "technology"
+        ],
+        "impact_score": 4,
+        "suggested_allocation_pct": 0.1,
+        "expected_hold": "30-90 days",
+        "target_return_pct": 15.0
+      },
+      "status": "resolved",
+      "submitted_at": 1783035485.5362992,
+      "decided_at": 1783035659.430918,
+      "operator_action": "approved"
+    },
+    {
+      "id": "it_1783036411012",
+      "agent": "it",
+      "type": "fix",
+      "payload": {
+        "issue_type": "error_storm",
+        "priority": "high",
+        "detail": "35 errors in recent logs.",
+        "action": "auto_fix_high_confidence",
+        "success_rate": 1.0,
+        "approved_action": null,
+        "operator_action": null
+      },
+      "status": "resolved",
+      "submitted_at": 1783036411.012779,
+      "decided_at": 1783037086.4839535,
+      "operator_action": "approved"
+    },
+    {
+      "id": "trumpgov_1783037289266",
+      "agent": "trumpgov",
+      "type": "investment_suggestion",
+      "payload": {
+        "symbol": "GOOGL",
+        "type": "quick_flip",
+        "reason": "Policy impact: ['defense', 'technology'] | General Dynamics Vs. Lockheed Martin: Buy General Dynamics for Deep Marine Backlogs",
+        "source_url": "https://247wallst.com/investing/2026/07/02/general-dynamics-vs-lockheed-martin-buy-general-dynamics-for-deep-marine-backlogs/",
+        "source_title": "General Dynamics Vs. Lockheed Martin: Buy General Dynamics for Deep Marine Backlogs",
+        "sectors": [
+          "defense",
+          "technology"
+        ],
+        "impact_score": 4,
+        "suggested_allocation_pct": 0.1,
+        "expected_hold": "30-90 days",
+        "target_return_pct": 15.0
+      },
+      "status": "pending",
+      "submitted_at": 1783037289.2664697,
+      "decided_at": null,
+      "operator_action": null
+    },
+    {
+      "id": "trumpgov_1783037289267",
+      "agent": "trumpgov",
+      "type": "investment_suggestion",
+      "payload": {
+        "symbol": "GOOGL",
+        "type": "quick_flip",
+        "reason": "Policy impact: ['defense', 'technology'] | Why Boeing (BA) Stock Is Trading Up Today",
+        "source_url": "https://finance.yahoo.com/markets/stocks/articles/why-boeing-ba-stock-trading-220424637.html",
+        "source_title": "Why Boeing (BA) Stock Is Trading Up Today",
+        "sectors": [
+          "defense",
+          "technology"
+        ],
+        "impact_score": 4,
+        "suggested_allocation_pct": 0.1,
+        "expected_hold": "30-90 days",
+        "target_return_pct": 15.0
+      },
+      "status": "pending",
+      "submitted_at": 1783037289.2678437,
+      "decided_at": null,
+      "operator_action": null
+    },
+    {
+      "id": "trumpgov_1783037289270",
+      "agent": "trumpgov",
+      "type": "investment_suggestion",
+      "payload": {
+        "symbol": "GOOGL",
+        "type": "quick_flip",
+        "reason": "Policy impact: ['energy', 'technology'] | SLB (SLB) Secures Seven Year Kuwait Oil Deal And Opens Global Tech Hub",
+        "source_url": "https://finance.yahoo.com/energy/articles/slb-slb-secures-seven-kuwait-181421636.html",
+        "source_title": "SLB (SLB) Secures Seven Year Kuwait Oil Deal And Opens Global Tech Hub",
+        "sectors": [
+          "energy",
+          "technology"
+        ],
+        "impact_score": 4,
+        "suggested_allocation_pct": 0.1,
+        "expected_hold": "30-90 days",
+        "target_return_pct": 15.0
+      },
+      "status": "pending",
+      "submitted_at": 1783037289.2700672,
+      "decided_at": null,
+      "operator_action": null
+    },
+    {
+      "id": "it_1783037314310",
+      "agent": "it",
+      "type": "fix",
+      "payload": {
+        "issue_type": "error_storm",
+        "priority": "high",
+        "detail": "34 errors in recent logs.",
+        "action": "auto_fix_high_confidence",
+        "success_rate": 1.0,
+        "approved_action": null,
+        "operator_action": null
+      },
+      "status": "pending",
+      "submitted_at": 1783037314.3104908,
+      "decided_at": null,
+      "operator_action": null
+    },
+    {
+      "id": "it_1783038214715",
+      "agent": "it",
+      "type": "fix",
+      "payload": {
+        "issue_type": "error_storm",
+        "priority": "high",
+        "detail": "32 errors in recent logs.",
+        "action": "auto_fix_high_confidence",
+        "success_rate": 1.0,
+        "approved_action": null,
+        "operator_action": null
+      },
+      "status": "pending",
+      "submitted_at": 1783038214.7151313,
+      "decided_at": null,
+      "operator_action": null
+    },
+    {
+      "id": "trumpgov_1783039092648",
+      "agent": "trumpgov",
+      "type": "investment_suggestion",
+      "payload": {
+        "symbol": "GOOGL",
+        "type": "quick_flip",
+        "reason": "Policy impact: ['defense', 'technology'] | LMT Stock Gains Nearly 5% \u2014 Lockheed Martin Emerges As Frontrunner For Ultra Maritime In Potential $3.5B Deal",
+        "source_url": "https://stocktwits.com/news-articles/markets/equity/lmt-stock-gains-lockheed-martin-leads-race-for-ultra-maritime-3-5b-deal/cZm973IR7j9",
+        "source_title": "LMT Stock Gains Nearly 5% \u2014 Lockheed Martin Emerges As Frontrunner For Ultra Maritime In Potential $3.5B Deal",
+        "sectors": [
+          "defense",
+          "technology"
+        ],
+        "impact_score": 4,
+        "suggested_allocation_pct": 0.1,
+        "expected_hold": "30-90 days",
+        "target_return_pct": 15.0
+      },
+      "status": "pending",
+      "submitted_at": 1783039092.6480186,
+      "decided_at": null,
+      "operator_action": null
+    },
+    {
+      "id": "it_1783039117691",
+      "agent": "it",
+      "type": "fix",
+      "payload": {
+        "issue_type": "error_storm",
+        "priority": "high",
+        "detail": "31 errors in recent logs.",
+        "action": "auto_fix_high_confidence",
+        "success_rate": 1.0,
+        "approved_action": null,
+        "operator_action": null
+      },
+      "status": "pending",
+      "submitted_at": 1783039117.691364,
       "decided_at": null,
       "operator_action": null
     }

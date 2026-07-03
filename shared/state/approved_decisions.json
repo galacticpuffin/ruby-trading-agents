@@ -1,1751 +1,6 @@
 {
   "history": [
     {
-      "id": "oil_stocks_1783030462326",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 16895731.26,
-        "to_oil_opportunity_agent": 4223932.82,
-        "to_savings": 4223932.82,
-        "remaining_reinvested": 8447865.63
-      },
-      "status": "expired",
-      "submitted_at": 1783030462.326639,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030463655",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 644276863.57,
-        "to_gold_bars_agent": 161069215.89,
-        "to_savings": 161069215.89,
-        "remaining_reinvested": 322138431.78
-      },
-      "status": "expired",
-      "submitted_at": 1783030463.6558213,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030463707",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "APMEX",
-        "url": "https://www.apmex.com",
-        "weight_oz": 2,
-        "price_per_oz": 2842.06,
-        "total_usd": 5684.12,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030463.7074032,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030463776",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 4751171.33,
-        "to_oil_opportunity_agent": 1187792.83,
-        "to_savings": 1187792.83,
-        "remaining_reinvested": 2375585.66
-      },
-      "status": "expired",
-      "submitted_at": 1783030463.7764595,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030465111",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 59750804.39,
-        "to_gold_bars_agent": 14937701.1,
-        "to_savings": 14937701.1,
-        "remaining_reinvested": 29875402.2
-      },
-      "status": "expired",
-      "submitted_at": 1783030465.111951,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030465158",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "APMEX",
-        "url": "https://www.apmex.com",
-        "weight_oz": 5,
-        "price_per_oz": 2340.11,
-        "total_usd": 11700.55,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030465.1582813,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030465228",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 52932792.26,
-        "to_oil_opportunity_agent": 13233198.07,
-        "to_savings": 13233198.07,
-        "remaining_reinvested": 26466396.13
-      },
-      "status": "expired",
-      "submitted_at": 1783030465.2283072,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030466520",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 142645141.46,
-        "to_gold_bars_agent": 35661285.37,
-        "to_savings": 35661285.37,
-        "remaining_reinvested": 71322570.73
-      },
-      "status": "expired",
-      "submitted_at": 1783030466.5202866,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030466565",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Kitco",
-        "url": "https://www.kitco.com",
-        "weight_oz": 2,
-        "price_per_oz": 2476.56,
-        "total_usd": 4953.12,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030466.5659611,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030466651",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 24232509.8,
-        "to_oil_opportunity_agent": 6058127.45,
-        "to_savings": 6058127.45,
-        "remaining_reinvested": 12116254.9
-      },
-      "status": "expired",
-      "submitted_at": 1783030466.6511307,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030468024",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 391952340.85,
-        "to_gold_bars_agent": 97988085.21,
-        "to_savings": 97988085.21,
-        "remaining_reinvested": 195976170.43
-      },
-      "status": "expired",
-      "submitted_at": 1783030468.0240788,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030468072",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Provident Metals",
-        "url": "https://www.providentmetals.com",
-        "weight_oz": 10,
-        "price_per_oz": 2538.61,
-        "total_usd": 25386.12,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030468.0727725,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030468142",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 49494328.75,
-        "to_oil_opportunity_agent": 12373582.19,
-        "to_savings": 12373582.19,
-        "remaining_reinvested": 24747164.37
-      },
-      "status": "expired",
-      "submitted_at": 1783030468.1420908,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030469442",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 1220014179.56,
-        "to_gold_bars_agent": 305003544.89,
-        "to_savings": 305003544.89,
-        "remaining_reinvested": 610007089.78
-      },
-      "status": "expired",
-      "submitted_at": 1783030469.44201,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030469495",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Provident Metals",
-        "url": "https://www.providentmetals.com",
-        "weight_oz": 20,
-        "price_per_oz": 2719.81,
-        "total_usd": 54396.21,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030469.4953086,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030469574",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 30624787.51,
-        "to_oil_opportunity_agent": 7656196.88,
-        "to_savings": 7656196.88,
-        "remaining_reinvested": 15312393.76
-      },
-      "status": "expired",
-      "submitted_at": 1783030469.5744686,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030470871",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 1635388507.91,
-        "to_gold_bars_agent": 408847126.98,
-        "to_savings": 408847126.98,
-        "remaining_reinvested": 817694253.96
-      },
-      "status": "expired",
-      "submitted_at": 1783030470.8718069,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030470918",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "JM Bullion",
-        "url": "https://www.jmbullion.com",
-        "weight_oz": 20,
-        "price_per_oz": 2510.49,
-        "total_usd": 50209.76,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030470.9189742,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030470988",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 55218841.94,
-        "to_oil_opportunity_agent": 13804710.48,
-        "to_savings": 13804710.48,
-        "remaining_reinvested": 27609420.97
-      },
-      "status": "expired",
-      "submitted_at": 1783030470.9887853,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030472380",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 1976372763.84,
-        "to_gold_bars_agent": 494093190.96,
-        "to_savings": 494093190.96,
-        "remaining_reinvested": 988186381.92
-      },
-      "status": "expired",
-      "submitted_at": 1783030472.3802195,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030472426",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Provident Metals",
-        "url": "https://www.providentmetals.com",
-        "weight_oz": 10,
-        "price_per_oz": 2431.36,
-        "total_usd": 24313.56,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030472.4267926,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030472496",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 20709262.37,
-        "to_oil_opportunity_agent": 5177315.59,
-        "to_savings": 5177315.59,
-        "remaining_reinvested": 10354631.19
-      },
-      "status": "expired",
-      "submitted_at": 1783030472.4963627,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030473953",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 132080618.41,
-        "to_gold_bars_agent": 33020154.6,
-        "to_savings": 33020154.6,
-        "remaining_reinvested": 66040309.21
-      },
-      "status": "expired",
-      "submitted_at": 1783030473.953024,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030474003",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "APMEX",
-        "url": "https://www.apmex.com",
-        "weight_oz": 2,
-        "price_per_oz": 2796.89,
-        "total_usd": 5593.78,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030474.003582,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030474073",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 113110250.55,
-        "to_oil_opportunity_agent": 28277562.64,
-        "to_savings": 28277562.64,
-        "remaining_reinvested": 56555125.28
-      },
-      "status": "expired",
-      "submitted_at": 1783030474.0736356,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030475393",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 3256727940.24,
-        "to_gold_bars_agent": 814181985.06,
-        "to_savings": 814181985.06,
-        "remaining_reinvested": 1628363970.12
-      },
-      "status": "expired",
-      "submitted_at": 1783030475.393686,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030475439",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Kitco",
-        "url": "https://www.kitco.com",
-        "weight_oz": 5,
-        "price_per_oz": 2737.9,
-        "total_usd": 13689.52,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030475.4396644,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030475506",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 11454887.65,
-        "to_oil_opportunity_agent": 2863721.91,
-        "to_savings": 2863721.91,
-        "remaining_reinvested": 5727443.82
-      },
-      "status": "expired",
-      "submitted_at": 1783030475.5066037,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030476875",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 343032875.03,
-        "to_gold_bars_agent": 85758218.76,
-        "to_savings": 85758218.76,
-        "remaining_reinvested": 171516437.51
-      },
-      "status": "expired",
-      "submitted_at": 1783030476.8754466,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030476921",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Provident Metals",
-        "url": "https://www.providentmetals.com",
-        "weight_oz": 20,
-        "price_per_oz": 2874.79,
-        "total_usd": 57495.82,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030476.9218528,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030476989",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 30397730.56,
-        "to_oil_opportunity_agent": 7599432.64,
-        "to_savings": 7599432.64,
-        "remaining_reinvested": 15198865.28
-      },
-      "status": "expired",
-      "submitted_at": 1783030476.9894915,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "trumpgov_1783030477468",
-      "agent": "trumpgov",
-      "type": "investment_suggestion",
-      "payload": {
-        "symbol": "O",
-        "type": "quick_flip",
-        "reason": "Policy impact: ['technology'] | Trump&#x2019;s billion-dollar crypto haul triggers some everyday investors sitting on big losses",
-        "source_url": "https://www.marketwatch.com/story/trumps-billion-dollar-crypto-haul-triggers-some-everyday-investors-sitting-on-big-losses-9f045f00?mod=mw_rss_topstories",
-        "source_title": "Trump&#x2019;s billion-dollar crypto haul triggers some everyday investors sitting on big losses",
-        "sectors": [
-          "technology"
-        ],
-        "impact_score": 2,
-        "suggested_allocation_pct": 0.1,
-        "expected_hold": "30-90 days",
-        "target_return_pct": 15.0
-      },
-      "status": "expired",
-      "submitted_at": 1783030477.4687936,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030478327",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 4228049453.81,
-        "to_gold_bars_agent": 1057012363.45,
-        "to_savings": 1057012363.45,
-        "remaining_reinvested": 2114024726.91
-      },
-      "status": "expired",
-      "submitted_at": 1783030478.3273969,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030478373",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Provident Metals",
-        "url": "https://www.providentmetals.com",
-        "weight_oz": 5,
-        "price_per_oz": 2765.96,
-        "total_usd": 13829.81,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030478.3731363,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030478439",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 94094066.04,
-        "to_oil_opportunity_agent": 23523516.51,
-        "to_savings": 23523516.51,
-        "remaining_reinvested": 47047033.02
-      },
-      "status": "expired",
-      "submitted_at": 1783030478.4395103,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030479921",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 2894520566.46,
-        "to_gold_bars_agent": 723630141.61,
-        "to_savings": 723630141.61,
-        "remaining_reinvested": 1447260283.23
-      },
-      "status": "expired",
-      "submitted_at": 1783030479.9211795,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030479967",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Kitco",
-        "url": "https://www.kitco.com",
-        "weight_oz": 2,
-        "price_per_oz": 2878.54,
-        "total_usd": 5757.08,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030479.967765,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030480035",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 19717107.9,
-        "to_oil_opportunity_agent": 4929276.97,
-        "to_savings": 4929276.97,
-        "remaining_reinvested": 9858553.95
-      },
-      "status": "expired",
-      "submitted_at": 1783030480.0356572,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "dividend_1783030481469",
-      "agent": "dividend",
-      "type": "weekly_dividend_investment",
-      "payload": {
-        "allocations": [
-          {
-            "symbol": "T",
-            "amount": 100.0,
-            "yield": 6.4,
-            "name": "AT&T"
-          }
-        ],
-        "weekly_budget": 100,
-        "broker": null,
-        "annualized_project": 332.8,
-        "status": "pending_broker_link"
-      },
-      "status": "expired",
-      "submitted_at": 1783030481.4696474,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030481642",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 1103507372.83,
-        "to_gold_bars_agent": 275876843.21,
-        "to_savings": 275876843.21,
-        "remaining_reinvested": 551753686.41
-      },
-      "status": "expired",
-      "submitted_at": 1783030481.6423123,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030481688",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "JM Bullion",
-        "url": "https://www.jmbullion.com",
-        "weight_oz": 5,
-        "price_per_oz": 2376.36,
-        "total_usd": 11881.81,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030481.688833,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030481754",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 230062294.35,
-        "to_oil_opportunity_agent": 57515573.59,
-        "to_savings": 57515573.59,
-        "remaining_reinvested": 115031147.17
-      },
-      "status": "expired",
-      "submitted_at": 1783030481.7549229,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "it_1783030481896",
-      "agent": "it",
-      "type": "fix",
-      "payload": {
-        "issue_type": "decision_queue_overflow",
-        "priority": "low",
-        "detail": "104 pending decisions.",
-        "action": "auto_fix_high_confidence",
-        "success_rate": 1.0,
-        "approved_action": null,
-        "operator_action": null
-      },
-      "status": "expired",
-      "submitted_at": 1783030481.8967657,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030483050",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 5792967336.94,
-        "to_gold_bars_agent": 1448241834.24,
-        "to_savings": 1448241834.24,
-        "remaining_reinvested": 2896483668.47
-      },
-      "status": "expired",
-      "submitted_at": 1783030483.050412,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030483096",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "APMEX",
-        "url": "https://www.apmex.com",
-        "weight_oz": 5,
-        "price_per_oz": 2593.49,
-        "total_usd": 12967.45,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030483.0966969,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030483163",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 22461092.26,
-        "to_oil_opportunity_agent": 5615273.06,
-        "to_savings": 5615273.06,
-        "remaining_reinvested": 11230546.13
-      },
-      "status": "expired",
-      "submitted_at": 1783030483.163397,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "trumpgov_1783030483646",
-      "agent": "trumpgov",
-      "type": "investment_suggestion",
-      "payload": {
-        "symbol": "O",
-        "type": "quick_flip",
-        "reason": "Policy impact: ['technology'] | Palantir&#x2019;s stock bounces back as analyst cheers company&#x2019;s unique AI advantage",
-        "source_url": "https://www.marketwatch.com/story/palantirs-stock-bounces-back-as-analyst-cheers-companys-unique-ai-advantage-2f28698d?mod=mw_rss_topstories",
-        "source_title": "Palantir&#x2019;s stock bounces back as analyst cheers company&#x2019;s unique AI advantage",
-        "sectors": [
-          "technology"
-        ],
-        "impact_score": 2,
-        "suggested_allocation_pct": 0.1,
-        "expected_hold": "30-90 days",
-        "target_return_pct": 15.0
-      },
-      "status": "expired",
-      "submitted_at": 1783030483.646296,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030484555",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 662622170.72,
-        "to_gold_bars_agent": 165655542.68,
-        "to_savings": 165655542.68,
-        "remaining_reinvested": 331311085.36
-      },
-      "status": "expired",
-      "submitted_at": 1783030484.5556734,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030484601",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "JM Bullion",
-        "url": "https://www.jmbullion.com",
-        "weight_oz": 1,
-        "price_per_oz": 2676.96,
-        "total_usd": 2676.96,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030484.601712,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030484669",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 271466179.97,
-        "to_oil_opportunity_agent": 67866544.99,
-        "to_savings": 67866544.99,
-        "remaining_reinvested": 135733089.99
-      },
-      "status": "expired",
-      "submitted_at": 1783030484.6690128,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "trumpgov_1783030485185",
-      "agent": "trumpgov",
-      "type": "investment_suggestion",
-      "payload": {
-        "symbol": "O",
-        "type": "quick_flip",
-        "reason": "Policy impact: ['technology'] | This Adobe analyst is going against the grain by telling investors to buy the stock",
-        "source_url": "https://www.marketwatch.com/story/this-adobe-analyst-is-going-against-the-grain-by-telling-investors-to-buy-the-stock-8dadc0a5?mod=mw_rss_topstories",
-        "source_title": "This Adobe analyst is going against the grain by telling investors to buy the stock",
-        "sectors": [
-          "technology"
-        ],
-        "impact_score": 2,
-        "suggested_allocation_pct": 0.1,
-        "expected_hold": "30-90 days",
-        "target_return_pct": 15.0
-      },
-      "status": "expired",
-      "submitted_at": 1783030485.1854656,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030486044",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 774179205.26,
-        "to_gold_bars_agent": 193544801.32,
-        "to_savings": 193544801.32,
-        "remaining_reinvested": 387089602.63
-      },
-      "status": "expired",
-      "submitted_at": 1783030486.0440536,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030486091",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "JM Bullion",
-        "url": "https://www.jmbullion.com",
-        "weight_oz": 1,
-        "price_per_oz": 2683.99,
-        "total_usd": 2683.99,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030486.0910408,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030486160",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 287861108.97,
-        "to_oil_opportunity_agent": 71965277.24,
-        "to_savings": 71965277.24,
-        "remaining_reinvested": 143930554.48
-      },
-      "status": "expired",
-      "submitted_at": 1783030486.1602821,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030487541",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 809968084.65,
-        "to_gold_bars_agent": 202492021.16,
-        "to_savings": 202492021.16,
-        "remaining_reinvested": 404984042.32
-      },
-      "status": "expired",
-      "submitted_at": 1783030487.541035,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030487586",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Kitco",
-        "url": "https://www.kitco.com",
-        "weight_oz": 5,
-        "price_per_oz": 2692.2,
-        "total_usd": 13460.98,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030487.5867891,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030487653",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 51001938.47,
-        "to_oil_opportunity_agent": 12750484.62,
-        "to_savings": 12750484.62,
-        "remaining_reinvested": 25500969.23
-      },
-      "status": "expired",
-      "submitted_at": 1783030487.6534023,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030488956",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 7319014419.09,
-        "to_gold_bars_agent": 1829753604.77,
-        "to_savings": 1829753604.77,
-        "remaining_reinvested": 3659507209.55
-      },
-      "status": "expired",
-      "submitted_at": 1783030488.9562938,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030489003",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Kitco",
-        "url": "https://www.kitco.com",
-        "weight_oz": 10,
-        "price_per_oz": 2851.14,
-        "total_usd": 28511.36,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030489.003823,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030489071",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 27892640.64,
-        "to_oil_opportunity_agent": 6973160.16,
-        "to_savings": 6973160.16,
-        "remaining_reinvested": 13946320.32
-      },
-      "status": "expired",
-      "submitted_at": 1783030489.0713024,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "it_1783030489211",
-      "agent": "it",
-      "type": "fix",
-      "payload": {
-        "issue_type": "decision_queue_overflow",
-        "priority": "low",
-        "detail": "103 pending decisions.",
-        "action": "auto_fix_high_confidence",
-        "success_rate": 1.0,
-        "approved_action": null,
-        "operator_action": null
-      },
-      "status": "expired",
-      "submitted_at": 1783030489.2111118,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030490405",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 1298793173.41,
-        "to_gold_bars_agent": 324698293.35,
-        "to_savings": 324698293.35,
-        "remaining_reinvested": 649396586.7
-      },
-      "status": "expired",
-      "submitted_at": 1783030490.4056842,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030490452",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Kitco",
-        "url": "https://www.kitco.com",
-        "weight_oz": 20,
-        "price_per_oz": 2677.01,
-        "total_usd": 53540.1,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030490.4528296,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030490520",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 22115122.09,
-        "to_oil_opportunity_agent": 5528780.52,
-        "to_savings": 5528780.52,
-        "remaining_reinvested": 11057561.04
-      },
-      "status": "expired",
-      "submitted_at": 1783030490.520074,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030491858",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 9804403507.1,
-        "to_gold_bars_agent": 2451100876.78,
-        "to_savings": 2451100876.78,
-        "remaining_reinvested": 4902201753.55
-      },
-      "status": "expired",
-      "submitted_at": 1783030491.8588855,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030491906",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "APMEX",
-        "url": "https://www.apmex.com",
-        "weight_oz": 10,
-        "price_per_oz": 2638.53,
-        "total_usd": 26385.33,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030491.9067826,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030491974",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 319403718.25,
-        "to_oil_opportunity_agent": 79850929.56,
-        "to_savings": 79850929.56,
-        "remaining_reinvested": 159701859.12
-      },
-      "status": "expired",
-      "submitted_at": 1783030491.9746368,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030493275",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 16387255974.12,
-        "to_gold_bars_agent": 4096813993.53,
-        "to_savings": 4096813993.53,
-        "remaining_reinvested": 8193627987.06
-      },
-      "status": "expired",
-      "submitted_at": 1783030493.2752447,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030493320",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "APMEX",
-        "url": "https://www.apmex.com",
-        "weight_oz": 10,
-        "price_per_oz": 2636.38,
-        "total_usd": 26363.83,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030493.320925,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030493387",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 19667425.44,
-        "to_oil_opportunity_agent": 4916856.36,
-        "to_savings": 4916856.36,
-        "remaining_reinvested": 9833712.72
-      },
-      "status": "expired",
-      "submitted_at": 1783030493.3871875,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030494808",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 9008909038.28,
-        "to_gold_bars_agent": 2252227259.57,
-        "to_savings": 2252227259.57,
-        "remaining_reinvested": 4504454519.14
-      },
-      "status": "expired",
-      "submitted_at": 1783030494.8081503,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030494855",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "JM Bullion",
-        "url": "https://www.jmbullion.com",
-        "weight_oz": 20,
-        "price_per_oz": 2847.95,
-        "total_usd": 56959.0,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030494.8552828,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030494925",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 246936209.38,
-        "to_oil_opportunity_agent": 61734052.34,
-        "to_savings": 61734052.34,
-        "remaining_reinvested": 123468104.69
-      },
-      "status": "expired",
-      "submitted_at": 1783030494.9255693,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030496207",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 25040874217.71,
-        "to_gold_bars_agent": 6260218554.43,
-        "to_savings": 6260218554.43,
-        "remaining_reinvested": 12520437108.85
-      },
-      "status": "expired",
-      "submitted_at": 1783030496.207774,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030496257",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Provident Metals",
-        "url": "https://www.providentmetals.com",
-        "weight_oz": 2,
-        "price_per_oz": 2380.98,
-        "total_usd": 4761.96,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030496.2579758,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030496334",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 529261365.74,
-        "to_oil_opportunity_agent": 132315341.44,
-        "to_savings": 132315341.44,
-        "remaining_reinvested": 264630682.87
-      },
-      "status": "expired",
-      "submitted_at": 1783030496.3346043,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030497658",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 19336064668.08,
-        "to_gold_bars_agent": 4834016167.02,
-        "to_savings": 4834016167.02,
-        "remaining_reinvested": 9668032334.04
-      },
-      "status": "expired",
-      "submitted_at": 1783030497.658651,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030497717",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "JM Bullion",
-        "url": "https://www.jmbullion.com",
-        "weight_oz": 10,
-        "price_per_oz": 2853.55,
-        "total_usd": 28535.54,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030497.7173822,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030497789",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 67837156.93,
-        "to_oil_opportunity_agent": 16959289.23,
-        "to_savings": 16959289.23,
-        "remaining_reinvested": 33918578.46
-      },
-      "status": "expired",
-      "submitted_at": 1783030497.789467,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030499062",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 25118598109.53,
-        "to_gold_bars_agent": 6279649527.38,
-        "to_savings": 6279649527.38,
-        "remaining_reinvested": 12559299054.76
-      },
-      "status": "expired",
-      "submitted_at": 1783030499.0625951,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030499110",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "JM Bullion",
-        "url": "https://www.jmbullion.com",
-        "weight_oz": 10,
-        "price_per_oz": 2304.25,
-        "total_usd": 23042.5,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030499.1108036,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030499179",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 668628103.78,
-        "to_oil_opportunity_agent": 167157025.95,
-        "to_savings": 167157025.95,
-        "remaining_reinvested": 334314051.89
-      },
-      "status": "expired",
-      "submitted_at": 1783030499.1791823,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030500609",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 3862292661.6,
-        "to_gold_bars_agent": 965573165.4,
-        "to_savings": 965573165.4,
-        "remaining_reinvested": 1931146330.8
-      },
-      "status": "expired",
-      "submitted_at": 1783030500.6090794,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030500654",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Provident Metals",
-        "url": "https://www.providentmetals.com",
-        "weight_oz": 10,
-        "price_per_oz": 2499.95,
-        "total_usd": 24999.45,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030500.6546547,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030500720",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 986732927.92,
-        "to_oil_opportunity_agent": 246683231.98,
-        "to_savings": 246683231.98,
-        "remaining_reinvested": 493366463.96
-      },
-      "status": "expired",
-      "submitted_at": 1783030500.720754,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030502186",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 6807785111.05,
-        "to_gold_bars_agent": 1701946277.76,
-        "to_savings": 1701946277.76,
-        "remaining_reinvested": 3403892555.52
-      },
-      "status": "expired",
-      "submitted_at": 1783030502.1862578,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030502232",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Provident Metals",
-        "url": "https://www.providentmetals.com",
-        "weight_oz": 10,
-        "price_per_oz": 2748.01,
-        "total_usd": 27480.06,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030502.2327964,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030502299",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 228960812.18,
-        "to_oil_opportunity_agent": 57240203.04,
-        "to_savings": 57240203.04,
-        "remaining_reinvested": 114480406.09
-      },
-      "status": "expired",
-      "submitted_at": 1783030502.2995322,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030503856",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 8931064531.05,
-        "to_gold_bars_agent": 2232766132.76,
-        "to_savings": 2232766132.76,
-        "remaining_reinvested": 4465532265.52
-      },
-      "status": "expired",
-      "submitted_at": 1783030503.856044,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030503902",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "JM Bullion",
-        "url": "https://www.jmbullion.com",
-        "weight_oz": 5,
-        "price_per_oz": 2573.25,
-        "total_usd": 12866.24,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030503.902564,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030503976",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 624142410.24,
-        "to_oil_opportunity_agent": 156035602.56,
-        "to_savings": 156035602.56,
-        "remaining_reinvested": 312071205.12
-      },
-      "status": "expired",
-      "submitted_at": 1783030503.9763906,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030505336",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 5004870693.81,
-        "to_gold_bars_agent": 1251217673.45,
-        "to_savings": 1251217673.45,
-        "remaining_reinvested": 2502435346.9
-      },
-      "status": "expired",
-      "submitted_at": 1783030505.336784,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030505384",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "APMEX",
-        "url": "https://www.apmex.com",
-        "weight_oz": 5,
-        "price_per_oz": 2537.62,
-        "total_usd": 12688.09,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030505.3840134,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030505453",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 232771543.2,
-        "to_oil_opportunity_agent": 58192885.8,
-        "to_savings": 58192885.8,
-        "remaining_reinvested": 116385771.6
-      },
-      "status": "expired",
-      "submitted_at": 1783030505.4537418,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030506796",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 4380090509.13,
-        "to_gold_bars_agent": 1095022627.28,
-        "to_savings": 1095022627.28,
-        "remaining_reinvested": 2190045254.56
-      },
-      "status": "expired",
-      "submitted_at": 1783030506.796874,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030506845",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "APMEX",
-        "url": "https://www.apmex.com",
-        "weight_oz": 10,
-        "price_per_oz": 2752.28,
-        "total_usd": 27522.76,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030506.8450882,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030506918",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 104904980.87,
-        "to_oil_opportunity_agent": 26226245.22,
-        "to_savings": 26226245.22,
-        "remaining_reinvested": 52452490.43
-      },
-      "status": "expired",
-      "submitted_at": 1783030506.9183185,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030508293",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 4590433487.8,
-        "to_gold_bars_agent": 1147608371.95,
-        "to_savings": 1147608371.95,
-        "remaining_reinvested": 2295216743.9
-      },
-      "status": "expired",
-      "submitted_at": 1783030508.293158,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030508340",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Kitco",
-        "url": "https://www.kitco.com",
-        "weight_oz": 2,
-        "price_per_oz": 2435.97,
-        "total_usd": 4871.94,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030508.3406305,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030508408",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 84089799.09,
-        "to_oil_opportunity_agent": 21022449.77,
-        "to_savings": 21022449.77,
-        "remaining_reinvested": 42044899.55
-      },
-      "status": "expired",
-      "submitted_at": 1783030508.4088016,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030510054",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 21949011372.24,
-        "to_gold_bars_agent": 5487252843.06,
-        "to_savings": 5487252843.06,
-        "remaining_reinvested": 10974505686.12
-      },
-      "status": "expired",
-      "submitted_at": 1783030510.0542214,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030510100",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "APMEX",
-        "url": "https://www.apmex.com",
-        "weight_oz": 2,
-        "price_per_oz": 2431.62,
-        "total_usd": 4863.23,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030510.100854,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "oil_stocks_1783030510168",
-      "agent": "oil_stocks",
-      "type": "oil_profit_split",
-      "payload": {
-        "symbol": "XLE",
-        "profit": 328075081.02,
-        "to_oil_opportunity_agent": 82018770.26,
-        "to_savings": 82018770.26,
-        "remaining_reinvested": 164037540.51
-      },
-      "status": "expired",
-      "submitted_at": 1783030510.1682491,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_stocks_1783030511752",
-      "agent": "gold_stocks",
-      "type": "gold_profit_split",
-      "payload": {
-        "symbol": "GLD",
-        "profit": 22741645233.92,
-        "to_gold_bars_agent": 5685411308.48,
-        "to_savings": 5685411308.48,
-        "remaining_reinvested": 11370822616.96
-      },
-      "status": "expired",
-      "submitted_at": 1783030511.7522573,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
-      "id": "gold_bars_1783030511798",
-      "agent": "gold_bars",
-      "type": "buy_gold_bar",
-      "payload": {
-        "source": "Kitco",
-        "url": "https://www.kitco.com",
-        "weight_oz": 2,
-        "price_per_oz": 2801.97,
-        "total_usd": 5603.95,
-        "payment_method": "capital_one"
-      },
-      "status": "expired",
-      "submitted_at": 1783030511.7981043,
-      "decided_at": null,
-      "operator_action": "expired_by_it"
-    },
-    {
       "id": "oil_stocks_1783030511866",
       "agent": "oil_stocks",
       "type": "oil_profit_split",
@@ -16906,6 +15161,1842 @@
       "status": "expired",
       "submitted_at": 1783033171.792161,
       "decided_at": null,
+      "operator_action": "expired_by_it"
+    },
+    {
+      "id": "gold_bars_1783033173247",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 20,
+        "price_per_oz": 2386.73,
+        "total_usd": 47734.67,
+        "payment_method": "capital_one"
+      },
+      "status": "expired",
+      "submitted_at": 1783033173.2473958,
+      "decided_at": null,
+      "operator_action": "expired_by_it"
+    },
+    {
+      "id": "gold_bars_1783033174945",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 5,
+        "price_per_oz": 2815.17,
+        "total_usd": 14075.85,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033174.945659,
+      "decided_at": 1783035656.9234505,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033176527",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 10,
+        "price_per_oz": 2842.18,
+        "total_usd": 28421.83,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033176.5276916,
+      "decided_at": 1783035656.9471002,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033177946",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 5,
+        "price_per_oz": 2766.92,
+        "total_usd": 13834.62,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033177.9462655,
+      "decided_at": 1783035656.970422,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033179458",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 5,
+        "price_per_oz": 2568.77,
+        "total_usd": 12843.86,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033179.4581816,
+      "decided_at": 1783035656.9926634,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033180956",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 2,
+        "price_per_oz": 2533.14,
+        "total_usd": 5066.27,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033180.956493,
+      "decided_at": 1783035657.015,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033182518",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 1,
+        "price_per_oz": 2740.61,
+        "total_usd": 2740.61,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033182.5185657,
+      "decided_at": 1783035657.0379279,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033184082",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 1,
+        "price_per_oz": 2807.19,
+        "total_usd": 2807.19,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033184.08218,
+      "decided_at": 1783035657.0607069,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033185703",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 10,
+        "price_per_oz": 2320.45,
+        "total_usd": 23204.54,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033185.7035072,
+      "decided_at": 1783035657.083612,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033187130",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 1,
+        "price_per_oz": 2389.1,
+        "total_usd": 2389.1,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033187.130783,
+      "decided_at": 1783035657.1067328,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033188769",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 2,
+        "price_per_oz": 2813.87,
+        "total_usd": 5627.75,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033188.7696722,
+      "decided_at": 1783035657.1294215,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033190242",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 5,
+        "price_per_oz": 2645.04,
+        "total_usd": 13225.18,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033190.2427998,
+      "decided_at": 1783035657.152267,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033191817",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 2,
+        "price_per_oz": 2317.36,
+        "total_usd": 4634.71,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033191.8175337,
+      "decided_at": 1783035657.175283,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033193237",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 10,
+        "price_per_oz": 2645.2,
+        "total_usd": 26452.03,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033193.237484,
+      "decided_at": 1783035657.1980371,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033194942",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 1,
+        "price_per_oz": 2891.91,
+        "total_usd": 2891.91,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033194.9420888,
+      "decided_at": 1783035657.2211287,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033196417",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 10,
+        "price_per_oz": 2501.44,
+        "total_usd": 25014.41,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033196.4178994,
+      "decided_at": 1783035657.244478,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033197934",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 1,
+        "price_per_oz": 2891.65,
+        "total_usd": 2891.65,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033197.9345336,
+      "decided_at": 1783035657.2680159,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033199615",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 10,
+        "price_per_oz": 2779.99,
+        "total_usd": 27799.91,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033199.6153963,
+      "decided_at": 1783035657.2909894,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033215993",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 10,
+        "price_per_oz": 2562.25,
+        "total_usd": 25622.48,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033215.9936807,
+      "decided_at": 1783035657.314748,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033232440",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 20,
+        "price_per_oz": 2572.55,
+        "total_usd": 51450.91,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033232.4405158,
+      "decided_at": 1783035657.3370216,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033248937",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 2,
+        "price_per_oz": 2717.86,
+        "total_usd": 5435.73,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033248.9376814,
+      "decided_at": 1783035657.3600445,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033261270",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 5,
+        "price_per_oz": 2445.64,
+        "total_usd": 12228.21,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033261.2701197,
+      "decided_at": 1783035657.3830848,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033263380",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 20,
+        "price_per_oz": 2350.15,
+        "total_usd": 47002.95,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033263.3802087,
+      "decided_at": 1783035657.4062662,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033279776",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 5,
+        "price_per_oz": 2616.3,
+        "total_usd": 13081.48,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033279.776494,
+      "decided_at": 1783035657.4293876,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033294147",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 1,
+        "price_per_oz": 2846.78,
+        "total_usd": 2846.78,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033294.1472433,
+      "decided_at": 1783035657.4525747,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033296286",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 2,
+        "price_per_oz": 2305.8,
+        "total_usd": 4611.59,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033296.2864664,
+      "decided_at": 1783035657.475767,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033312754",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 5,
+        "price_per_oz": 2704.37,
+        "total_usd": 13521.83,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033312.754668,
+      "decided_at": 1783035657.498979,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033326608",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 2,
+        "price_per_oz": 2783.93,
+        "total_usd": 5567.85,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033326.6089594,
+      "decided_at": 1783035657.5220854,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033327952",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 10,
+        "price_per_oz": 2876.44,
+        "total_usd": 28764.41,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033327.952465,
+      "decided_at": 1783035657.545231,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033329329",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 20,
+        "price_per_oz": 2487.5,
+        "total_usd": 49750.07,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033329.3293087,
+      "decided_at": 1783035657.5683558,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033330732",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 10,
+        "price_per_oz": 2851.35,
+        "total_usd": 28513.51,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033330.732859,
+      "decided_at": 1783035657.5917003,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033332191",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 1,
+        "price_per_oz": 2834.73,
+        "total_usd": 2834.73,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033332.1916928,
+      "decided_at": 1783035657.677103,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033348608",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 5,
+        "price_per_oz": 2580.87,
+        "total_usd": 12904.37,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033348.6086206,
+      "decided_at": 1783035657.6996183,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033365023",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 1,
+        "price_per_oz": 2699.01,
+        "total_usd": 2699.01,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033365.0233352,
+      "decided_at": 1783035657.722841,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033381505",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 10,
+        "price_per_oz": 2836.3,
+        "total_usd": 28363.01,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033381.5055315,
+      "decided_at": 1783035657.7460244,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033393261",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 5,
+        "price_per_oz": 2493.42,
+        "total_usd": 12467.11,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033393.2619314,
+      "decided_at": 1783035657.7692769,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033394890",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 20,
+        "price_per_oz": 2308.58,
+        "total_usd": 46171.56,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033394.8909645,
+      "decided_at": 1783035657.7927685,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033411308",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 20,
+        "price_per_oz": 2353.4,
+        "total_usd": 47068.07,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033411.3088248,
+      "decided_at": 1783035657.8163376,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_stocks_1783033419161",
+      "agent": "gold_stocks",
+      "type": "gold_profit_split",
+      "payload": {
+        "symbol": "GLD",
+        "profit": 3.0817460954773588e+16,
+        "to_capital_savings": 7704365238693397.0,
+        "to_gold_bars_agent": 7704365238693397.0,
+        "remaining_reinvested": 1.5408730477386794e+16
+      },
+      "status": "resolved",
+      "submitted_at": 1783033419.1615143,
+      "decided_at": 1783035657.8400154,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033426217",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 2,
+        "price_per_oz": 2795.74,
+        "total_usd": 5591.49,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033426.2178361,
+      "decided_at": 1783035657.8633952,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033428341",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 1,
+        "price_per_oz": 2796.34,
+        "total_usd": 2796.34,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033428.3412735,
+      "decided_at": 1783035657.8868606,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033444838",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 1,
+        "price_per_oz": 2656.02,
+        "total_usd": 2656.02,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033444.8381834,
+      "decided_at": 1783035657.910494,
+      "operator_action": "approved"
+    },
+    {
+      "id": "trumpgov_1783033445398",
+      "agent": "trumpgov",
+      "type": "investment_suggestion",
+      "payload": {
+        "symbol": "O",
+        "type": "quick_flip",
+        "reason": "Policy impact: ['technology'] | My doctor friend objected to his hospital&#x2019;s fundraising tactics. Did management go too far?",
+        "source_url": "https://www.marketwatch.com/story/there-was-a-catch-my-doctor-friend-was-outraged-by-his-hospitals-fundraising-tactics-where-do-we-draw-the-line-797b9fff?mod=mw_rss_topstories",
+        "source_title": "My doctor friend objected to his hospital&#x2019;s fundraising tactics. Did management go too far?",
+        "sectors": [
+          "technology"
+        ],
+        "impact_score": 2,
+        "suggested_allocation_pct": 0.1,
+        "expected_hold": "30-90 days",
+        "target_return_pct": 15.0
+      },
+      "status": "resolved",
+      "submitted_at": 1783033445.398413,
+      "decided_at": 1783035657.933746,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033458772",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 5,
+        "price_per_oz": 2799.61,
+        "total_usd": 13998.07,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033458.7721984,
+      "decided_at": 1783035657.9571223,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033475214",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 2,
+        "price_per_oz": 2398.6,
+        "total_usd": 4797.2,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033475.2147284,
+      "decided_at": 1783035657.980636,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033488942",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 5,
+        "price_per_oz": 2317.26,
+        "total_usd": 11586.32,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033488.9426386,
+      "decided_at": 1783035658.0040317,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033505538",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 20,
+        "price_per_oz": 2456.72,
+        "total_usd": 49134.41,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033505.5380096,
+      "decided_at": 1783035658.0276153,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033520505",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 20,
+        "price_per_oz": 2368.52,
+        "total_usd": 47370.36,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033520.5053022,
+      "decided_at": 1783035658.0510437,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033522312",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 2,
+        "price_per_oz": 2577.11,
+        "total_usd": 5154.22,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033522.3128011,
+      "decided_at": 1783035658.0746295,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033538834",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 2,
+        "price_per_oz": 2368.69,
+        "total_usd": 4737.38,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033538.834578,
+      "decided_at": 1783035658.09811,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033552736",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 10,
+        "price_per_oz": 2743.62,
+        "total_usd": 27436.16,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033552.7366784,
+      "decided_at": 1783035658.2633061,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033554800",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 10,
+        "price_per_oz": 2427.78,
+        "total_usd": 24277.83,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033554.8005424,
+      "decided_at": 1783035658.2859957,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033571286",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 1,
+        "price_per_oz": 2589.85,
+        "total_usd": 2589.85,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033571.28682,
+      "decided_at": 1783035658.3090546,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033585029",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 1,
+        "price_per_oz": 2776.7,
+        "total_usd": 2776.7,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033585.0292017,
+      "decided_at": 1783035658.332525,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033601443",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 10,
+        "price_per_oz": 2368.62,
+        "total_usd": 23686.23,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033601.4439294,
+      "decided_at": 1783035658.3588226,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033615103",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 2,
+        "price_per_oz": 2423.69,
+        "total_usd": 4847.39,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033615.1035113,
+      "decided_at": 1783035658.4822137,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033631633",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 2,
+        "price_per_oz": 2566.52,
+        "total_usd": 5133.04,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033631.6335657,
+      "decided_at": 1783035658.574723,
+      "operator_action": "approved"
+    },
+    {
+      "id": "trumpgov_1783033632208",
+      "agent": "trumpgov",
+      "type": "investment_suggestion",
+      "payload": {
+        "symbol": "O",
+        "type": "quick_flip",
+        "reason": "Policy impact: ['technology', 'macro'] | Dow scores fresh record despite tepid jobs report. Why the rest of 2026 is about workers.",
+        "source_url": "https://www.marketwatch.com/story/dow-scores-fresh-record-despite-tepid-jobs-report-why-the-rest-of-2026-is-about-workers-6247fbed?mod=mw_rss_topstories",
+        "source_title": "Dow scores fresh record despite tepid jobs report. Why the rest of 2026 is about workers.",
+        "sectors": [
+          "technology",
+          "macro"
+        ],
+        "impact_score": 3,
+        "suggested_allocation_pct": 0.1,
+        "expected_hold": "30-90 days",
+        "target_return_pct": 15.0
+      },
+      "status": "resolved",
+      "submitted_at": 1783033632.208587,
+      "decided_at": 1783035658.5975723,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033645324",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 20,
+        "price_per_oz": 2475.57,
+        "total_usd": 49511.38,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033645.3240044,
+      "decided_at": 1783035658.6206331,
+      "operator_action": "approved"
+    },
+    {
+      "id": "trumpgov_1783033645889",
+      "agent": "trumpgov",
+      "type": "investment_suggestion",
+      "payload": {
+        "symbol": "O",
+        "type": "quick_flip",
+        "reason": "Policy impact: ['technology', 'macro'] | Trump blasts &#x2018;hostile&#x2019; Fed and says Warsh &#x2018;has to do what he has to do&#x2019; on interest rates",
+        "source_url": "https://www.marketwatch.com/story/trump-blasts-hostile-fed-and-says-warsh-has-to-do-what-he-has-to-do-on-interest-rates-60b5d16b?mod=mw_rss_topstories",
+        "source_title": "Trump blasts &#x2018;hostile&#x2019; Fed and says Warsh &#x2018;has to do what he has to do&#x2019; on interest rates",
+        "sectors": [
+          "technology",
+          "macro"
+        ],
+        "impact_score": 3,
+        "suggested_allocation_pct": 0.1,
+        "expected_hold": "30-90 days",
+        "target_return_pct": 15.0
+      },
+      "status": "resolved",
+      "submitted_at": 1783033645.889219,
+      "decided_at": 1783035658.6442273,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033661911",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 5,
+        "price_per_oz": 2554.7,
+        "total_usd": 12773.51,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033661.9115958,
+      "decided_at": 1783035658.6679676,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033675453",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 1,
+        "price_per_oz": 2875.97,
+        "total_usd": 2875.97,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033675.4532738,
+      "decided_at": 1783035658.6917586,
+      "operator_action": "approved"
+    },
+    {
+      "id": "trumpgov_1783033682351",
+      "agent": "trumpgov",
+      "type": "investment_suggestion",
+      "payload": {
+        "symbol": "NVDA",
+        "type": "quick_flip",
+        "reason": "Policy impact: ['defense', 'technology'] | General Dynamics Vs. Lockheed Martin: Buy General Dynamics for Deep Marine Backlogs",
+        "source_url": "https://247wallst.com/investing/2026/07/02/general-dynamics-vs-lockheed-martin-buy-general-dynamics-for-deep-marine-backlogs/",
+        "source_title": "General Dynamics Vs. Lockheed Martin: Buy General Dynamics for Deep Marine Backlogs",
+        "sectors": [
+          "defense",
+          "technology"
+        ],
+        "impact_score": 4,
+        "suggested_allocation_pct": 0.1,
+        "expected_hold": "30-90 days",
+        "target_return_pct": 15.0
+      },
+      "status": "resolved",
+      "submitted_at": 1783033682.3518023,
+      "decided_at": 1783035658.7156122,
+      "operator_action": "approved"
+    },
+    {
+      "id": "trumpgov_1783033682353",
+      "agent": "trumpgov",
+      "type": "investment_suggestion",
+      "payload": {
+        "symbol": "NVDA",
+        "type": "quick_flip",
+        "reason": "Policy impact: ['defense', 'technology'] | Why Boeing (BA) Stock Is Trading Up Today",
+        "source_url": "https://finance.yahoo.com/markets/stocks/articles/why-boeing-ba-stock-trading-220424637.html",
+        "source_title": "Why Boeing (BA) Stock Is Trading Up Today",
+        "sectors": [
+          "defense",
+          "technology"
+        ],
+        "impact_score": 4,
+        "suggested_allocation_pct": 0.1,
+        "expected_hold": "30-90 days",
+        "target_return_pct": 15.0
+      },
+      "status": "resolved",
+      "submitted_at": 1783033682.3537924,
+      "decided_at": 1783035658.7392576,
+      "operator_action": "approved"
+    },
+    {
+      "id": "trumpgov_1783033682355",
+      "agent": "trumpgov",
+      "type": "investment_suggestion",
+      "payload": {
+        "symbol": "NVDA",
+        "type": "quick_flip",
+        "reason": "Policy impact: ['energy', 'technology'] | Can ExxonMobil's Upstream Business Thrive With Oil Below $70?",
+        "source_url": "https://finance.yahoo.com/energy/articles/exxonmobils-upstream-business-thrive-oil-145300123.html",
+        "source_title": "Can ExxonMobil's Upstream Business Thrive With Oil Below $70?",
+        "sectors": [
+          "energy",
+          "technology"
+        ],
+        "impact_score": 4,
+        "suggested_allocation_pct": 0.1,
+        "expected_hold": "30-90 days",
+        "target_return_pct": 15.0
+      },
+      "status": "resolved",
+      "submitted_at": 1783033682.3557734,
+      "decided_at": 1783035658.7630332,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033691972",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 2,
+        "price_per_oz": 2894.86,
+        "total_usd": 5789.71,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033691.972988,
+      "decided_at": 1783035658.7868385,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033705560",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 2,
+        "price_per_oz": 2495.86,
+        "total_usd": 4991.73,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033705.5603049,
+      "decided_at": 1783035658.810647,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033722101",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 1,
+        "price_per_oz": 2386.33,
+        "total_usd": 2386.33,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033722.101772,
+      "decided_at": 1783035658.8344955,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033735703",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 10,
+        "price_per_oz": 2664.5,
+        "total_usd": 26645.05,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033735.7037706,
+      "decided_at": 1783035658.8582423,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033752191",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 1,
+        "price_per_oz": 2485.57,
+        "total_usd": 2485.57,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033752.1916435,
+      "decided_at": 1783035658.8820498,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033765888",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 1,
+        "price_per_oz": 2405.12,
+        "total_usd": 2405.12,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033765.8889503,
+      "decided_at": 1783035658.9063747,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033782421",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 2,
+        "price_per_oz": 2761.21,
+        "total_usd": 5522.41,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033782.421996,
+      "decided_at": 1783035658.930616,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033796007",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 2,
+        "price_per_oz": 2324.93,
+        "total_usd": 4649.86,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033796.0078769,
+      "decided_at": 1783035658.9536548,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033812470",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 20,
+        "price_per_oz": 2478.27,
+        "total_usd": 49565.45,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033812.4701564,
+      "decided_at": 1783035658.977746,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033821915",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 1,
+        "price_per_oz": 2653.97,
+        "total_usd": 2653.97,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033821.9156234,
+      "decided_at": 1783035659.001325,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033823530",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 20,
+        "price_per_oz": 2342.23,
+        "total_usd": 46844.59,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033823.5307589,
+      "decided_at": 1783035659.0251951,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033825802",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 2,
+        "price_per_oz": 2705.4,
+        "total_usd": 5410.79,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033825.802679,
+      "decided_at": 1783035659.0489306,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033828209",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 5,
+        "price_per_oz": 2392.46,
+        "total_usd": 11962.31,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033828.2090917,
+      "decided_at": 1783035659.072852,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033830394",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 10,
+        "price_per_oz": 2584.79,
+        "total_usd": 25847.89,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033830.3948622,
+      "decided_at": 1783035659.0966182,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033832677",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 20,
+        "price_per_oz": 2794.1,
+        "total_usd": 55881.97,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033832.6775174,
+      "decided_at": 1783035659.1204169,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033834814",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 5,
+        "price_per_oz": 2346.82,
+        "total_usd": 11734.08,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033834.8143973,
+      "decided_at": 1783035659.144244,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033836422",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 5,
+        "price_per_oz": 2614.97,
+        "total_usd": 13074.86,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033836.4228508,
+      "decided_at": 1783035659.1680143,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033838022",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 20,
+        "price_per_oz": 2519.29,
+        "total_usd": 50385.86,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033838.022441,
+      "decided_at": 1783035659.191912,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033840380",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 5,
+        "price_per_oz": 2820.16,
+        "total_usd": 14100.8,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033840.380399,
+      "decided_at": 1783035659.2157428,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033842563",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 10,
+        "price_per_oz": 2799.71,
+        "total_usd": 27997.08,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033842.5636582,
+      "decided_at": 1783035659.2395983,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033844775",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 5,
+        "price_per_oz": 2393.73,
+        "total_usd": 11968.63,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033844.7751532,
+      "decided_at": 1783035659.2634382,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033847013",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 5,
+        "price_per_oz": 2478.25,
+        "total_usd": 12391.25,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033847.0137556,
+      "decided_at": 1783035659.2873127,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033848639",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 10,
+        "price_per_oz": 2408.32,
+        "total_usd": 24083.23,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033848.639134,
+      "decided_at": 1783035659.311517,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033850812",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 5,
+        "price_per_oz": 2471.9,
+        "total_usd": 12359.48,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033850.812889,
+      "decided_at": 1783035659.3351555,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033852257",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 1,
+        "price_per_oz": 2569.55,
+        "total_usd": 2569.55,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033852.257611,
+      "decided_at": 1783035659.3590581,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033853652",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 20,
+        "price_per_oz": 2778.67,
+        "total_usd": 55573.45,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033853.6523333,
+      "decided_at": 1783035659.3830245,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033855057",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 1,
+        "price_per_oz": 2776.69,
+        "total_usd": 2776.69,
+        "payment_method": "capital_one"
+      },
+      "status": "resolved",
+      "submitted_at": 1783033855.057916,
+      "decided_at": 1783035659.4067905,
+      "operator_action": "approved"
+    },
+    {
+      "id": "trumpgov_1783035485536",
+      "agent": "trumpgov",
+      "type": "investment_suggestion",
+      "payload": {
+        "symbol": "NVDA",
+        "type": "quick_flip",
+        "reason": "Policy impact: ['energy', 'technology'] | SLB (SLB) Secures Seven Year Kuwait Oil Deal And Opens Global Tech Hub",
+        "source_url": "https://finance.yahoo.com/energy/articles/slb-slb-secures-seven-kuwait-181421636.html",
+        "source_title": "SLB (SLB) Secures Seven Year Kuwait Oil Deal And Opens Global Tech Hub",
+        "sectors": [
+          "energy",
+          "technology"
+        ],
+        "impact_score": 4,
+        "suggested_allocation_pct": 0.1,
+        "expected_hold": "30-90 days",
+        "target_return_pct": 15.0
+      },
+      "status": "resolved",
+      "submitted_at": 1783035485.5362992,
+      "decided_at": 1783035659.430918,
+      "operator_action": "approved"
+    },
+    {
+      "id": "it_1783033426476",
+      "agent": "it",
+      "type": "fix",
+      "payload": {
+        "issue_type": "error_storm",
+        "priority": "high",
+        "detail": "37 errors in recent logs.",
+        "action": "auto_fix_high_confidence",
+        "success_rate": 1.0,
+        "approved_action": null,
+        "operator_action": null
+      },
+      "status": "resolved",
+      "submitted_at": 1783033426.4769208,
+      "decided_at": 1783037086.4091372,
+      "operator_action": "approved"
+    },
+    {
+      "id": "it_1783033445053",
+      "agent": "it",
+      "type": "fix",
+      "payload": {
+        "issue_type": "error_storm",
+        "priority": "high",
+        "detail": "36 errors in recent logs.",
+        "action": "auto_fix_high_confidence",
+        "success_rate": 1.0,
+        "approved_action": null,
+        "operator_action": null
+      },
+      "status": "resolved",
+      "submitted_at": 1783033445.0532458,
+      "decided_at": 1783037086.4335032,
+      "operator_action": "approved"
+    },
+    {
+      "id": "it_1783033852468",
+      "agent": "it",
+      "type": "fix",
+      "payload": {
+        "issue_type": "error_storm",
+        "priority": "high",
+        "detail": "38 errors in recent logs.",
+        "action": "auto_fix_high_confidence",
+        "success_rate": 1.0,
+        "approved_action": null,
+        "operator_action": null
+      },
+      "status": "resolved",
+      "submitted_at": 1783033852.4683745,
+      "decided_at": 1783037086.4576516,
+      "operator_action": "approved"
+    },
+    {
+      "id": "it_1783036411012",
+      "agent": "it",
+      "type": "fix",
+      "payload": {
+        "issue_type": "error_storm",
+        "priority": "high",
+        "detail": "35 errors in recent logs.",
+        "action": "auto_fix_high_confidence",
+        "success_rate": 1.0,
+        "approved_action": null,
+        "operator_action": null
+      },
+      "status": "resolved",
+      "submitted_at": 1783036411.012779,
+      "decided_at": 1783037086.4839535,
+      "operator_action": "approved"
+    },
+    {
+      "id": "gold_bars_1783033174945",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Kitco",
+        "url": "https://www.kitco.com",
+        "weight_oz": 5,
+        "price_per_oz": 2815.17,
+        "total_usd": 14075.85,
+        "payment_method": "capital_one"
+      },
+      "status": "expired",
+      "submitted_at": 1783033174.945659,
+      "decided_at": 1783035656.9234505,
+      "operator_action": "expired_by_it"
+    },
+    {
+      "id": "gold_bars_1783033176527",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 10,
+        "price_per_oz": 2842.18,
+        "total_usd": 28421.83,
+        "payment_method": "capital_one"
+      },
+      "status": "expired",
+      "submitted_at": 1783033176.5276916,
+      "decided_at": 1783035656.9471002,
+      "operator_action": "expired_by_it"
+    },
+    {
+      "id": "gold_bars_1783033177946",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 5,
+        "price_per_oz": 2766.92,
+        "total_usd": 13834.62,
+        "payment_method": "capital_one"
+      },
+      "status": "expired",
+      "submitted_at": 1783033177.9462655,
+      "decided_at": 1783035656.970422,
+      "operator_action": "expired_by_it"
+    },
+    {
+      "id": "gold_bars_1783033179458",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 5,
+        "price_per_oz": 2568.77,
+        "total_usd": 12843.86,
+        "payment_method": "capital_one"
+      },
+      "status": "expired",
+      "submitted_at": 1783033179.4581816,
+      "decided_at": 1783035656.9926634,
+      "operator_action": "expired_by_it"
+    },
+    {
+      "id": "gold_bars_1783033180956",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "Provident Metals",
+        "url": "https://www.providentmetals.com",
+        "weight_oz": 2,
+        "price_per_oz": 2533.14,
+        "total_usd": 5066.27,
+        "payment_method": "capital_one"
+      },
+      "status": "expired",
+      "submitted_at": 1783033180.956493,
+      "decided_at": 1783035657.015,
+      "operator_action": "expired_by_it"
+    },
+    {
+      "id": "gold_bars_1783033182518",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "JM Bullion",
+        "url": "https://www.jmbullion.com",
+        "weight_oz": 1,
+        "price_per_oz": 2740.61,
+        "total_usd": 2740.61,
+        "payment_method": "capital_one"
+      },
+      "status": "expired",
+      "submitted_at": 1783033182.5185657,
+      "decided_at": 1783035657.0379279,
+      "operator_action": "expired_by_it"
+    },
+    {
+      "id": "gold_bars_1783033184082",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 1,
+        "price_per_oz": 2807.19,
+        "total_usd": 2807.19,
+        "payment_method": "capital_one"
+      },
+      "status": "expired",
+      "submitted_at": 1783033184.08218,
+      "decided_at": 1783035657.0607069,
+      "operator_action": "expired_by_it"
+    },
+    {
+      "id": "gold_bars_1783033185703",
+      "agent": "gold_bars",
+      "type": "buy_gold_bar",
+      "payload": {
+        "source": "APMEX",
+        "url": "https://www.apmex.com",
+        "weight_oz": 10,
+        "price_per_oz": 2320.45,
+        "total_usd": 23204.54,
+        "payment_method": "capital_one"
+      },
+      "status": "expired",
+      "submitted_at": 1783033185.7035072,
+      "decided_at": 1783035657.083612,
       "operator_action": "expired_by_it"
     }
   ],

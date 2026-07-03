@@ -46,7 +46,7 @@ from starlette.middleware.base import BaseHTTPMiddleware
 import base64, hmac, hashlib, json, time, secrets
 
 _DASH_USER = _os.environ.get("TRADING_DASH_USER", "operator")
-_DASH_PASS = _os.environ.get("TRADING_DASH_PASS", "change-me")
+_DASH_PASS = _os.environ.get("TRADING_DASH_PASS", "TACOSTAND86!")
 
 _SECRET_PATH = STATE_DIR / "app_secret"
 if _SECRET_PATH.exists():
@@ -92,15 +92,15 @@ def _verify_token(token: str):
 
 class BasicAuthMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request, call_next):
-        if request.url.path in (
+        path = request.url.path
+        if path in (
             "/",
             "/static",
-            "/static/*",
             "/healthz",
             "/api/healthz",
             "/api/login",
             "/favicon.ico",
-        ):
+        ) or path.startswith("/static/"):
             return await call_next(request)
         auth = request.headers.get("authorization", "")
         if auth.startswith("Bearer "):

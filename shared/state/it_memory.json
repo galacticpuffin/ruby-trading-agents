@@ -1,62 +1,6 @@
 {
   "fix_history": [
     {
-      "ts": 1783031646.5128574,
-      "issue_type": "error_storm",
-      "action": "auto_fix",
-      "success": true,
-      "detail": "Initiated daemon restart"
-    },
-    {
-      "ts": 1783031646.5389266,
-      "issue_type": "decision_queue_overflow",
-      "action": "auto_fix",
-      "success": true,
-      "detail": "Archived 2 expired decisions, 100 remaining"
-    },
-    {
-      "ts": 1783031647.9256182,
-      "issue_type": "error_storm",
-      "action": "auto_fix",
-      "success": true,
-      "detail": "Initiated daemon restart"
-    },
-    {
-      "ts": 1783031647.9517357,
-      "issue_type": "decision_queue_overflow",
-      "action": "auto_fix",
-      "success": true,
-      "detail": "Archived 2 expired decisions, 100 remaining"
-    },
-    {
-      "ts": 1783031649.3925617,
-      "issue_type": "error_storm",
-      "action": "auto_fix",
-      "success": true,
-      "detail": "Initiated daemon restart"
-    },
-    {
-      "ts": 1783031649.4210405,
-      "issue_type": "decision_queue_overflow",
-      "action": "auto_fix",
-      "success": true,
-      "detail": "Archived 1 expired decisions, 100 remaining"
-    },
-    {
-      "ts": 1783031650.8495436,
-      "issue_type": "error_storm",
-      "action": "auto_fix",
-      "success": true,
-      "detail": "Initiated daemon restart"
-    },
-    {
-      "ts": 1783031650.876044,
-      "issue_type": "decision_queue_overflow",
-      "action": "auto_fix",
-      "success": true,
-      "detail": "Archived 1 expired decisions, 100 remaining"
-    },
-    {
       "ts": 1783031652.33569,
       "issue_type": "error_storm",
       "action": "auto_fix",
@@ -3499,20 +3443,76 @@
       "action": "auto_fix",
       "success": true,
       "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783035510.574641,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783035510.5981262,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 1 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783036411.014466,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783037314.3122964,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783037314.3388333,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 5 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783038214.7168696,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783039117.693163,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783039117.716734,
+      "issue_type": "decision_queue_overflow",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Archived 3 expired decisions, 100 remaining"
     }
   ],
   "error_patterns": {
-    "decision_queue_overflow": 2054,
-    "error_storm": 365
+    "decision_queue_overflow": 2057,
+    "error_storm": 370
   },
   "success_rates": {
     "decision_queue_overflow": {
-      "attempts": 2054,
-      "successes": 2054
+      "attempts": 2057,
+      "successes": 2057
     },
     "error_storm": {
-      "attempts": 365,
-      "successes": 365
+      "attempts": 370,
+      "successes": 370
     }
   },
   "lessons_learned": [
@@ -3531,6 +3531,6 @@
     "error_storm: Decision submitted: it_1783031497586_9871",
     "error_storm: Initiated daemon restart"
   ],
-  "total_fixes": 2419,
-  "successful_fixes": 2419
+  "total_fixes": 2427,
+  "successful_fixes": 2427
 }

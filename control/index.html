@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Operator // Control Center</title>
+<title>RUBY // Operator Control Center</title>
 <style>
   :root {
     --bg: #0a0d12;
@@ -23,7 +23,8 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
-    background: var(--bg);
+    background: var(--bg) url('/assets/ruby-logo.png') center center no-repeat fixed;
+    background-size: 400px 400px;
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     min-height: 100vh;
@@ -34,6 +35,8 @@
     grid-template-columns: 300px 1fr;
     grid-template-rows: auto 1fr;
     min-height: 100vh;
+    background: rgba(10,13,18,0.55);
+    backdrop-filter: blur(6px);
   }
   @media (max-width: 960px){ .app { grid-template-columns: 1fr; } }
 
@@ -237,7 +240,7 @@
 <body>
   <div id="login-screen" style="position:fixed;inset:0;background:#0a0d12;color:#e6edf5;display:flex;align-items:center;justify-content:center;z-index:9999;">
     <form id="login-form" style="background:#0f1520;padding:20px;border-radius:12px;border:1px solid #1c2736;display:flex;flex-direction:column;gap:12px;width:320px;">
-      <div style="font-weight:800;letter-spacing:0.12em;color:#00ff9d;">OPERATOR // CONTROL CENTER</div>
+      <div style="font-weight:800;letter-spacing:0.12em;color:#00ff9d;">RUBY // OPERATOR CONTROL CENTER</div>
       <input id="login-user" type="text" placeholder="username" autocomplete="username" style="background:#0a0f18;color:#e6edf5;border:1px solid #1c2736;padding:10px;border-radius:8px;"/>
       <input id="login-pass" type="password" placeholder="password" autocomplete="current-password" style="background:#0a0f18;color:#e6edf5;border:1px solid #1c2736;padding:10px;border-radius:8px;"/>
       <button type="submit" style="background:#00ff9d;color:#0a0d12;font-weight:800;padding:10px;border-radius:8px;border:none;cursor:pointer;">LOGIN</button>
@@ -263,6 +266,10 @@
       <div>
         <h3>Active Agents</h3>
         <div class="agents" id="agents">Loading...</div>
+      </div>
+      <div>
+        <h3>Run Agent</h3>
+        <div class="shortcuts" id="run-shortcuts"></div>
       </div>
 
       <div>
@@ -382,6 +389,26 @@ window.addEventListener('DOMContentLoaded', function(){
   try { if(localStorage.getItem('dash_token')) document.getElementById('login-screen').style.display='none'; } catch(e){}
 });
 
+function renderRunShortcuts(list){
+  var container = document.getElementById('run-shortcuts');
+  if(!container) return;
+  container.innerHTML = '';
+  (list || []).forEach(function(item){
+    var name = item.name || item.key || '?';
+    var runTarget = item.key || name;
+    var a = document.createElement('a');
+    a.className = 'shortcut';
+    a.href = '#';
+    a.onclick = function(e){ e.preventDefault(); sendCmd('run ' + runTarget); };
+    var icon = document.createElement('div'); icon.className = 'icon';
+    icon.textContent = String(name).charAt(0).toUpperCase();
+    var meta = document.createElement('div'); meta.className = 'meta';
+    meta.innerHTML = '<div class="label">Run ' + esc(name) + '</div><div class="sub">Manual trigger</div>';
+    a.appendChild(icon); a.appendChild(meta);
+    container.appendChild(a);
+  });
+}
+
 /* dashboard runtime */
 (function(){
 var _AUTH_HEADERS=(function(){var t=localStorage.getItem('dash_token');if(!t)return {};return {'Authorization':'Bearer '+t};})();
@@ -493,9 +520,12 @@ function renderDecisions(list){
     else detail=JSON.stringify(payload);
     var timeStr=d.submitted_at?new Date(d.submitted_at*1000).toLocaleString([],{hour:'2-digit',minute:'2-digit'}):'';
     var box=document.createElement('div');box.className='decision';
+    box.setAttribute('data-id', d.id);
     box.innerHTML='<div class="decision-head"><div><div class="decision-agent">'+esc(d.agent)+'</div><div class="decision-type">'+esc(d.type)+'</div></div><div class="decision-time">'+esc(timeStr)+'</div></div>'+
       '<div class="decision-payload" title="'+esc(detail)+'">'+esc(detail)+'</div>'+
-      '<div class="decision-actions"><button class="approve" onclick="sendCmd("approve '+d.id+'")">APPROVE</button><button class="reject" onclick="sendCmd("reject '+d.id+'")">REJECT</button></div>';
+      '<div class="decision-actions"><button class="approve">APPROVE</button><button class="reject">REJECT</button></div>';
+    box.querySelector('.approve').addEventListener('click', function(){ sendCmd('approve ' + d.id); });
+    box.querySelector('.reject').addEventListener('click', function(){ sendCmd('reject ' + d.id); });
     els.decisions.appendChild(box);
   });
 }
@@ -560,7 +590,12 @@ async function refresh(){
       renderAccuracy((st.accuracy)||{});
     }
     if(dec)renderDecisions((dec.pending)||[]);
-    if(integ)renderIntegrations((integ.integrations)||[]);
+    if(integ){
+      renderIntegrations((integ.integrations)||[]);
+    }
+    if(st && st.agents){
+      renderRunShortcuts(st.agents);
+    }
     var conn=(br&&br.brief&&br.brief.connectivity)||null;
     if(conn&&conn.connected!==undefined){
       els.netDot.className='dot '+(conn.connected?'ok':'danger');
