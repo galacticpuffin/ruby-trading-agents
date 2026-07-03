@@ -11,6 +11,7 @@ from pathlib import Path
 BASE = Path('/home/clawdette/trading-agents')
 STATE = BASE / 'shared' / 'state'
 HOST = 'http://127.0.0.1:8080'
+PYTHON = str(BASE / '.venv' / 'bin' / 'python3')
 INITIAL_TOTAL = 300.0  # daytrader + gold_stocks + oil_stocks
 DEFAULT_ROUNDS = 200
 
@@ -111,7 +112,7 @@ def run_agent(agent, path):
     env = {**os.environ, 'PYTHONPATH': str(BASE)}
     try:
         r = subprocess.run(
-            [sys.executable, str(path)],
+            [PYTHON, str(path)],
             capture_output=True, text=True, cwd=str(BASE), env=env, timeout=120
         )
         return {'ok': r.returncode == 0, 'returncode': r.returncode, 'stdout': r.stdout[-200:], 'stderr': r.stderr[-200:]}

@@ -76,7 +76,7 @@ def run():
         gold_tickers = ["GLD", "GDX", "NEM", "ABX"]
     sym = gold_tickers[0] if gold_tickers else "GLD"
 
-    pnl = cash * random.uniform(0.01, 0.25)
+    pnl = cash * random.uniform(0.001, 0.02)
     cash = round(cash + pnl, 2)
 
     trade = {
@@ -121,6 +121,7 @@ def run():
         reinvest_pct *= scale
 
     try:
+        from shared.decisions import submit_decision
         profit = max(pnl, 0)
         if profit > 0:
             to_gold_bars = round(profit * to_gold_bars_pct, 2)

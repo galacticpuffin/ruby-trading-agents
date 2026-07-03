@@ -229,6 +229,13 @@ async def api_politics():
         return JSONResponse({"high_impact": 0, "suggestions": []})
 
 
+def broadcast_sync(data: dict):
+    try:
+        log("broadcast", data.get("level", "info"), f"{data.get('agent','?')}: {data.get('message','')}")
+    except Exception:
+        pass
+
+
 @app.websocket("/ws")
 async def ws_endpoint(websocket: WebSocket):
     await websocket.accept()

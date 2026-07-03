@@ -69,7 +69,7 @@ def run():
     cash = folio["oil_stocks"].get("cash", 100.0)
     start_cash = folio["oil_stocks"].get("start_cash", 100.0)
 
-    pnl = cash * random.uniform(0.01, 0.24)
+    pnl = cash * random.uniform(0.001, 0.02)
     cash = round(cash + pnl, 2)
 
     trade = {
@@ -114,6 +114,7 @@ def run():
         reinvest_pct *= scale
 
     try:
+        from shared.decisions import submit_decision
         profit = max(pnl, 0)
         if profit > 0:
             to_oil_opp = round(profit * to_oil_opp_pct, 2)
