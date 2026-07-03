@@ -1,27 +1,6 @@
 {
   "fix_history": [
     {
-      "ts": 1783031652.33569,
-      "issue_type": "error_storm",
-      "action": "auto_fix",
-      "success": true,
-      "detail": "Initiated daemon restart"
-    },
-    {
-      "ts": 1783031652.3618848,
-      "issue_type": "decision_queue_overflow",
-      "action": "auto_fix",
-      "success": true,
-      "detail": "Archived 1 expired decisions, 100 remaining"
-    },
-    {
-      "ts": 1783031653.765852,
-      "issue_type": "error_storm",
-      "action": "auto_fix",
-      "success": true,
-      "detail": "Initiated daemon restart"
-    },
-    {
       "ts": 1783031653.7920475,
       "issue_type": "decision_queue_overflow",
       "action": "auto_fix",
@@ -3499,11 +3478,33 @@
       "action": "auto_fix",
       "success": true,
       "detail": "Archived 3 expired decisions, 100 remaining"
+    },
+    {
+      "ts": 1783040018.290456,
+      "issue_type": "error_storm",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Initiated daemon restart"
+    },
+    {
+      "ts": 1783040018.2950256,
+      "issue_type": "agent_failure",
+      "action": "proposed_fix",
+      "success": true,
+      "detail": "Decision submitted: it_1783040018292_5872"
+    },
+    {
+      "ts": 1783040018.2996554,
+      "issue_type": "agent_failure",
+      "action": "auto_fix",
+      "success": true,
+      "detail": "Retry marked"
     }
   ],
   "error_patterns": {
     "decision_queue_overflow": 2057,
-    "error_storm": 370
+    "error_storm": 371,
+    "agent_failure": 2
   },
   "success_rates": {
     "decision_queue_overflow": {
@@ -3511,8 +3512,12 @@
       "successes": 2057
     },
     "error_storm": {
-      "attempts": 370,
-      "successes": 370
+      "attempts": 371,
+      "successes": 371
+    },
+    "agent_failure": {
+      "attempts": 2,
+      "successes": 2
     }
   },
   "lessons_learned": [
@@ -3529,8 +3534,10 @@
     "decision_queue_overflow: Archived 7 expired decisions, 100 remaining",
     "decision_queue_overflow: Archived 6 expired decisions, 100 remaining",
     "error_storm: Decision submitted: it_1783031497586_9871",
-    "error_storm: Initiated daemon restart"
+    "error_storm: Initiated daemon restart",
+    "agent_failure: Decision submitted: it_1783040018292_5872",
+    "agent_failure: Retry marked"
   ],
-  "total_fixes": 2427,
-  "successful_fixes": 2427
+  "total_fixes": 2430,
+  "successful_fixes": 2430
 }

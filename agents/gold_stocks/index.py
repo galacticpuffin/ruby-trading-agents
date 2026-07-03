@@ -100,7 +100,7 @@ def run():
     save_json(FOLIO_PATH, folio)
     save_json(GOLD_STOCKS_STATE, state)
 
-    log("gold_stocks", "ok", f"{sym} PnL: ${pnl:.2f} (win={is_win}) cash=${cash:.2f}")
+    log("gold_stocks", "ok", f"{sym} PnL: ${pnl:.2f} cash=${cash:.2f}")
 
     try:
         from shared.core import update_ticker_series

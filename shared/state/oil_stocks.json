@@ -1,6 +1,25 @@
 {
-  "cash": 100,
-  "trades": [],
+  "cash": 97.44,
+  "trades": [
+    {
+      "date": "2026-07-02",
+      "symbol": "XLE",
+      "pnl": -4.58,
+      "cash_after": 95.42,
+      "win": false
+    },
+    {
+      "date": "2026-07-02",
+      "symbol": "XLE",
+      "pnl": 2.02,
+      "cash_after": 97.44,
+      "win": true
+    }
+  ],
   "starting_cash": 100,
-  "status": "initialized"
+  "status": "initialized",
+  "last_run": "2026-07-02 08:53 PM",
+  "last_run_date": "2026-07-02",
+  "daily_trades": 0,
+  "start_cash": 100.0
 }

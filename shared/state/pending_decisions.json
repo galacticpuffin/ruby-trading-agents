@@ -1,0 +1,75 @@
+{
+  "queue": [
+    {
+      "id": "daytrader_1783039963724",
+      "agent": "daytrader",
+      "type": "trade",
+      "payload": {
+        "symbol": "O",
+        "side": "buy",
+        "pnl_estimate": 12.7,
+        "confidence": 1.0,
+        "cash_after": 212.7,
+        "budget_target": 1100
+      },
+      "status": "pending",
+      "submitted_at": 1783039963.7247987,
+      "decided_at": null,
+      "operator_action": null
+    },
+    {
+      "id": "it_1783040018288",
+      "agent": "it",
+      "type": "fix",
+      "payload": {
+        "issue_type": "error_storm",
+        "priority": "high",
+        "detail": "31 errors in recent logs.",
+        "action": "auto_fix_high_confidence",
+        "success_rate": 1.0,
+        "approved_action": null,
+        "operator_action": null
+      },
+      "status": "pending",
+      "submitted_at": 1783040018.2888978,
+      "decided_at": null,
+      "operator_action": null
+    },
+    {
+      "id": "it_1783040018293",
+      "agent": "it",
+      "type": "fix",
+      "payload": {
+        "issue_type": "agent_failure",
+        "priority": "medium",
+        "detail": "gold_stocks last run failed: name 'is_win' is not defined",
+        "action": "investigate_and_fix",
+        "success_rate": 0.0,
+        "approved_action": null,
+        "operator_action": null
+      },
+      "status": "pending",
+      "submitted_at": 1783040018.2936766,
+      "decided_at": null,
+      "operator_action": null
+    },
+    {
+      "id": "it_1783040018298",
+      "agent": "it",
+      "type": "fix",
+      "payload": {
+        "issue_type": "agent_failure",
+        "priority": "medium",
+        "detail": "oil_stocks last run failed: name 'is_win' is not defined",
+        "action": "auto_fix_high_confidence",
+        "success_rate": 1.0,
+        "approved_action": null,
+        "operator_action": null
+      },
+      "status": "pending",
+      "submitted_at": 1783040018.2982528,
+      "decided_at": null,
+      "operator_action": null
+    }
+  ]
+}
