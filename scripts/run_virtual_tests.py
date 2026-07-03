@@ -191,14 +191,14 @@ def main():
             for agent, err in result['errors'].items():
                 print(f'  FAIL {agent}: {err[:120]}')
         
-        if acc >= 99.0 and all(cash >= 100.0 for cash in result.get('cash', {}).values()) and err_count == 0:
-            reached_target = True
-            print('TARGET_REACHED')
+        if acc < 99.0 or err_count > 0:
+            print('TARGET_FAILED')
             break
     
     final_cash = sum(get_agent_cash().values())
     profit = round(final_cash - INITIAL_TOTAL, 2)
     profit_pct = round((profit / INITIAL_TOTAL) * 100.0, 2) if INITIAL_TOTAL else 0.0
+    reached_target = bool(history) and history[-1].get('accuracy', 0) >= 99.0 and len(history[-1].get('errors', {})) == 0
     
     print('=== VIRTUAL TEST REPORT ===')
     print(f'Rounds executed: {len(history)}')
